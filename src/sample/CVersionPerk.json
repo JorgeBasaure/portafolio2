@@ -1,0 +1,10 @@
+[
+    {
+                 "id":0,
+                 "title" :"Git",
+                 "Level_Perk" :"Básico.",
+                 "Hours_perk" : "10 Horas cronológicas.",
+                 "description_Perk" : "Uso básico para guardar y controlar versiones de un software en específico (Guardar en distinta rama a la maestra (No incluye el uso de Bash))",
+                 "done": false
+    }
+]

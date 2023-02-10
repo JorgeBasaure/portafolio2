@@ -1,0 +1,42 @@
+[
+{
+    "id":0,
+    "title" :"Visual Studio",
+    "Level_Perk" :"Principiante.",
+    "Hours_perk" : "28 Horas cronológicas.",
+    "description_Perk" : "Uso básico de software para el diseño de proyectos o soluciones.",
+    "done": false
+},
+{
+    "id":1,
+    "title" :"Visual Studio Code",
+    "Level_Perk" :"Principiante.",
+    "Hours_perk" : "28 Horas cronológicas.",
+    "description_Perk" : "Uso básico de software para el diseño de servicio web con descargas de paquetes (React, SASS)",
+    "done": false
+},
+{
+    "id":2,
+    "title" :"Microsoft SQL Server Management Studio 18",
+    "Level_Perk" :"Principiante.",
+    "Hours_perk" : "120 Horas cronológicas.",
+    "description_Perk" : "Uso básico de software para las consultas y uniones mediante T-SQL y confección de MER a través de Power Designer. (Posiblemente incorpore el uso de BBDD no relacionales como MongoDB)",
+    "done": false
+},
+{
+    "id":3,
+    "title" :"NetBeans",
+    "Level_Perk" :"Principiante.",
+    "Hours_perk" : "16 Horas cronológicas.",
+    "description_Perk" : "Uso básico de software para el diseño de proyectos o soluciones. (Posiblemente migre a Kotlin o Spring)",
+    "done": false
+},
+{
+    "id":4,
+    "title" :"Notepad++",
+    "Level_Perk" :"Principiante.",
+    "Hours_perk" : "20 Horas cronológicas.",
+    "description_Perk" : "Uso básico de software para el estudio para pulir habilidades de lenguaje como PHP.  (Posiblemente migre a Laravel).",
+    "done": false
+}
+]

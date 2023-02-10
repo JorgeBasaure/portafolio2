@@ -1,0 +1,26 @@
+ [
+    {
+                 "id":0,
+                 "title" :"VB.NET",
+                 "Level_Perk" :"Principiante.",
+                 "Hours_perk" : "16 Horas cronológicas.",
+                 "description_Perk" : "Uso básico de sintaxis en conjunto con Visual Studio, para el diseño de aplicaciones de escritorio.",
+                 "done": false
+    },
+    {
+        "id":1,
+        "title" :"Java",
+        "Level_Perk" :"Principiante.",
+        "Hours_perk" : "16 Horas cronológicas.",
+        "description_Perk" : "Uso básico de sintaxis en conjunto con Visual Studio, para el diseño de aplicaciones de escritorio.",
+        "done": false
+},
+{
+    "id":2,
+    "title" :"C#.NET",
+    "Level_Perk" :"Principiante.",
+    "Hours_perk" : "16 Horas cronológicas.",
+    "description_Perk" : "Uso básico de sintaxis en conjunto con Visual Studio para el diseño de aplicaciones de escritorio.",
+    "done": false
+}
+ ]

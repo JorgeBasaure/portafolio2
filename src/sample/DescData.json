@@ -1,0 +1,10 @@
+[
+    {
+        "id":0,
+        "title":"Nombre: ",
+        "Level_Perk" :"Nivel: ",
+        "Hours_perk" : "Horas dedicadas: ",
+        "description_Perk" : "Descripción de habilidad: ",
+        "done": false
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "id":0,
+        "title" :"Datos de contacto",
+        "Address" :"Dirección de residencia: ",
+        "Contact_phone" : "Teléfono de contacto: ",
+        "E_mail" : "Correo electrónico: ",
+        "done": false
+},
+    {
+                 "id":1,
+                 "title" :"Contacto",
+                 "Address" :"Cerro Blanco 1683, La florida, Santiago.",
+                 "Contact_phone" : "+56 9 6556 5141.",
+                 "E_mail" : "jorge.basaure.p@gmail.com",
+                 "done": false
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "id":0,
+        "title": "Antecedentes Personales.",
+        "description":"Mi nombre es Jorge Andrés Basaure Pérez, Y tengo 35 años. Soy recién titulado de la carrera de ingeniería en ejecución informática mención desarrollo de sistemas, gracias a la práctica de desarrollo de servicio web intranet basado en sharepoint con power BI. Me interesa trabajar en el mercado de TIC para ejercer en lo que me he estudiado. Además de aprender a algo nuevo y fortalecer en materia de habilidades blandas (socializar con los pares, subordinados, jefaturas y clientes).Además de desarrollar, lubricar y pulir mis habilidades de desarrollo de servicio Web, como de desarrollo. Mis pasatiempos es aprender no solamente programación y desarrollo mediante W3School y también ver YouTube en lo que confiere de este tema. Si no que también compongo música como hobby, hacer ciclismo de ruta (Fondos) para despejar la mente e incluso agilizar la mente.",
+        "done": false
+    },
+    {
+        "id":1,
+        "title":"Antecedentes Educacionales.",
+        "description": "He estudiado desde el 2015 en el Instituto AIEP encontrándose en el Campus Bellavista, en la comuna de Providencia - Santiago. En el año 2022 estoy titulado de Ingeniería en Ejecución Informática mención Desarrollo de Sistemas ",
+        "done":false
+    },
+    {
+        "id":2,
+        "title": "Antecedentes Laborales.",
+        "description": "Fui practicante en el Mutual de seguridad CChC que se encuentra en Av. Libertador Bernardo O'Higgins 4848 en la comuna de Estación Central Santiago. Donde implemente junto con mi supervisora, un servicio Web en intranet basado en Sharepoint con Power BI, con el fin de mejorar las capacitaciones en el área de medicina.",
+        "done":false
+    },
+    {
+        "id":3,
+        "title": "Dirección de residencia",
+        "description": "Cerro blanco 1683, La Florida, Santiago.",
+        "done":false
+    },
+    {
+        "id":4,
+        "title": "Número de teléfono celular",
+        "description": "+56 9 65565141",
+        "done":false
+    },
+    {
+        "id":4,
+        "title": "Correo electrónico",
+        "description": "jorge.basaure.p@gmail.com",
+        "done":false
+    }
+]

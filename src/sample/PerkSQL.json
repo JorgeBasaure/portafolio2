@@ -1,0 +1,10 @@
+[
+    {
+        "id":0,
+        "title":"SQL (Microsoft)",
+        "Level_Perk" :"Basico",
+        "Hours_perk" : "60 Horas cronológicas.",
+        "description_Perk" : "Llamadas de consultas básicas mediante T-SQL, mencionado en SQLMS (Posiblemente aprenda el uso de base de datos no relacionales)",
+        "done": false
+    }
+]

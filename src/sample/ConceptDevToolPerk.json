@@ -1,0 +1,34 @@
+[
+    {
+                 "id":0,
+                 "title" :"Bizagi",
+                 "Level_Perk" :"Básico.",
+                 "Hours_perk" : "100 Horas cronológicas.",
+                 "description_Perk" : "Diseño básico de mapas conceptuales, similar a Visio",
+                 "done": false
+    },
+    {
+        "id":1,
+        "title" :"Star-UML",
+        "Level_Perk" :"Básico.",
+        "Hours_perk" : "70 Horas cronológicas.",
+        "description_Perk" : "Diseño básico de casos de uso por tomas de requerimiento, modelamiento de clases para la capa de negocio y el uso de actores que interactúan con la funcionalidad de cada método conceptuado.",
+        "done": false
+},
+{
+    "id":2,
+    "title" :"Power Designer",
+    "Level_Perk" :"Básico.",
+    "Hours_perk" : "100 Horas cronológicas.",
+    "description_Perk" : "Diseño básico de base de datos conceptuales, añadiendo integración de seguridad y evitando redundancias por normalización hasta 3FN.",
+    "done": false
+},
+{
+    "id":3,
+    "title" :"Balsamiq",
+    "Level_Perk" :"Básico.",
+    "Hours_perk" : "200 Horas cronológicas.",
+    "description_Perk" : "Diseño básico de presentación conceptuales, para aplicación de escritorio, servicio web y smartphones.",
+    "done": false
+}
+]

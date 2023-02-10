@@ -1,0 +1,58 @@
+[
+    {
+                 "id":0,
+                 "title" :"Word",
+                 "Level_Perk" :"Básico.",
+                 "Hours_perk" : "180 Horas cronológicas.",
+                 "description_Perk" : "Uso básico de software para documentación e informes básicos.",
+                 "done": false
+    },
+    {
+        "id":1,
+        "title" :"Excel",
+        "Level_Perk" :"Principiante.",
+        "Hours_perk" : "340 Horas cronológicas.",
+        "description_Perk" : "Uso básico de software para reportes con uso de fórmulas básicas y exportación a Power BI.",
+        "done": false
+},
+{
+    "id":2,
+    "title" :"Project",
+    "Level_Perk" :"Principiante.",
+    "Hours_perk" : "60 Horas cronológicas.",
+    "description_Perk" : "Uso básico de software para creación de carta Gantt.",
+    "done": false
+},
+{
+    "id":3,
+    "title" :"Sharepoint",
+    "Level_Perk" :"Principiante.",
+    "Hours_perk" : "600 Horas cronológicas.",
+    "description_Perk" : "Uso básico de software para diseñar, cargar archivos, levantar y funcionar un servicio intranet con Power BI.",
+    "done": false
+},
+{
+    "id":4,
+    "title" :"Power BI",
+    "Level_Perk" :"Principiante.",
+    "Hours_perk" : "200 Horas cronológicas.",
+    "description_Perk" : "Uso básico de software para cargar archivos Excel y funcionar un servicio intranet con Sharepoint",
+    "done": false
+},
+{
+    "id":5,
+    "title" :"Visio",
+    "Level_Perk" :"Principiante.",
+    "Hours_perk" : "100 Horas cronológicas.",
+    "description_Perk" : "Uso básico de software de diagramas de flujo, además de Bizagi.",
+    "done": false
+},
+{
+    "id":6,
+    "title" :"Power Point",
+    "Level_Perk" :"Principiante.",
+    "Hours_perk" : "100 Horas cronológicas.",
+    "description_Perk" : "Uso básico de software de diagramas de flujo, además de Bizagi.",
+    "done": false
+}
+ ]
