@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import Contacto from './sample/Contact.json'
+import Contacto from './sample/Contact.json';
+import logoLDIN from './img/icons8-linkedin-480.svg'; 
 
 
 class Contact extends Component
@@ -40,7 +41,11 @@ class DatosContacto extends Component{
                 <li><Contact mytext={Contacto[0].Contact_phone}  subtitle={Contacto[1].Contact_phone} /></li>
                 <li><Emailr mytext={Contacto[0].E_mail}  subtitle={Contacto[1].E_mail} /></li>
            </ul>
+           <div>
+         <img src={logoLDIN} className="IDE-logo" alt="logoLDIN" />
+         </div>
         </div> 
+        
       );
     }
   }

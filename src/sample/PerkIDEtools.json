@@ -36,7 +36,7 @@
     "title" :"Notepad++",
     "Level_Perk" :"Principiante.",
     "Hours_perk" : "20 Horas cronológicas.",
-    "description_Perk" : "Uso básico de software para el estudio para pulir habilidades de lenguaje como PHP.  (Posiblemente migre a Laravel).",
+    "description_Perk" : "Uso básico de software para el estudio de pulir habilidades de lenguaje como PHP.  (Posiblemente migre a Laravel).",
     "done": false
 }
 ]

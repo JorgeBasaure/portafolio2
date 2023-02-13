@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import CtrlVerperk from './sample/CVersionPerk.json'
-import DData from './sample/DescData.json'
-
+import CtrlVerperk from './sample/CVersionPerk.json';
+import DData from './sample/DescData.json';
+import logoGIT from './img/CTRLVER/Git-logo.svg';
 class PortafolioCtrlVer extends Component
 {
   state = {show: false}
@@ -22,6 +22,9 @@ class HerramientasCtrlVer extends Component{
       
       return(
         <div className='PerkCtrlVer'> <h1>Habilidades en control de versiones</h1>
+                <div>
+         <img src={logoGIT} className="IDE-logo" alt="logoGIT" />
+         </div>
            <p>{CtrlVerperk[0].title}</p>
           <PortafolioCtrlVer mytext={DData[0].Level_Perk}  subtitle= {CtrlVerperk[0].Level_Perk} />
           <PortafolioCtrlVer mytext={DData[0].Hours_perk}  subtitle={CtrlVerperk[0].Hours_perk} />
