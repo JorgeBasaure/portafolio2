@@ -1,0 +1,18 @@
+
+.profile{
+    
+     &__name{
+        color: aqua;
+     }
+     &__personal{
+        content: url('../img/20230131_124854.jpg');
+     }
+
+     &__academy{
+        content: url('../img/bellavista-7___Selected.jpg');
+     }
+     &__job{
+        content:url('../img/1332946447-lmb-bic-mut-10.jpg')
+     }
+
+}

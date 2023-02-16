@@ -1,0 +1,13 @@
+@use 'mixins';
+
+@use 'presentacionIng';
+
+body
+{
+    background-image: linear-gradient(rgb(79, 70, 65),rgba(79, 70, 65, 0))
+                                     , url('../img/workspace-1280538.jpg');
+    display: flex;
+    @include mixins.arreglar-imagen();
+}
+
+

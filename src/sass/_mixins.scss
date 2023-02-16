@@ -1,0 +1,13 @@
+@mixin crear-flexbox($justify){
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+}
+@mixin arreglar-imagen{
+    background: {
+        size:auto;
+        repeat: no-repeat;
+        position: center;
+        attachment: fixed;
+    }
+}

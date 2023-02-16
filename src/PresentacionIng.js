@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import prof from './sample/Profile.json'
-import PicDev from './img/20230131_124854.jpg'
-import AcdDev from './img/bellavista-7___Selected.jpg'
-import JobDev from './img/1332946447-lmb-bic-mut-10.jpg'
 
 
 
@@ -24,27 +21,36 @@ class PresentacionDev extends Component {
 
     return (
       <div className="profile">
-        <h1>Presentación</h1>
 
-        <div className="profile__personal">
-          <p   className="profile__title">{prof[0].title}</p>
-          <img src={PicDev} alt="" />
+        <h1 className="profile__name">Presentación</h1>
+
+         <div>
+            <p   className="profile__title">{prof[0].title}</p>
+         </div>
+        <div className="profile__personal"> 
         </div>
         <div>
           <PortafolioDev mytext={prof[0].description} />
         </div>
 
-        <div>
-          <p className="profile__title">{prof[1].title}</p>
-          <img src={AcdDev} alt="" />
-        </div>
-        <div>
 
+  <div >
+          <p className="profile__title">{prof[1].title}</p>
+        </div>
+
+        <div className="profile__academy">
+        </div>
+
+        <div>
           <PortafolioDev mytext={prof[1].description} />
         </div>
+
+
+
         <div>
         <p className="profile__title">{prof[2].title}</p>
-          <img src={JobDev} alt="" />
+          </div>
+         <div className="profile__job">
           </div>
         <div>
           
