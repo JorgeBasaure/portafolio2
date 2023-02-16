@@ -1,19 +1,10 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
-import './App.scss';
+import '../src/sass/App.scss';
 
-/* function WenaCabros(props) 
-{
-  return(
-   <div id="prueba">{props.mytext}</div>
-  )
-} */
+//TODO: Administrar las clases, id, y todo lo que tenga que ver con las identificaciones de etiquietas para SASS y CSS3
 
 class App extends Component{
-  /* state = 
-  {
-    curriculum: prof
-  } */
 
   render()
   {

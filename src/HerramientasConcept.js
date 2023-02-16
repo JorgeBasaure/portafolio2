@@ -13,7 +13,7 @@ class PortafolioConcept extends Component
     {
       if (!this.state.show){
         return(
-          <p id="PortConcept">{this.props.mytext}  {this.props.subtitle}</p>
+          <p id="PortConcept__specs">{this.props.mytext}  {this.props.subtitle}</p>
         )
       }   
     }
@@ -24,32 +24,39 @@ class HerramientasConcept extends Component{
     {
       
       return(
-        <div className='PerkConcept'> <h1>Habilidades Herramientas de conceptos</h1>
+        <div className='PerkConcept'>
+           <h1 className='PerkConcept__title'>Habilidades Herramientas de conceptos</h1>
                   <div>
-         <img src={logoBIZAGIM} className="IDE-logo" alt="logoBIZAGIM" />
+
+         <img src={logoBIZAGIM} className="IDElogo__BIZAGIM" alt="logoBIZAGIM" />
          </div>
-           <p>{Conceptperk[0].title}</p>
+           <p className='PerkConcept__name'>{Conceptperk[0].title}</p>
           <PortafolioConcept mytext={DData[0].Level_Perk}  subtitle= {Conceptperk[0].Level_Perk} />
           <PortafolioConcept mytext={DData[0].Hours_perk}  subtitle={Conceptperk[0].Hours_perk} />
           <PortafolioConcept mytext={DData[0].description_Perk}  subtitle={Conceptperk[0].description_Perk} /> 
           <div>
-         <img src={logoSTARUML} className="IDE-logo" alt="logoSTARUML}" />
+
+         <img src={logoSTARUML} className="Conceptlogo__STARUML" alt="logoSTARUML" />
          </div>
-          <p>{Conceptperk[1].title}</p>
+
+          <p className='PerkConcept__name'>{Conceptperk[1].title}</p>
           <PortafolioConcept mytext={DData[0].Level_Perk}  subtitle= {Conceptperk[1].Level_Perk} />
           <PortafolioConcept mytext={DData[0].Hours_perk}  subtitle={Conceptperk[1].Hours_perk} />
           <PortafolioConcept mytext={DData[0].description_Perk}  subtitle={Conceptperk[1].description_Perk} /> 
           <div>
-         <img src={logoSAPPD} className="IDE-logo" alt="logoSAPPD}" />
+
+         <img src={logoSAPPD} className="Conceptlogo__SAPPD" alt="logoSAPPD" />
          </div>
-          <p>{Conceptperk[2].title}</p>
+
+          <p className='PerkConcept__name'>{Conceptperk[2].title}</p>
           <PortafolioConcept mytext={DData[0].Level_Perk}  subtitle= {Conceptperk[2].Level_Perk} />
           <PortafolioConcept mytext={DData[0].Hours_perk}  subtitle={Conceptperk[2].Hours_perk} />
           <PortafolioConcept mytext={DData[0].description_Perk}  subtitle={Conceptperk[2].description_Perk} /> 
           <div>
-         <img src={logoBALSAMIQ} className="IDE-logo" alt="logoBALSAMIQ" />
+
+         <img src={logoBALSAMIQ} className="Conceptlogo__BALSAMIQ" alt="logoBALSAMIQ" />
          </div>
-          <p>{Conceptperk[3].title}</p>
+          <p className='PerkConcept__name'>{Conceptperk[3].title}</p>
           <PortafolioConcept mytext={DData[0].Level_Perk}  subtitle= {Conceptperk[3].Level_Perk} />
           <PortafolioConcept mytext={DData[0].Hours_perk}  subtitle={Conceptperk[3].Hours_perk} />
           <PortafolioConcept mytext={DData[0].description_Perk}  subtitle={Conceptperk[3].description_Perk} /> 

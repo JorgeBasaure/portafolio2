@@ -17,7 +17,7 @@ class PortafolioFE extends Component
     {
       if (!this.state.show){
         return(
-          <p id="PortFE">{this.props.mytext}  {this.props.subtitle}</p>
+          <p className="PortFE__specs">{this.props.mytext}  {this.props.subtitle}</p>
         )
       }   
     }
@@ -29,40 +29,45 @@ class HerramientasFE extends Component{
   {
     
     return(
-      <div className='PerkFe'> <h1>Habilidades Front-End</h1>
+      <div className='PerkFe'> 
+        <h1 className='PerkFe__title'>Habilidades Front-End</h1>
          <div>
-         <img src={logoHTML5} className="FE-logo" alt="logoHTML5" />
+
+         <img src={logoHTML5} className="FElogo__HTML5" alt="logoHTML5" />
          </div>
-         <p>{FEperk[0].title}</p>
+         <p className='PerkFe__name'>{FEperk[0].title}</p>
         <PortafolioFE mytext={DData[0].Level_Perk}  subtitle= {FEperk[0].Level_Perk} />
         <PortafolioFE mytext={DData[0].Hours_perk}  subtitle={FEperk[0].Hours_perk} />
         <PortafolioFE mytext={DData[0].description_Perk}  subtitle={FEperk[0].description_Perk} /> 
         <div>
-        <img src={logoSASS} className="FE-logo" alt="logoSASS" />
+
+        <img src={logoSASS} className="FElogo__SASS" alt="logoSASS" />
          </div>
-        <p>{FEperk[1].title}</p>
+        <p className='PerkFe__name'>{FEperk[1].title}</p>
         <PortafolioFE mytext={DData[0].Level_Perk}  subtitle= {FEperk[1].Level_Perk} />
         <PortafolioFE mytext={DData[0].Hours_perk}  subtitle={FEperk[1].Hours_perk} />
         <PortafolioFE mytext={DData[0].description_Perk}  subtitle={FEperk[1].description_Perk} /> 
         <div>
-        <img src={logoJS} className="FE-logo" alt="logoJS" />
+
+        <img src={logoJS} className="FElogo__JS" alt="logoJS" />
          </div>
-        <p>{FEperk[2].title}</p>
+        <p className='PerkFe__name'>{FEperk[2].title}</p>
         <PortafolioFE mytext={DData[0].Level_Perk}  subtitle= {FEperk[2].Level_Perk} />
         <PortafolioFE mytext={DData[0].Hours_perk}  subtitle={FEperk[2].Hours_perk} />
         <PortafolioFE mytext={DData[0].description_Perk}  subtitle={FEperk[2].description_Perk} /> 
         <div>
-        <img src={logoPHP} className="FE-logo" alt="logoPHP" />
+
+        <img src={logoPHP} className="FElogo__PHP" alt="logoPHP" />
          </div>
-        <p>{FEperk[3].title}</p>
+        <p className='PerkFe__name'>{FEperk[3].title}</p>
         <PortafolioFE mytext={DData[0].Level_Perk}  subtitle= {FEperk[3].Level_Perk} />
         <PortafolioFE mytext={DData[0].Hours_perk}  subtitle={FEperk[3].Hours_perk} />
         <PortafolioFE mytext={DData[0].description_Perk}  subtitle={FEperk[3].description_Perk} /> 
-
+        
         <div>
-           <img src={logoReact} className="App-logo" alt="logo" />
+           <img src={logoReact} className="FElogo__REACT" alt="logo" />
            </div>
-        <p>{FEperk[4].title}</p>
+        <p className='PerkFe__name'>{FEperk[4].title}</p>
         <PortafolioFE mytext={DData[0].Level_Perk}  subtitle= {FEperk[4].Level_Perk} />
         <PortafolioFE mytext={DData[0].Hours_perk}  subtitle={FEperk[4].Hours_perk} />
         <PortafolioFE mytext={DData[0].description_Perk}  subtitle={FEperk[4].description_Perk} /> 

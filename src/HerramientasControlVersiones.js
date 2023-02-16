@@ -9,7 +9,7 @@ class PortafolioCtrlVer extends Component
     {
       if (!this.state.show){
         return(
-          <p id="PortCtrlVer">{this.props.mytext}  {this.props.subtitle}</p>
+          <p id="PortCtrlVer__specs">{this.props.mytext}  {this.props.subtitle}</p>
         )
       }   
     }
@@ -21,11 +21,13 @@ class HerramientasCtrlVer extends Component{
     {
       
       return(
-        <div className='PerkCtrlVer'> <h1>Habilidades en control de versiones</h1>
+        <div className='PerkCtrlVer'>
+           <h1 className='PerkCtrlVer__title'>Habilidades en control de versiones</h1>
                 <div>
-         <img src={logoGIT} className="IDE-logo" alt="logoGIT" />
+
+         <img src={logoGIT} className="CtrlVerlogo__GIT" alt="logoGIT" />
          </div>
-           <p>{CtrlVerperk[0].title}</p>
+           <p  className='PerkCtrlVer__name'>{CtrlVerperk[0].title}</p>
           <PortafolioCtrlVer mytext={DData[0].Level_Perk}  subtitle= {CtrlVerperk[0].Level_Perk} />
           <PortafolioCtrlVer mytext={DData[0].Hours_perk}  subtitle={CtrlVerperk[0].Hours_perk} />
           <PortafolioCtrlVer mytext={DData[0].description_Perk}  subtitle={CtrlVerperk[0].description_Perk} /> 

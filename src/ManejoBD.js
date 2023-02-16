@@ -9,7 +9,7 @@ class PortafolioSQL extends Component
     {
       if (!this.state.show){
         return(
-          <p id="PortSQL">{this.props.mytext}  {this.props.subtitle}</p>
+          <p id="PortSQL__specs">{this.props.mytext}  {this.props.subtitle}</p>
         )
       }   
     }
@@ -21,11 +21,12 @@ class ManejoSQL extends Component{
     {
       
       return(
-        <div className='PerkSQL'> <h1>Habilidades Base de datos (Persistencia)</h1>
+        <div className='PerkSQL'> 
+        |<h1 className='PerkSQL__title'>Habilidades Base de datos (Persistencia)</h1>
                  <div>
-         <img src={logoSQLS} className="IDE-logo" alt="logoSQLS" />
+         <img src={logoSQLS} className="SQLlogo" alt="logoSQLS" />
          </div>
-           <p>{SQLPerk[0].title}</p>
+           <p className='PerkSQL__name'>{SQLPerk[0].title}</p>
           <PortafolioSQL mytext={DData[0].Level_Perk}  subtitle= {SQLPerk[0].Level_Perk} />
           <PortafolioSQL mytext={DData[0].Hours_perk}  subtitle={SQLPerk[0].Hours_perk} />
           <PortafolioSQL mytext={DData[0].description_Perk}  subtitle={SQLPerk[0].description_Perk} /> 
