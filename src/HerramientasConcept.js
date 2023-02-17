@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import Conceptperk from './sample/ConceptDevToolPerk.json';
 import DData from './sample/DescData.json';
-import logoBIZAGIM from './img/CONCEPT/modeler-logo-md.svg';
-import logoSTARUML from './img/CONCEPT/7642181.png';
-import logoSAPPD from './img/CONCEPT/logo-powerdesigner.png';
-import logoBALSAMIQ from './img/CONCEPT/balsamiq-logo-screen-1000x500.png';
+//import logoBIZAGIM from './img/CONCEPT/modeler-logo-md.svg';
+//import logoSTARUML from './img/CONCEPT/7642181.png';
+//import logoSAPPD from './img/CONCEPT/logo-powerdesigner.png';
+//import logoBALSAMIQ from './img/CONCEPT/balsamiq-logo-screen-1000x500.png';
 
 class PortafolioConcept extends Component
 {
@@ -26,37 +26,39 @@ class HerramientasConcept extends Component{
       return(
         <div className='PerkConcept'>
            <h1 className='PerkConcept__title'>Habilidades Herramientas de conceptos</h1>
-                  <div>
 
-         <img src={logoBIZAGIM} className="IDElogo__BIZAGIM" alt="logoBIZAGIM" />
-         </div>
+
+           <div className="Conceptlogo__BIZAGIM"></div>
+
            <p className='PerkConcept__name'>{Conceptperk[0].title}</p>
+
           <PortafolioConcept mytext={DData[0].Level_Perk}  subtitle= {Conceptperk[0].Level_Perk} />
           <PortafolioConcept mytext={DData[0].Hours_perk}  subtitle={Conceptperk[0].Hours_perk} />
-          <PortafolioConcept mytext={DData[0].description_Perk}  subtitle={Conceptperk[0].description_Perk} /> 
-          <div>
+          <PortafolioConcept mytext={DData[0].description_Perk}  subtitle={Conceptperk[0].description_Perk} />
 
-         <img src={logoSTARUML} className="Conceptlogo__STARUML" alt="logoSTARUML" />
-         </div>
+
+          <div className="Conceptlogo__STARUML"></div>
 
           <p className='PerkConcept__name'>{Conceptperk[1].title}</p>
+
           <PortafolioConcept mytext={DData[0].Level_Perk}  subtitle= {Conceptperk[1].Level_Perk} />
           <PortafolioConcept mytext={DData[0].Hours_perk}  subtitle={Conceptperk[1].Hours_perk} />
           <PortafolioConcept mytext={DData[0].description_Perk}  subtitle={Conceptperk[1].description_Perk} /> 
-          <div>
+          
 
-         <img src={logoSAPPD} className="Conceptlogo__SAPPD" alt="logoSAPPD" />
-         </div>
+          <div className="Conceptlogo__SAPPD"></div>
 
           <p className='PerkConcept__name'>{Conceptperk[2].title}</p>
+
           <PortafolioConcept mytext={DData[0].Level_Perk}  subtitle= {Conceptperk[2].Level_Perk} />
           <PortafolioConcept mytext={DData[0].Hours_perk}  subtitle={Conceptperk[2].Hours_perk} />
           <PortafolioConcept mytext={DData[0].description_Perk}  subtitle={Conceptperk[2].description_Perk} /> 
-          <div>
+          
+          
+          <div className="Conceptlogo__BALSAMIQ"></div>
 
-         <img src={logoBALSAMIQ} className="Conceptlogo__BALSAMIQ" alt="logoBALSAMIQ" />
-         </div>
           <p className='PerkConcept__name'>{Conceptperk[3].title}</p>
+
           <PortafolioConcept mytext={DData[0].Level_Perk}  subtitle= {Conceptperk[3].Level_Perk} />
           <PortafolioConcept mytext={DData[0].Hours_perk}  subtitle={Conceptperk[3].Hours_perk} />
           <PortafolioConcept mytext={DData[0].description_Perk}  subtitle={Conceptperk[3].description_Perk} /> 

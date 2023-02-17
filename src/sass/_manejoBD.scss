@@ -1,0 +1,10 @@
+@use 'mixins';
+
+.SQLlogo{
+
+
+    &__MSQL{
+        content: url('../img/BBDD/microsoft-sql-server-logo-svgrepo-com.svg');
+        @include mixins.tamaño-logo();
+    }
+}

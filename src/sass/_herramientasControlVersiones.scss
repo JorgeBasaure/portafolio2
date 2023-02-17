@@ -1,0 +1,9 @@
+@use 'mixins';
+
+.CtrlVerlogo{
+
+    &__GIT{
+        content: url('../img/CTRLVER/Git-logo.svg');
+        @include mixins.tamaño-logo();
+    }
+}

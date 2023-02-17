@@ -1,0 +1,26 @@
+@use 'mixins';
+
+
+.Conceptlogo{
+
+
+    &__BIZAGIM{
+        content: url('../img/CONCEPT/modeler-logo-md.svg');
+        @include mixins.tamaño-logo();
+    }
+
+    &__STARUML{
+        content: url('../img/CONCEPT/7642181.png');
+        @include mixins.tamaño-logo();
+    }
+
+    &__SAPPD{
+        content: url('../img/CONCEPT/logo-powerdesigner.png');
+        @include mixins.tamaño-logo();
+    }
+
+    &__BALSAMIQ{
+        content: url('../img/CONCEPT/balsamiq-logo-screen-1000x500.png');
+        @include mixins.tamaño-logo-cuadrado();
+    }
+}

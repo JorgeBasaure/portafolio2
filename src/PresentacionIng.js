@@ -8,7 +8,7 @@ class PortafolioDev extends Component {
   render() {
     if (!this.state.show) {
       return (
-        <p id="profile__paragraph">{this.props.mytext}</p>
+        <p>{this.props.mytext}</p>
       )
     }
   }
@@ -23,39 +23,24 @@ class PresentacionDev extends Component {
       <div className="profile">
 
         <h1 className="profile__name">Presentación</h1>
-
-         <div>
-            <p   className="profile__title">{prof[0].title}</p>
-         </div>
-        <div className="profile__personal"> 
-        </div>
-        <div>
-          <PortafolioDev mytext={prof[0].description} />
+        <div className="profile--title"><p>{prof[0].title}</p></div>
+         <div className='profile__Spersonal'>
+            <div className="profile--personal"></div>
+            <div className="profile--paragraph"><PortafolioDev mytext={prof[0].description} /></div>
         </div>
 
+        <div  className="profile--title"><p>{prof[1].title}</p></div>
+  <div className='profile__Sacademy'>
+      <div className="profile--academy"></div>
+      <div  className="profile--paragraph"><PortafolioDev mytext={prof[1].description} /></div>
+  </div>
 
-  <div >
-          <p className="profile__title">{prof[1].title}</p>
-        </div>
-
-        <div className="profile__academy">
-        </div>
-
-        <div>
-          <PortafolioDev mytext={prof[1].description} />
-        </div>
-
-
-
-        <div>
-        <p className="profile__title">{prof[2].title}</p>
-          </div>
-         <div className="profile__job">
-          </div>
-        <div>
-          
-          <PortafolioDev mytext={prof[2].description} /></div>
-
+    <div className="profile--title"><p>{prof[2].title}</p></div>    
+    <div className='profile__Sjob'>
+      <div className="profile--job"></div>
+      <div  className="profile--paragraph"><PortafolioDev mytext={prof[2].description} /></div>
+    </div>
+        
       </div>
     );
   }

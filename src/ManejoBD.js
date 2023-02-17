@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import SQLPerk from './sample/PerkSQL.json';
 import DData from './sample/DescData.json';
-import logoSQLS from './img/BBDD/microsoft-sql-server-logo-svgrepo-com.svg';
+//import logoSQLS from './img/BBDD/microsoft-sql-server-logo-svgrepo-com.svg';
 class PortafolioSQL extends Component
 {
   state = {show: false}
@@ -22,11 +22,12 @@ class ManejoSQL extends Component{
       
       return(
         <div className='PerkSQL'> 
-        |<h1 className='PerkSQL__title'>Habilidades Base de datos (Persistencia)</h1>
-                 <div>
-         <img src={logoSQLS} className="SQLlogo" alt="logoSQLS" />
-         </div>
+        <h1 className='PerkSQL__title'>Habilidades Base de datos (Persistencia)</h1>
+
+         <div className="SQLlogo__MSQL"></div>
+
            <p className='PerkSQL__name'>{SQLPerk[0].title}</p>
+
           <PortafolioSQL mytext={DData[0].Level_Perk}  subtitle= {SQLPerk[0].Level_Perk} />
           <PortafolioSQL mytext={DData[0].Hours_perk}  subtitle={SQLPerk[0].Hours_perk} />
           <PortafolioSQL mytext={DData[0].description_Perk}  subtitle={SQLPerk[0].description_Perk} /> 

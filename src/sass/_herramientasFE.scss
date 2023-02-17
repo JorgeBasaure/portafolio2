@@ -1,0 +1,35 @@
+@use 'mixins';
+
+.FElogo{
+
+    &__HTML5{
+        content: url('../img/FE/HTML5_logo_and_wordmark.svg');
+        @include mixins.tamaño-logo();
+    }
+
+    &__CSS{
+        content: url('../img/FE/CSS3_logo_and_wordmark.svg');
+        @include mixins.tamaño-logo();
+    }
+
+    &__SASS{
+        content: url('../img/FE/Sass_Logo_Color.svg');
+        @include mixins.tamaño-logo();
+    }
+
+    &__JS{
+        content: url('../img/FE/javascript-logo-svgrepo-com.svg');
+        @include mixins.tamaño-logo();
+    }
+
+    &__PHP{
+        content:url('../img/FE/PHP-logo.svg');
+        @include mixins.tamaño-logo();
+    }
+
+    &__REACT{
+        content: url('../logo.svg');
+        @include mixins.tamaño-logo();
+    }
+
+}

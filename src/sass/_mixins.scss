@@ -1,7 +1,8 @@
 @mixin crear-flexbox($justify){
     display: flex;
-    align-items: center;
+    align-items:flex-start;
     justify-content: $justify;
+    margin:1%;
 }
 @mixin arreglar-imagen{
     background: {
@@ -10,4 +11,23 @@
         position: center;
         attachment: fixed;
     }
+}
+
+@mixin tamaño-logo{
+    width: 200px;
+    height: 200px;
+    margin: 10px 5px 0 10px;
+}
+
+@mixin tamaño-logo-cuadrado{
+    width: 200px;
+    height: 100px;
+    margin: 10px 5px 0 10px;
+}
+
+@mixin tamaño-img{
+    width: 20%;
+    height: 10%;
+    margin-right: 1%;
+
 }

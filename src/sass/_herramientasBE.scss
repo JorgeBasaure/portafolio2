@@ -1,0 +1,19 @@
+@use 'mixins';
+
+.BElogo{
+
+    &__VBNET{
+        content:url('../img/BE/VB.NET_Logo.svg');
+        @include mixins.tamaño-logo();
+    }
+
+    &__JAVA{
+        content: url('../img/BE/java-logo-svgrepo-com.svg');
+        @include mixins.tamaño-logo();
+    }
+
+    &__CSHARP{
+        content: url(../img/BE/c--4.svg);
+        @include mixins.tamaño-logo();
+    }
+}

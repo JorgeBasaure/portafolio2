@@ -1,0 +1,30 @@
+@use 'mixins';
+
+.IDElogo{
+
+    &__VS{
+        content:url('../img/IDE/Visual_Studio_Icon_2019.svg');
+        @include mixins.tamaño-logo();
+    }
+
+    &__VSC{
+        content: url('../img/IDE/vscode.svg');
+        @include mixins.tamaño-logo();
+    }
+
+    &__SQLMS{
+        content: url('../img/IDE/sql-server-icon-png-11348.png');
+        @include mixins.tamaño-logo();
+    }
+
+    &__NETBEANS{
+        content: url('../img/IDE/icons8-netbeans-512.svg');
+        @include mixins.tamaño-logo();
+    }
+
+    &__NOTEPAD2PLUS{
+        content: url('../img/IDE/Notepad++_Logo.svg');
+        @include mixins.tamaño-logo();
+    }
+
+}

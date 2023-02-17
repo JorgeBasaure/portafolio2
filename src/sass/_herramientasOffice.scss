@@ -1,0 +1,41 @@
+@use 'mixins';
+
+.Officelogo{
+
+
+    &__WORD{
+        content: url('../img/Office/Microsoft_Office_Word_2019_present.svg');
+        @include mixins.tamaño-logo();
+    }
+
+    &__EXCEL{
+        content: url('../img/Office/icons8-microsoft-excel-2019-480.svg');
+        @include mixins.tamaño-logo();
+    }
+
+    &__PROJECT{
+        content: url('../img/Office/Microsoft_Project_2019_present.svg');
+        @include mixins.tamaño-logo();
+    }
+
+    &__SHAREPOINT{
+        content: url('../img/Office/icons8-microsoft-sharepoint-2019-480.svg');
+        @include mixins.tamaño-logo();
+    }
+ 
+    &__POWERBI{
+        content: url('../img/Office/New_Power_BI_Logo.svg');
+        @include mixins.tamaño-logo();
+    }
+
+    &__VISIO{
+        content: url('../img/Office/icons8-microsoft-visio-2019-480.svg');
+        @include mixins.tamaño-logo();
+    }
+
+    &__PP{
+        content: url('../img/Office/icons8-microsoft-powerpoint-2019-480.svg');
+        @include mixins.tamaño-logo();
+    }
+}
+
