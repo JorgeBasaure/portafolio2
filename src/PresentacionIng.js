@@ -22,7 +22,7 @@ class PresentacionDev extends Component {
     return (
       <div className="profile">
 
-        <h1 className="profile__name">Presentación</h1>
+        <h1 className="profile__name">Presentación  Ajuste para los DIV</h1>
         <div className="profile--title"><p>{prof[0].title}</p></div>
          <div className='profile__Spersonal'>
             <div className="profile--personal"></div>
