@@ -24,14 +24,13 @@ class PresentacionDev extends Component {
       <div className="profile">
         <h1>Presentación</h1>
 
-        <div>
-          <p>{prof[0].title}</p>
-          <img src={PicDev} alt="" />
-        </div>
-        <div>
 
-          <PortafolioDev mytext={prof[0].description} />
-        </div>
+<div  className="profile--title"><p>{prof[0].title}</p></div>
+
+<div className='profile__Spersonal'>
+        <div className="profile--personal"></div>
+        <div  className="profile--paragraph"><PortafolioDev mytext={prof[0].description} /></div>
+</div>
 
         <div  className="profile--title"><p>{prof[1].title}</p></div>
         
