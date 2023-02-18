@@ -22,16 +22,19 @@ class ManejoSQL extends Component{
       
       return(
         <div className='PerkSQL'> 
-        <h1 className='PerkSQL__title'>Habilidades Base de datos (Persistencia)</h1>
+              <h1 className='PerkSQL__title'>Habilidades Base de datos (Persistencia)</h1>
 
-         <div className="SQLlogo__MSQL"></div>
+              <div className="SQLlogo__SMSQL">
+                    <div className="SQLlogo__MSQL"></div>
 
-           <p className='PerkSQL__name'>{SQLPerk[0].title}</p>
+                    <div>
+                          <p className='PerkSQL__name'>{SQLPerk[0].title}</p>
 
-          <PortafolioSQL mytext={DData[0].Level_Perk}  subtitle= {SQLPerk[0].Level_Perk} />
-          <PortafolioSQL mytext={DData[0].Hours_perk}  subtitle={SQLPerk[0].Hours_perk} />
-          <PortafolioSQL mytext={DData[0].description_Perk}  subtitle={SQLPerk[0].description_Perk} /> 
-  
+                          <PortafolioSQL mytext={DData[0].Level_Perk}  subtitle= {SQLPerk[0].Level_Perk} />
+                          <PortafolioSQL mytext={DData[0].Hours_perk}  subtitle={SQLPerk[0].Hours_perk} />
+                          <PortafolioSQL mytext={DData[0].description_Perk}  subtitle={SQLPerk[0].description_Perk} /> 
+                    </div>
+              </div>
         </div> 
       );
     }

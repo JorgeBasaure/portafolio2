@@ -2,6 +2,18 @@
 
 .BElogo{
 
+    &__SVBNET{
+        @include mixins.crear-flexbox(30);
+    }
+
+    &__SJAVA{
+        @include mixins.crear-flexbox(30);
+    }
+
+    &__SCSHARP{
+        @include mixins.crear-flexbox(30);
+    }
+
     &__VBNET{
         content:url('../img/BE/VB.NET_Logo.svg');
         @include mixins.tamaño-logo();

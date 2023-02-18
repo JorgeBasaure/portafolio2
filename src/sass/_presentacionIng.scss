@@ -7,7 +7,7 @@
    }
 
    &__Spersonal{
-        @include mixins.crear-flexbox(30);
+      @include mixins.crear-flexbox(30);
    }
 
    &__Sacademy{

@@ -27,50 +27,81 @@ class HerramientasIDE extends Component{
       
       return(
         <div className='PerkIDE'> 
-        <h1 className='PerkIDE__title'>Habilidades en IDE</h1>
+            <h1 className='PerkIDE__title'>Habilidades en IDE</h1>
 
+            <div className="IDElogo__SVS">
+                    <div className="IDElogo__VS"></div>
 
-           <div className="IDElogo__VS"></div>
+                    <div>
+                            <p className='PerkIDE__name'>{IDEperk[0].title}</p>
 
-           <p className='PerkIDE__name'>{IDEperk[0].title}</p>
+                            <PortafolioIDE mytext={DData[0].Level_Perk}  subtitle= {IDEperk[0].Level_Perk} />
+                            <PortafolioIDE mytext={DData[0].Hours_perk}  subtitle={IDEperk[0].Hours_perk} />
+                            <PortafolioIDE mytext={DData[0].description_Perk}  subtitle={IDEperk[0].description_Perk} /> 
+                    </div>
+            </div>
+           
 
-          <PortafolioIDE mytext={DData[0].Level_Perk}  subtitle= {IDEperk[0].Level_Perk} />
-          <PortafolioIDE mytext={DData[0].Hours_perk}  subtitle={IDEperk[0].Hours_perk} />
-          <PortafolioIDE mytext={DData[0].description_Perk}  subtitle={IDEperk[0].description_Perk} /> 
+           
 
+           <div className="IDElogo__SVSC">
+                    <div className="IDElogo__VSC"></div>
 
-          <div className="IDElogo__VSC"></div>
+                    <div>
+                            <p className='PerkIDE__name'>{IDEperk[1].title}</p>
 
-          <p className='PerkIDE__name'>{IDEperk[1].title}</p>
-
-          <PortafolioIDE mytext={DData[0].Level_Perk}  subtitle= {IDEperk[1].Level_Perk} />
-          <PortafolioIDE mytext={DData[0].Hours_perk}  subtitle={IDEperk[1].Hours_perk} />
-          <PortafolioIDE mytext={DData[0].description_Perk}  subtitle={IDEperk[1].description_Perk} /> 
-
-
-          <div className="IDElogo__SQLMS"></div>
-
-          <p className='PerkIDE__name'>{IDEperk[2].title}</p>
-
-          <PortafolioIDE mytext={DData[0].Level_Perk}  subtitle= {IDEperk[2].Level_Perk} />
-          <PortafolioIDE mytext={DData[0].Hours_perk}  subtitle={IDEperk[2].Hours_perk} />
-          <PortafolioIDE mytext={DData[0].description_Perk}  subtitle={IDEperk[2].description_Perk} /> 
+                            <PortafolioIDE mytext={DData[0].Level_Perk}  subtitle= {IDEperk[1].Level_Perk} />
+                            <PortafolioIDE mytext={DData[0].Hours_perk}  subtitle={IDEperk[1].Hours_perk} />
+                            <PortafolioIDE mytext={DData[0].description_Perk}  subtitle={IDEperk[1].description_Perk} /> 
+                    </div>
+           </div>
           
-          <div className="IDElogo__NETBEANS"></div>
 
-          <p className='PerkIDE__name'>{IDEperk[3].title}</p>
+          
 
-          <PortafolioIDE mytext={DData[0].Level_Perk}  subtitle= {IDEperk[3].Level_Perk} />
-          <PortafolioIDE mytext={DData[0].Hours_perk}  subtitle={IDEperk[3].Hours_perk} />
-          <PortafolioIDE mytext={DData[0].description_Perk}  subtitle={IDEperk[3].description_Perk} /> 
+            <div className="IDElogo__SSQLMS">
+                    <div className="IDElogo__SQLMS"></div>
 
-          <div className="IDElogo__NOTEPAD2PLUS"></div>
+                    <div>
+                            <p className='PerkIDE__name'>{IDEperk[2].title}</p>
 
-          <p className='PerkIDE__name'>{IDEperk[4].title}</p>
+                            <PortafolioIDE mytext={DData[0].Level_Perk}  subtitle= {IDEperk[2].Level_Perk} />
+                            <PortafolioIDE mytext={DData[0].Hours_perk}  subtitle={IDEperk[2].Hours_perk} />
+                            <PortafolioIDE mytext={DData[0].description_Perk}  subtitle={IDEperk[2].description_Perk} />
+                    </div>
+            </div>
+          
 
-          <PortafolioIDE mytext={DData[0].Level_Perk}  subtitle= {IDEperk[4].Level_Perk} />
-          <PortafolioIDE mytext={DData[0].Hours_perk}  subtitle={IDEperk[4].Hours_perk} />
-          <PortafolioIDE mytext={DData[0].description_Perk}  subtitle={IDEperk[4].description_Perk} /> 
+           
+            <div className="IDElogo__SNETBEANS">
+                    <div className="IDElogo__NETBEANS"></div>
+
+                    <div>
+                            <p className='PerkIDE__name'>{IDEperk[3].title}</p>
+
+                            <PortafolioIDE mytext={DData[0].Level_Perk}  subtitle= {IDEperk[3].Level_Perk} />
+                            <PortafolioIDE mytext={DData[0].Hours_perk}  subtitle={IDEperk[3].Hours_perk} />
+                            <PortafolioIDE mytext={DData[0].description_Perk}  subtitle={IDEperk[3].description_Perk} />
+                    </div>
+
+           </div>
+            
+
+           
+           <div className="IDElogo__SNOTEPAD2PLUS">
+                  <div className="IDElogo__NOTEPAD2PLUS"></div>
+
+                  <div>
+                          <p className='PerkIDE__name'>{IDEperk[4].title}</p>
+
+                          <PortafolioIDE mytext={DData[0].Level_Perk}  subtitle= {IDEperk[4].Level_Perk} />
+                          <PortafolioIDE mytext={DData[0].Hours_perk}  subtitle={IDEperk[4].Hours_perk} />
+                          <PortafolioIDE mytext={DData[0].description_Perk}  subtitle={IDEperk[4].description_Perk} /> 
+                  </div>
+           </div>
+        
+
+
         </div> 
       );
     }

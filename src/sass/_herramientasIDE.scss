@@ -1,6 +1,26 @@
 @use 'mixins';
-
+//@include mixins.crear-flexbox(30);
 .IDElogo{
+
+    &__SVS{
+        @include mixins.crear-flexbox(30);
+    }
+
+    &__SVSC{
+        @include mixins.crear-flexbox(30);
+    }
+
+    &__SSQLMS{
+        @include mixins.crear-flexbox(30);
+    }
+
+    &__SNETBEANS{
+        @include mixins.crear-flexbox(30);
+    }
+
+    &__SNOTEPAD2PLUS{
+        @include mixins.crear-flexbox(30);
+    }
 
     &__VS{
         content:url('../img/IDE/Visual_Studio_Icon_2019.svg');

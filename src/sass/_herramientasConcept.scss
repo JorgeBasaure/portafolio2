@@ -4,6 +4,22 @@
 .Conceptlogo{
 
 
+    &__SBIZAGIM{
+        @include mixins.crear-flexbox(30);
+    }
+
+    &__SSTARUML{
+        @include mixins.crear-flexbox(30);
+    }
+
+    &__SSAPPD{
+        @include mixins.crear-flexbox(30);
+    }
+
+    &__SBALSAMIQ{
+        @include mixins.crear-flexbox(30);
+    }
+
     &__BIZAGIM{
         content: url('../img/CONCEPT/modeler-logo-md.svg');
         @include mixins.tamaño-logo();

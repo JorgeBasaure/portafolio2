@@ -2,7 +2,9 @@
 
 .SQLlogo{
 
-
+    &__SMSQL{
+        @include mixins.crear-flexbox(30);
+    }
     &__MSQL{
         content: url('../img/BBDD/microsoft-sql-server-logo-svgrepo-com.svg');
         @include mixins.tamaño-logo();

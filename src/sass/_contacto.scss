@@ -2,6 +2,10 @@
 
 .ContactoDev{
 
+    &__Sector{
+        @include mixins.crear-flexbox(30);
+    }
+
     &__LDINlogo{
         content: url('../img/icons8-linkedin-480.svg');
         @include mixins.tamaño-logo();

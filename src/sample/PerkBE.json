@@ -12,7 +12,7 @@
         "title" :"Java",
         "Level_Perk" :"Principiante.",
         "Hours_perk" : "16 Horas cronológicas.",
-        "description_Perk" : "Uso básico de sintaxis en conjunto con Visual Studio, para el diseño de aplicaciones de escritorio.",
+        "description_Perk" : "Uso básico de sintaxis en conjunto con NetBeans, para el diseño de aplicaciones de escritorio.",
         "done": false
 },
 {

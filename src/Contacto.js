@@ -36,18 +36,22 @@ class DatosContacto extends Component{
       
       return(
         <div className="ContactoDev"> 
-          <h1  className="ContactoDev__title">{Contacto[0].title}</h1>
+              <h1  className="ContactoDev__title">{Contacto[0].title}</h1>
 
-           <ul>
-               <li><Contact mytext={Contacto[0].Address}  subtitle= {Contacto[1].Address} /></li>
-                <li><Contact mytext={Contacto[0].Contact_phone}  subtitle={Contacto[1].Contact_phone} /></li>
-                <li><Emailr mytext={Contacto[0].E_mail}  subtitle={Contacto[1].E_mail} /></li>
-           </ul>
-           
-           <div className="ContactoDev__LDINlogo"></div>
+              <div className="ContactoDev__Sector">
+                    <div className="ContactoDev__LDINlogo"></div>
+                    
+                    <div>
+                          <ul>
+                                <li><Contact mytext={Contacto[0].Address}  subtitle= {Contacto[1].Address} /></li>
+                                <li><Contact mytext={Contacto[0].Contact_phone}  subtitle={Contacto[1].Contact_phone} /></li>
+                                <li><Emailr mytext={Contacto[0].E_mail}  subtitle={Contacto[1].E_mail} /></li>
+                          </ul>
+                    </div>
 
+
+              </div>
         </div> 
-        
       );
     }
   }

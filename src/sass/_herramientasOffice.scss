@@ -1,7 +1,37 @@
 @use 'mixins';
-
+//@include mixins.crear-flexbox(30);
 .Officelogo{
 
+
+    &__SWORD{
+        @include mixins.crear-flexbox(30);
+    }
+
+    &__SEXCEL{
+        @include mixins.crear-flexbox(30);
+    }
+
+    &__SPROJECT{
+        @include mixins.crear-flexbox(30);
+    }
+
+    &__SSHAREPOINT{
+        @include mixins.crear-flexbox(30);
+    }
+
+    &__SPOWERBI{
+        @include mixins.crear-flexbox(30);
+    }
+
+    &__SVISIO{
+        @include mixins.crear-flexbox(30);
+    }
+
+    &__SPP{
+        @include mixins.crear-flexbox(30);
+    }
+
+    
 
     &__WORD{
         content: url('../img/Office/Microsoft_Office_Word_2019_present.svg');

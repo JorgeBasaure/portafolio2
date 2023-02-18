@@ -2,7 +2,7 @@
     display: flex;
     align-items:flex-start;
     justify-content: $justify;
-    margin:1%;
+    margin: 2% 1%;
 }
 @mixin arreglar-imagen{
     background: {
@@ -16,18 +16,29 @@
 @mixin tamaño-logo{
     width: 200px;
     height: 200px;
-    margin: 10px 5px 0 10px;
+    margin-right: 2%;
+}
+
+@mixin tamaño-logo-css{
+    width: 200px;
+    height: 200px;
 }
 
 @mixin tamaño-logo-cuadrado{
     width: 200px;
     height: 100px;
-    margin: 10px 5px 0 10px;
+    margin-right: 2%;
 }
 
 @mixin tamaño-img{
     width: 20%;
     height: 10%;
-    margin-right: 1%;
+    margin-right: 2%;
 
+}
+
+@mixin align-sign{
+    width: 10px;
+    height: 10px;
+    margin: 90px 10px 90px 10px;
 }

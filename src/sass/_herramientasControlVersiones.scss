@@ -2,6 +2,11 @@
 
 .CtrlVerlogo{
 
+    &__SGIT{
+        @include mixins.crear-flexbox(30);
+    }
+
+
     &__GIT{
         content: url('../img/CTRLVER/Git-logo.svg');
         @include mixins.tamaño-logo();

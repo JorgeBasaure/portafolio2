@@ -2,6 +2,31 @@
 
 .FElogo{
 
+    //
+    &__SHTML5{
+        @include mixins.crear-flexbox(30);
+    }
+
+    &__Styles{
+        @include mixins.crear-flexbox(30);
+    }
+
+    &__PLUS{
+        @include mixins.align-sign();
+    }
+
+    &__SJS{
+        @include mixins.crear-flexbox(30);
+    }
+
+    &__SPHP{
+        @include mixins.crear-flexbox(30);
+    }
+
+    &__SREACT{
+        @include mixins.crear-flexbox(30);
+    }
+
     &__HTML5{
         content: url('../img/FE/HTML5_logo_and_wordmark.svg');
         @include mixins.tamaño-logo();
@@ -9,7 +34,7 @@
 
     &__CSS{
         content: url('../img/FE/CSS3_logo_and_wordmark.svg');
-        @include mixins.tamaño-logo();
+        @include mixins.tamaño-logo-css();
     }
 
     &__SASS{
