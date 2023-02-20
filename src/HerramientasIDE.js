@@ -14,7 +14,7 @@ class PortafolioIDE extends Component
     {
       if (!this.state.show){
         return(
-          <p id="PortIDE__specs">{this.props.mytext}  {this.props.subtitle}</p>
+          <p className="PortIDE__specs">{this.props.mytext}  {this.props.subtitle}</p>
         )
       }   
     }

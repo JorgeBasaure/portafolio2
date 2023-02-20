@@ -1,5 +1,7 @@
 @use 'mixins';
 
+
+
 .profile{
    
    &__name{
@@ -43,11 +45,17 @@
    }
 
 
+   }
    
+   .perfil{
 
+       &__ing{
+         @include mixins.appear-effect();
+       }
+      //
+}
 
   
 
     
 
-}

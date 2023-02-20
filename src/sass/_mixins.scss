@@ -1,5 +1,5 @@
 @mixin crear-flexbox($justify){
-    display: flex;
+    display: inline-flex;
     align-items:flex-start;
     justify-content: $justify;
     margin: 2% 1%;
@@ -41,4 +41,19 @@
     width: 10px;
     height: 10px;
     margin: 90px 10px 90px 10px;
+}
+
+@mixin appear-effect{
+         
+         overflow: hidden;
+
+         animation: typing 4s  steps(500), cursor .75s step-end infinite alternate;
+
+
+
+         @keyframes typing {
+            from {color: transparent}
+            to {color: black;}
+         }
+
 }

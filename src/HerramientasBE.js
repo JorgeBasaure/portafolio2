@@ -11,7 +11,7 @@ class PortafolioBE extends Component
     {
       if (!this.state.show){
         return(
-          <p id="PortBE__specs">{this.props.mytext}  {this.props.subtitle}</p>
+          <p className="PortBE__specs">{this.props.mytext}  {this.props.subtitle}</p>
         )
       }   
     }

@@ -9,7 +9,7 @@ class PortafolioOffice extends Component
     {
       if (!this.state.show){
         return(
-          <p id="PortOffice__specs">{this.props.mytext}  {this.props.subtitle}</p>
+          <p className="PortOffice__specs">{this.props.mytext}  {this.props.subtitle}</p>
         )
       }   
     }

@@ -8,7 +8,7 @@ class PortafolioDev extends Component {
   render() {
     if (!this.state.show) {
       return (
-        <p id="perfil">{this.props.mytext}</p>
+        <p className="perfil__ing">{this.props.mytext}</p>
       )
     }
   }

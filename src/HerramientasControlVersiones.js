@@ -9,7 +9,7 @@ class PortafolioCtrlVer extends Component
     {
       if (!this.state.show){
         return(
-          <p id="PortCtrlVer__specs">{this.props.mytext}  {this.props.subtitle}</p>
+          <p className="PortCtrlVer__specs">{this.props.mytext}  {this.props.subtitle}</p>
         )
       }   
     }
