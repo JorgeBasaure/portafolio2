@@ -44,16 +44,18 @@
 
    }
 
+   &--title{
+      @include mixins.appear-effect();
+    }
 
    }
-   
-   .perfil{
 
-       &__ing{
-         @include mixins.appear-effect();
-       }
-      //
-}
+  
+
+    
+   
+      
+
 
   
 

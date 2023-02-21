@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import prof from './sample/Profile.json'
-
-
-
+import prof from './sample/Profile.json';
+//import Typed from'typed.js'
 class PortafolioDev extends Component {
+  
   state = { show: false }
   render() {
+
+
     if (!this.state.show) {
       return (
         <p className="perfil__ing">{this.props.mytext}</p>
