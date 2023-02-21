@@ -1,19 +1,17 @@
 import React, {Component} from 'react';
 import Conceptperk from './sample/ConceptDevToolPerk.json';
 import DData from './sample/DescData.json';
-//import logoBIZAGIM from './img/CONCEPT/modeler-logo-md.svg';
-//import logoSTARUML from './img/CONCEPT/7642181.png';
-//import logoSAPPD from './img/CONCEPT/logo-powerdesigner.png';
-//import logoBALSAMIQ from './img/CONCEPT/balsamiq-logo-screen-1000x500.png';
+import Typed from'react-typed';
 
 class PortafolioConcept extends Component
 {
   state = {show: false}
    render()
     {
+      const subtitleLines = [this.props.subtitle];
       if (!this.state.show){
         return(
-          <p className="PortConcept__specs">{this.props.mytext}  {this.props.subtitle}</p>
+          <p className="PortConcept__specs">{this.props.mytext}<Typed strings={subtitleLines}  typeSpeed={20} startDelay={40} /></p>
         )
       }   
     }

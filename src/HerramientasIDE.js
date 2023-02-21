@@ -1,20 +1,17 @@
 import React, {Component} from 'react';
 import IDEperk from './sample/PerkIDEtools.json';
 import DData from './sample/DescData.json';
-//import logoVS from './img/IDE/Visual_Studio_Icon_2019.svg';
-//import logoVSC from './img/IDE/vscode.svg';
-//import logoSQLMS from './img/IDE/sql-server-icon-png-11348.png';
-//import logoNETBEANS from './img/IDE/icons8-netbeans-512.svg';
-//import logoNOTEPAD2PLUS from './img/IDE/Notepad++_Logo.svg'
+import Typed from'react-typed';
 
 class PortafolioIDE extends Component
 {
   state = {show: false}
    render()
     {
+        const subtitleLines = [this.props.subtitle];
       if (!this.state.show){
         return(
-          <p className="PortIDE__specs">{this.props.mytext}  {this.props.subtitle}</p>
+          <p className="PortIDE__specs">{this.props.mytext} <Typed strings={subtitleLines}  typeSpeed={20} startDelay={40} /></p>
         )
       }   
     }

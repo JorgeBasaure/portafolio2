@@ -1,19 +1,21 @@
 import React, {Component} from 'react';
 import FEperk from './sample/PerkFE.json'
 import DData from './sample/DescData.json'
-
+import Typed from'react-typed';
 
 //TERMINADO EL ESQUELETO
 
 
 class PortafolioFE extends Component
 {
+   //TODO: Harmonizar en el SASS como Typed.js para que la presentación, por lo menos en esta pantalla funcione. Una vez hecho, pasamos a responsivo.
   state = {show: false}
    render()
     {
+      const subtitleLines = [this.props.subtitle];
       if (!this.state.show){
         return(
-          <p className="PortFE__specs">{this.props.mytext}  {this.props.subtitle}</p>
+          <p className="PortFE__specs">{this.props.mytext} <Typed strings={subtitleLines}  typeSpeed={20} startDelay={40} /></p>
         )
       }   
     }

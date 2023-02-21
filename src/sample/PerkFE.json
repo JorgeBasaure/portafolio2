@@ -3,7 +3,7 @@
                  "id":0,
                  "title" :"HTML 5",
                  "Level_Perk" :"Principiante.",
-                 "Hours_perk" : "38 Horas cronológicas.",
+                 "Hours_perk" : "68 Horas cronológicas.",
                  "description_Perk" : "Uso básico de sintaxis en conjunto con React y Visual Studio Core, para el diseño del esqueleto de la página web.",
                  "done": false
     },
@@ -11,7 +11,7 @@
         "id":1,
         "title" :"CSS 3 con SASS",
         "Level_Perk" :"Principiante.",
-        "Hours_perk" : "34 Horas cronológicas (CSS 3).",
+        "Hours_perk" : "64 Horas cronológicas (CSS 3).",
         "description_Perk" : "Uso básico de sintaxis en conjunto con React y Visual Studio Core, para el diseño de Look and Feel de la página web.",
         "done": false
 },
@@ -19,7 +19,7 @@
     "id":2,
     "title" :"JavaScript",
     "Level_Perk" :"Principiante.",
-    "Hours_perk" : "40 Horas cronológicas (ES6).",
+    "Hours_perk" : "70 Horas cronológicas (ES6).",
     "description_Perk" : "Introducción al manejo básico de sintaxis en conjunto con JSON, AJAX (Próximamente TypeScript), React y Visual Studio Core, para la automatización dinámica y para la comunicación entre la página web y BBDD.",
     "done": false
 },

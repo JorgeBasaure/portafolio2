@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Contacto from './sample/Contact.json';
-
+import Typed from'react-typed';
 
 
 class Contact extends Component
@@ -8,9 +8,10 @@ class Contact extends Component
   state = {show: false}
    render()
     {
+      const subtitleLines = [this.props.subtitle];
       if (!this.state.show){
         return(
-          <p className='Contacto__specs'>{this.props.mytext}  {this.props.subtitle}</p>
+          <p className='Contacto__specs'>{this.props.mytext}<Typed strings={subtitleLines}  typeSpeed={20} startDelay={40} /></p>
         )
       }   
     }
@@ -20,9 +21,10 @@ class Emailr extends Component
     state = {show: false}
     render()
      {
+      const subtitleLines = [this.props.subtitle];
        if (!this.state.show){
          return(
-            <p className='ContactoMail'>{this.props.mytext} <a href={this.props.subtitle}>{this.props.subtitle}</a></p>
+            <p className='ContactoMail'>{this.props.mytext} <a href={subtitleLines}><Typed strings={subtitleLines}  typeSpeed={20} startDelay={40} /></a></p>
             
          );
        }

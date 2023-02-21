@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import prof from './sample/Profile.json';
-//import Typed from'typed.js'
+import Typed from'react-typed';
 class PortafolioDev extends Component {
-  
   state = { show: false }
-  render() {
 
+  render() {
+    const textLines = [this.props.mytext];
 
     if (!this.state.show) {
       return (
-        <p className="perfil__ing">{this.props.mytext}</p>
+       <p className="perfil__ing"><Typed strings={textLines} typeSpeed={8}  startDelay={20}/></p>
+       //
+        
       )
     }
   }

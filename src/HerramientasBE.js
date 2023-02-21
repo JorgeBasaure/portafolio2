@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import BEperk from './sample/PerkBE.json';
 import DData from './sample/DescData.json';
-
+import Typed from'react-typed';
 
 //TODO: Verificar si los logos son expandibles, si no buscar logo svg java grande
 class PortafolioBE extends Component
@@ -9,9 +9,10 @@ class PortafolioBE extends Component
   state = {show: false}
    render()
     {
+        const subtitleLines = [this.props.subtitle];
       if (!this.state.show){
         return(
-          <p className="PortBE__specs">{this.props.mytext}  {this.props.subtitle}</p>
+          <p className="PortBE__specs">{this.props.mytext} <Typed strings={subtitleLines}  typeSpeed={20} startDelay={40} /></p>
         )
       }   
     }

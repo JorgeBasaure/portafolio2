@@ -1,15 +1,16 @@
 import React, {Component} from 'react';
 import SQLPerk from './sample/PerkSQL.json';
 import DData from './sample/DescData.json';
-//import logoSQLS from './img/BBDD/microsoft-sql-server-logo-svgrepo-com.svg';
+import Typed from'react-typed';
 class PortafolioSQL extends Component
 {
   state = {show: false}
    render()
     {
+      const subtitleLines = [this.props.subtitle];
       if (!this.state.show){
         return(
-          <p id="PortSQL__specs">{this.props.mytext}  {this.props.subtitle}</p>
+          <p id="PortSQL__specs">{this.props.mytext} <Typed strings={subtitleLines}  typeSpeed={20} startDelay={40} /></p>
         )
       }   
     }

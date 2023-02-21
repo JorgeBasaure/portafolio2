@@ -1,15 +1,17 @@
 import React, {Component} from 'react';
 import Officeperk from './sample/PerkOffice.json';
 import DData from './sample/DescData.json';
+import Typed from'react-typed';
 
 class PortafolioOffice extends Component
 {
   state = {show: false}
    render()
     {
+        const subtitleLines = [this.props.subtitle];
       if (!this.state.show){
         return(
-          <p className="PortOffice__specs">{this.props.mytext}  {this.props.subtitle}</p>
+          <p className="PortOffice__specs">{this.props.mytext} <Typed strings={subtitleLines}  typeSpeed={20} startDelay={40} /></p>
         )
       }   
     }
