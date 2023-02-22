@@ -1,8 +1,73 @@
-@mixin crear-flexbox($justify){
-    display: flex;
-    align-items:flex-start;
-    justify-content: $justify;
-    margin: 2% 1%;
+@mixin ajustePersonal-img()
+{
+    height: 300px;
+    padding: 1px;
+    margin: 2px;
+    animation: emerging-img 6s, cursor .75s step-end infinite alternate;
+
+    @keyframes emerging-img {
+        from {opacity: 0}
+        to {opacity: 1}
+    }
+}
+@mixin ajustePersonal()
+{
+    height: 300px;
+    padding: 1px;
+    margin: 2px;
+}
+@mixin ajusteAcademico-img()
+{
+    height: 200px;
+    padding: 1px;
+    margin: 2px;
+    animation: emerging-img 6s, cursor .75s step-end infinite alternate;
+
+    @keyframes emerging-img {
+        from {opacity: 0}
+        to {opacity: 1}
+    }
+}
+@mixin ajusteAcademico()
+{
+    height: 200px;
+    padding: 1px;
+    margin: 2px;
+}
+@mixin ajusteLaboral-img()
+{
+    height: 240px;
+    padding: 1px;
+    margin: 2px;
+    animation: emerging-img 6s, cursor .75s step-end infinite alternate;
+
+    @keyframes emerging-img {
+        from {opacity: 0}
+        to {opacity: 1}
+    }
+}
+@mixin ajusteLaboral()
+{
+    height: 240px;
+    padding: 1px;
+    margin: 2px;
+}
+@mixin emerger-texto()
+{
+    animation: emer-txt 3s, steps(500);
+    @keyframes emer-txt {
+        from {opacity: 0}
+        to {opacity: 1}
+        
+    }
+}
+
+//TODO: DEBUGEAR EL MIXINS. LO QUE ESTÁ ARRIBA ESTÁ LISTO
+
+@mixin crear-flexbox(){
+    display:flex;
+    width: 1250px;
+   //align-items:center;
 }
 @mixin arreglar-imagen{
     background: {
@@ -16,7 +81,8 @@
 @mixin tamaño-logo{
     width: 200px;
     height: 200px;
-    margin-right: 2%;
+    padding: 1px;
+    margin: 2px;
     animation: emerging-logo 6s  steps(500), cursor 1s step-end infinite alternate;
 
     @keyframes emerging-logo {
@@ -39,7 +105,8 @@
 @mixin tamaño-logo-cuadrado{
     width: 200px;
     height: 100px;
-    margin-right: 2%;
+    padding: 1px;
+    margin: 2px;
     animation: emerging-logo-cuadrado 6s  steps(500), cursor 1s step-end infinite alternate;
 
     @keyframes emerging-logo-cuadrado {
@@ -49,9 +116,10 @@
 }
 
 @mixin tamaño-img{
-    width: 20%;
-    height: 10%;
-    margin-right: 2%;
+    width: 100px;
+    height: 150px;
+    padding: 1px;
+    margin: 2px;
     animation: emerging-img 6s, cursor .75s step-end infinite alternate;
 
     @keyframes emerging-img {

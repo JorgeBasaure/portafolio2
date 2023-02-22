@@ -3,7 +3,7 @@
 .CtrlVerlogo{
 
     &__SGIT{
-        @include mixins.crear-flexbox(30);
+        @include mixins.crear-flexbox();
     }
 
 

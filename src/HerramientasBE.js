@@ -3,7 +3,7 @@ import BEperk from './sample/PerkBE.json';
 import DData from './sample/DescData.json';
 import Typed from'react-typed';
 
-//TODO: Verificar si los logos son expandibles, si no buscar logo svg java grande
+
 class PortafolioBE extends Component
 {
   state = {show: false}

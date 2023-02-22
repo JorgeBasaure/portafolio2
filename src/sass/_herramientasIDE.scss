@@ -3,23 +3,23 @@
 .IDElogo{
 
     &__SVS{
-        @include mixins.crear-flexbox(30);
+        @include mixins.crear-flexbox();
     }
 
     &__SVSC{
-        @include mixins.crear-flexbox(30);
+        @include mixins.crear-flexbox();
     }
 
     &__SSQLMS{
-        @include mixins.crear-flexbox(30);
+        @include mixins.crear-flexbox();
     }
 
     &__SNETBEANS{
-        @include mixins.crear-flexbox(30);
+        @include mixins.crear-flexbox();
     }
 
     &__SNOTEPAD2PLUS{
-        @include mixins.crear-flexbox(30);
+        @include mixins.crear-flexbox();
     }
 
     &__VS{

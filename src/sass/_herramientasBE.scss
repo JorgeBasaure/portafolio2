@@ -1,17 +1,18 @@
 @use 'mixins';
-
+//TODO: DEBUGEAR TODAS LAS HOJAS CONTIGUAS A TRAVES DEL MIXINS
+//COLOREANDO EL DIV CON MARGIN Y PADDING.
 .BElogo{
 
     &__SVBNET{
-        @include mixins.crear-flexbox(30);
+        @include mixins.crear-flexbox();
     }
 
     &__SJAVA{
-        @include mixins.crear-flexbox(30);
+        @include mixins.crear-flexbox();
     }
 
     &__SCSHARP{
-        @include mixins.crear-flexbox(30);
+        @include mixins.crear-flexbox();
     }
 
     &__VBNET{

@@ -5,19 +5,19 @@
 
 
     &__SBIZAGIM{
-        @include mixins.crear-flexbox(30);
+        @include mixins.crear-flexbox();
     }
 
     &__SSTARUML{
-        @include mixins.crear-flexbox(30);
+        @include mixins.crear-flexbox();
     }
 
     &__SSAPPD{
-        @include mixins.crear-flexbox(30);
+        @include mixins.crear-flexbox();
     }
 
     &__SBALSAMIQ{
-        @include mixins.crear-flexbox(30);
+        @include mixins.crear-flexbox();
     }
 
     &__BIZAGIM{

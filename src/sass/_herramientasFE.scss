@@ -4,11 +4,11 @@
 
     
     &__SHTML5{
-        @include mixins.crear-flexbox(30);
+        @include mixins.crear-flexbox();
     }
 
     &__Styles{
-        @include mixins.crear-flexbox(30);
+        @include mixins.crear-flexbox();
     }
 
     &__PLUS{
@@ -16,15 +16,15 @@
     }
 
     &__SJS{
-        @include mixins.crear-flexbox(30);
+        @include mixins.crear-flexbox();
     }
 
     &__SPHP{
-        @include mixins.crear-flexbox(30);
+        @include mixins.crear-flexbox();
     }
 
     &__SREACT{
-        @include mixins.crear-flexbox(30);
+        @include mixins.crear-flexbox();
     }
 
     &__HTML5{

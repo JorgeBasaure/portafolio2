@@ -3,7 +3,7 @@
 .SQLlogo{
 
     &__SMSQL{
-        @include mixins.crear-flexbox(30);
+        @include mixins.crear-flexbox();
     }
     &__MSQL{
         content: url('../img/BBDD/microsoft-sql-server-logo-svgrepo-com.svg');

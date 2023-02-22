@@ -1,54 +1,64 @@
 @use 'mixins';
 
-
+//TODO: Encender el fondo de pantalla uns vez debugeado.
 
 .profile{
    
-   &__name{
-      color: aqua;
-   }
+   
+
 
    &__Spersonal{
-      @include mixins.crear-flexbox(30);
+      background-color: #ffd6cc;
+      display:flex;
    }
-
-   &__Sacademy{
-      @include mixins.crear-flexbox(30);
-   }
-   &__Sjob{
-
-      @include mixins.crear-flexbox(30);
-   }
-
-
-
-    &--personal{
+   &--personal{
       content: url('../img/20230131_124854.jpg');
-      @include mixins.tamaño-img();
-   
+      @include mixins.ajustePersonal-img();
+      background-color:#ff3300;
    }
-
-
-
-    &--academy{
-      content: url('../img/bellavista-7___Selected.jpg');
-      @include mixins.tamaño-img();
- 
-   }
-
-
-
-    &--job{
-      content:url('../img/1332946447-lmb-bic-mut-10.jpg');
-      @include mixins.tamaño-img();
-
-   }
-
-   &--title{
-      @include mixins.appear-effect();
+   &--Pparagraph{
+      @include mixins.ajustePersonal();
+      @include mixins.emerger-texto();
+      background-color:#ff5c33 ;
     }
 
+
+
+   &__Sacademy{
+     background-color: #9999ff;
+     
+     display: flex;
    }
+   &--academy{
+      content: url('../img/bellavista-7___Selected.jpg');
+      @include mixins.ajusteAcademico-img();
+      background-color:  #3333ff;
+   }
+   &--Aparagraph{
+      @include mixins.ajusteAcademico();
+      @include mixins.emerger-texto();
+      background-color: #6666ff;
+   }
+
+
+
+   &__Sjob{
+       display: flex;
+       background-color: #adebad;
+   }
+    &--job{
+      content:url('../img/1332946447-lmb-bic-mut-10.jpg');
+      @include mixins.ajusteLaboral-img();
+     background-color: #33cc33;
+
+   }
+   &--Jparagraph{
+      @include mixins.ajusteLaboral();
+      @include mixins.emerger-texto();
+      background-color: #70db70;
+   }
+}
+   
 
   
 

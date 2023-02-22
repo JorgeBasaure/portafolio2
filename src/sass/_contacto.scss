@@ -3,7 +3,7 @@
 .ContactoDev{
 
     &__Sector{
-        @include mixins.crear-flexbox(30);
+        @include mixins.crear-flexbox();
     }
 
     &__LDINlogo{
