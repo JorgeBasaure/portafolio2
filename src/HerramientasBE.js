@@ -12,7 +12,7 @@ class PortafolioBE extends Component
         const subtitleLines = [this.props.subtitle];
       if (!this.state.show){
         return(
-          <p className="PortBE__specs">{this.props.mytext} <Typed strings={subtitleLines}  typeSpeed={20} startDelay={40} /></p>
+          <p className="PortBE__specs">{this.props.mytext} <Typed strings={subtitleLines}  typeSpeed={10} startDelay={4000} /></p>
         )
       }   
     }
@@ -24,11 +24,14 @@ class HerramientasBE extends Component{
       
       return(
         <div className='PerkBe'> 
-        <h1 className='PerkBe__title'>Habilidades Back-End</h1>
+        
+        <div className='PerkBe__title'><h1 >Habilidades Back-End</h1></div>
+        
 
            <div className="BElogo__SVBNET">
                     <div className="BElogo__VBNET"></div>
-                    <div>
+                    
+                    <div className='BElogo__stats'>
                               <p className='PerkBe__name'>{BEperk[0].title}</p>
 
                               <PortafolioBE mytext={DData[0].Level_Perk}  subtitle= {BEperk[0].Level_Perk} />
@@ -41,7 +44,7 @@ class HerramientasBE extends Component{
            <div className="BElogo__SJAVA">
                   <div className="BElogo__JAVA"></div>
 
-                 <div>
+                 <div  className='BElogo__stats'>
                           < p className='PerkBe__name'>{BEperk[1].title}</p>
 
                           <PortafolioBE mytext={DData[0].Level_Perk}  subtitle= {BEperk[1].Level_Perk} />
@@ -56,7 +59,7 @@ class HerramientasBE extends Component{
             <div className="BElogo__SCSHARP">
                     <div className="BElogo__CSHARP"></div>
 
-                    <div>
+                    <div  className='BElogo__stats'>
                             <p className='PerkBe__name'>{BEperk[2].title}</p>
 
                             <PortafolioBE mytext={DData[0].Level_Perk}  subtitle= {BEperk[2].Level_Perk} />

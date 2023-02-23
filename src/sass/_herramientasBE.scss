@@ -4,29 +4,36 @@
 .BElogo{
 
     &__SVBNET{
-        @include mixins.crear-flexbox();
+        display: flex;
+        //background-color: #ff0000; // Para debug
     }
-
-    &__SJAVA{
-        @include mixins.crear-flexbox();
-    }
-
-    &__SCSHARP{
-        @include mixins.crear-flexbox();
-    }
-
     &__VBNET{
         content:url('../img/BE/VB.NET_Logo.svg');
         @include mixins.tamaño-logo();
+       //background-color: #00ffff
     }
-
+    &__SJAVA{
+        display: flex;
+       //background-color: #0080ff
+        
+    }
     &__JAVA{
         content: url('../img/BE/java-logo-svgrepo-com.svg');
         @include mixins.tamaño-logo();
+        //background-color: #1ea427
     }
-
+    &__SCSHARP{
+        display: flex;
+        //background-color: #00ff00
+    }
     &__CSHARP{
         content: url(../img/BE/c--4.svg);
         @include mixins.tamaño-logo();
+        //background-color: #b90000
+    }
+    &__stats{
+        //background-color: #80ff80;
+        @include mixins.ajusteHabilidadstats();
+        @include mixins.emerger-texto();
     }
 }

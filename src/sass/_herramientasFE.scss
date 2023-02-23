@@ -4,57 +4,74 @@
 
     
     &__SHTML5{
-        @include mixins.crear-flexbox();
+        //background-color: #ff8080;  // Para debug
+        display: flex;
+        @include mixins.ajusteHabilidad();
     }
-
-    &__Styles{
-        @include mixins.crear-flexbox();
-    }
-
-    &__PLUS{
-        @include mixins.align-sign();
-    }
-
-    &__SJS{
-        @include mixins.crear-flexbox();
-    }
-
-    &__SPHP{
-        @include mixins.crear-flexbox();
-    }
-
-    &__SREACT{
-        @include mixins.crear-flexbox();
-    }
-
     &__HTML5{
         content: url('../img/FE/HTML5_logo_and_wordmark.svg');
         @include mixins.tamaño-logo();
+        //background-color: #ff0000;
     }
 
+
+    &__Styles{
+        //background-color: #ffff00;
+        display: flex;
+        @include mixins.ajusteHabilidad();
+    }
     &__CSS{
         content: url('../img/FE/CSS3_logo_and_wordmark.svg');
-        @include mixins.tamaño-logo-css();
+        @include mixins.tamaño-logo();
     }
-
+    &__PLUS{
+        //background-color: #ffffff;
+        display: flex;
+        @include mixins.ajustePlus();
+    }
     &__SASS{
         content: url('../img/FE/Sass_Logo_Color.svg');
         @include mixins.tamaño-logo();
     }
+   
 
+    &__SJS{
+        //background-color: #00ff40;
+        display: flex;
+        @include mixins.ajusteHabilidad();
+    }
     &__JS{
         content: url('../img/FE/javascript-logo-svgrepo-com.svg');
         @include mixins.tamaño-logo();
     }
 
+
+    &__SPHP{
+        //background-color: #ff80c0;
+        display: flex;
+        @include mixins.ajusteHabilidad();
+    }
     &__PHP{
         content:url('../img/FE/PHP-logo.svg');
         @include mixins.tamaño-logo();
     }
 
+    &__SREACT{
+        //background-color: #ff00ff;
+        display: flex;
+        @include mixins.ajusteHabilidad();
+    }
     &__REACT{
         content: url('../logo.svg');
         @include mixins.tamaño-logo();
     }
+
+
+    &__stats{
+        //background-color: #80ff80;
+        @include mixins.ajusteHabilidadstats();
+        @include mixins.emerger-texto();
+    }
+    
 
 }
