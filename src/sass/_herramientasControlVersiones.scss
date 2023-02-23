@@ -5,10 +5,14 @@
     &__SGIT{
         @include mixins.crear-flexbox();
     }
-
-
     &__GIT{
         content: url('../img/CTRLVER/Git-logo.svg');
         @include mixins.tamaño-logo();
+    }
+
+    &__stats{
+        //background-color: #00ffff;
+        @include mixins.ajusteHabilidadstats();
+        @include mixins.emerger-texto();
     }
 }

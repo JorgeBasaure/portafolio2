@@ -10,7 +10,7 @@ class PortafolioCtrlVer extends Component
       const subtitleLines = [this.props.subtitle];
       if (!this.state.show){
         return(
-          <p className="PortCtrlVer__specs">{this.props.mytext}<Typed strings={subtitleLines}  typeSpeed={20} startDelay={40} /></p>
+          <p className="PortCtrlVer__specs">{this.props.mytext}<Typed strings={subtitleLines}  typeSpeed={10} startDelay={4000} /></p>
         )
       }   
     }
@@ -28,7 +28,7 @@ class HerramientasCtrlVer extends Component{
               <div className="CtrlVerlogo__SGIT">
                      <div className="CtrlVerlogo__GIT"></div>
 
-                     <div>
+                     <div className="CtrlVerlogo__stats">
                             <p  className='PerkCtrlVer__name'>{CtrlVerperk[0].title}</p>
 
                             <PortafolioCtrlVer mytext={DData[0].Level_Perk}  subtitle= {CtrlVerperk[0].Level_Perk} />

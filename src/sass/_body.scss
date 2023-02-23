@@ -11,13 +11,13 @@
 @use 'contacto';
 
 //TODO: Encender el fondo de pantalla uns vez debugeado.
-/*body
+body
 {
-    background-image: linear-gradient(rgb(79, 70, 65),rgba(79, 70, 65, 0))
-                                     , url('../img/workspace-1280538.jpg');
-    display: flex;
+    background-image: linear-gradient(rgb(0, 0, 0),rgba(255, 255, 255, 0))
+                                     , url('../img/space-7273891.jpg');
+    @include mixins.crear-flexbox();
     @include mixins.arreglar-imagen();
 }
-*/
+
 
 

@@ -11,7 +11,7 @@ class PortafolioConcept extends Component
       const subtitleLines = [this.props.subtitle];
       if (!this.state.show){
         return(
-          <p className="PortConcept__specs">{this.props.mytext}<Typed strings={subtitleLines}  typeSpeed={20} startDelay={40} /></p>
+          <p className="PortConcept__specs">{this.props.mytext}<Typed strings={subtitleLines}  typeSpeed={10} startDelay={4000} /></p>
         )
       }   
     }
@@ -29,7 +29,7 @@ class HerramientasConcept extends Component{
               <div className="Conceptlogo__SBIZAGIM">
                     <div className="Conceptlogo__BIZAGIM"></div>
 
-                    <div>
+                    <div className="Conceptlogo__stats">
                           <p className='PerkConcept__name'>{Conceptperk[0].title}</p>
 
                           <PortafolioConcept mytext={DData[0].Level_Perk}  subtitle= {Conceptperk[0].Level_Perk} />
@@ -41,7 +41,7 @@ class HerramientasConcept extends Component{
               <div className="Conceptlogo__SSTARUML">
                     <div className="Conceptlogo__STARUML"></div>
 
-                    <div>
+                    <div className="Conceptlogo__stats">
                           <p className='PerkConcept__name'>{Conceptperk[1].title}</p>
 
                           <PortafolioConcept mytext={DData[0].Level_Perk}  subtitle= {Conceptperk[1].Level_Perk} />
@@ -53,7 +53,7 @@ class HerramientasConcept extends Component{
               <div className="Conceptlogo__SSAPPD">
                     <div className="Conceptlogo__SAPPD"></div>
 
-                    <div>
+                    <div className="Conceptlogo__stats">
                           <p className='PerkConcept__name'>{Conceptperk[2].title}</p>
 
                           <PortafolioConcept mytext={DData[0].Level_Perk}  subtitle= {Conceptperk[2].Level_Perk} />
@@ -65,7 +65,7 @@ class HerramientasConcept extends Component{
               <div className="Conceptlogo__SBALSAMIQ">
                     <div className="Conceptlogo__BALSAMIQ"></div>
 
-                    <div>
+                    <div className="Conceptlogo__stats">
                           <p className='PerkConcept__name'>{Conceptperk[3].title}</p>
 
                           <PortafolioConcept mytext={DData[0].Level_Perk}  subtitle= {Conceptperk[3].Level_Perk} />

@@ -11,7 +11,7 @@ class Contact extends Component
       const subtitleLines = [this.props.subtitle];
       if (!this.state.show){
         return(
-          <p className='Contacto__specs'>{this.props.mytext}<Typed strings={subtitleLines}  typeSpeed={20} startDelay={40} /></p>
+          <p className='Contacto__specs'>{this.props.mytext}<Typed strings={subtitleLines}  typeSpeed={10} startDelay={4000} /></p>
         )
       }   
     }
@@ -24,7 +24,7 @@ class Emailr extends Component
       const subtitleLines = [this.props.subtitle];
        if (!this.state.show){
          return(
-            <p className='ContactoMail'>{this.props.mytext} <a href={subtitleLines}><Typed strings={subtitleLines}  typeSpeed={20} startDelay={40} /></a></p>
+            <p className='ContactoMail'>{this.props.mytext} <a href={subtitleLines}><Typed strings={subtitleLines}   typeSpeed={10} startDelay={4000} /></a></p>
             
          );
        }
@@ -43,7 +43,7 @@ class DatosContacto extends Component{
               <div className="ContactoDev__Sector">
                     <div className="ContactoDev__LDINlogo"></div>
                     
-                    <div>
+                    <div className="ContactoDev__stats">
                           <ul>
                                 <li><Contact mytext={Contacto[0].Address}  subtitle= {Contacto[1].Address} /></li>
                                 <li><Contact mytext={Contacto[0].Contact_phone}  subtitle={Contacto[1].Contact_phone} /></li>

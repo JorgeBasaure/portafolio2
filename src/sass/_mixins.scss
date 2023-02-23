@@ -1,9 +1,15 @@
+//AJUSTE DE DIV
+@mixin crear-flexbox(){
+    display:flex;
+
+}
 // ANTECEDENTES
 @mixin ajustePersonal-img()
 {
     height: 300px;
     padding: 1px;
     margin: 2px;
+    border-radius: 25px;
     animation: emerging-img 6s, cursor .75s step-end infinite alternate;
 
     @keyframes emerging-img {
@@ -14,7 +20,6 @@
 @mixin ajustePersonal()
 {
     height: 300px;
-    padding: 1px;
     margin: 2px;
 }
 @mixin ajusteAcademico-img()
@@ -22,6 +27,7 @@
     height: 200px;
     padding: 1px;
     margin: 2px;
+    border-radius: 25px;
     animation: emerging-img 6s, cursor .75s step-end infinite alternate;
 
     @keyframes emerging-img {
@@ -40,6 +46,7 @@
     height: 240px;
     padding: 1px;
     margin: 2px;
+    border-radius: 25px;
     animation: emerging-img 6s, cursor .75s step-end infinite alternate;
 
     @keyframes emerging-img {
@@ -71,6 +78,7 @@
 @mixin emerger-texto()
 {
     animation: emer-txt 3s, steps(500);
+    color: #a98a34;
     @keyframes emer-txt {
         from {opacity: 0}
         to {opacity: 1}
@@ -89,7 +97,7 @@
         top: 10px;
         bottom: 10px;
     }
-    border: 5px;;
+    border: 5px;
 }
 
 @mixin tamaño-logo{
@@ -97,6 +105,8 @@
     height: 180px;
     padding: 1px;
     margin-top: 10px;
+    background-image: linear-gradient(rgb(97, 218, 251),rgba(255, 255, 255, 0));
+    border-radius: 25px;
     animation: emerging-logo 6s  steps(500), cursor 1s step-end infinite alternate;
 
     @keyframes emerging-logo {
@@ -107,38 +117,31 @@
 @mixin ajusteHabilidadstats()
 {
     height: 200px;
+    margin: {
+        top: 10px;
+        bottom: 10px;
+    }
     padding-left: 10px;
+    border: 5px;
     
 }
 @mixin ajustePlus(){
+    font-size: 50px;
+    color:rgb(97, 218, 251);
     margin: {
-        top: 90px;
-        left: 4px;
-        right: 4px;
+        top: 30px;
+        left: 5px;
+        right: 5px;
     }
 }
-//TODO: DEBUGEAR EL MIXINS. LO QUE ESTÁ ARRIBA ESTÁ LISTO
-//LO QUE NO SE NECESITE, BORRARLO.
-
-@mixin crear-flexbox(){
-    display:flex;
-
-}
-@mixin arreglar-imagen{
-    background: {
-        size:auto;
-        repeat: no-repeat;
-        position: center;
-        attachment: fixed;
-    }
-}
-
-
 @mixin tamaño-logo-cuadrado{
     width: 200px;
     height: 100px;
     padding: 1px;
-    margin: 2px;
+    margin-top: 50px;
+    
+    background-image: linear-gradient(rgb(97, 218, 251),rgba(255, 255, 255, 0));
+    border-radius: 25px;
     animation: emerging-logo-cuadrado 6s  steps(500), cursor 1s step-end infinite alternate;
 
     @keyframes emerging-logo-cuadrado {
@@ -147,37 +150,14 @@
     }
 }
 
-@mixin tamaño-img{
-    width: 100px;
-    height: 150px;
-    padding: 1px;
-    margin: 2px;
-    animation: emerging-img 6s, cursor .75s step-end infinite alternate;
-
-    @keyframes emerging-img {
-        from {opacity: 0}
-        to {opacity: 1}
+@mixin arreglar-imagen{
+    background: {
+        size:cover;
+        repeat: no-repeat;
+        position: center;
+        attachment: fixed;
     }
-
 }
 
-@mixin align-sign{
-    width: 10px;
-    height: 10px;
-    margin: 90px 10px 90px 10px;
-}
-
-@mixin appear-effect{
-         
-         overflow: hidden;
-
-         animation: typing 2s, cursor .25s step-end infinite alternate;
-
-
-
-         @keyframes typing {
-            from {color: transparent}
-            to {color: black;}
-         }
-
-}
+//TODO: DEBUGEAR EL MIXINS. LO QUE ESTÁ ARRIBA ESTÁ LISTO
+//LO QUE NO SE NECESITE, BORRARLO.

@@ -6,37 +6,47 @@
 
     &__SBIZAGIM{
         @include mixins.crear-flexbox();
+        //background-color: #ff8040;  //Para depurar
     }
-
-    &__SSTARUML{
-        @include mixins.crear-flexbox();
-    }
-
-    &__SSAPPD{
-        @include mixins.crear-flexbox();
-    }
-
-    &__SBALSAMIQ{
-        @include mixins.crear-flexbox();
-    }
-
     &__BIZAGIM{
         content: url('../img/CONCEPT/modeler-logo-md.svg');
         @include mixins.tamaño-logo();
     }
 
+
+
+    &__SSTARUML{
+        @include mixins.crear-flexbox();
+        //background-color: #0000ff;
+    }
     &__STARUML{
         content: url('../img/CONCEPT/7642181.png');
         @include mixins.tamaño-logo();
     }
 
+    &__SSAPPD{
+        @include mixins.crear-flexbox();
+        //background-color: #c0c0c0;
+    }
     &__SAPPD{
         content: url('../img/CONCEPT/logo-powerdesigner.png');
         @include mixins.tamaño-logo();
     }
 
+
+    &__SBALSAMIQ{
+        @include mixins.crear-flexbox();
+        //background-color: #00ff00;
+    }
     &__BALSAMIQ{
         content: url('../img/CONCEPT/balsamiq-logo-screen-1000x500.png');
         @include mixins.tamaño-logo-cuadrado();
+        //background-color: #0080c0;
+    }
+
+    &__stats{
+        //background-color: #00ffff;
+        @include mixins.ajusteHabilidadstats();
+        @include mixins.emerger-texto();
     }
 }

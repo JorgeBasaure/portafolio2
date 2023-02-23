@@ -1,71 +1,81 @@
 @use 'mixins';
-//@include mixins.crear-flexbox(30);
+
 .Officelogo{
 
 
     &__SWORD{
+        //background-color: #ffff80;
         @include mixins.crear-flexbox();
     }
-
-    &__SEXCEL{
-        @include mixins.crear-flexbox();
-    }
-
-    &__SPROJECT{
-        @include mixins.crear-flexbox();
-    }
-
-    &__SSHAREPOINT{
-        @include mixins.crear-flexbox();
-    }
-
-    &__SPOWERBI{
-        @include mixins.crear-flexbox();
-    }
-
-    &__SVISIO{
-        @include mixins.crear-flexbox();
-    }
-
-    &__SPP{
-        @include mixins.crear-flexbox();
-    }
-
-    
-
     &__WORD{
         content: url('../img/Office/Microsoft_Office_Word_2019_present.svg');
         @include mixins.tamaño-logo();
     }
 
+
+    &__SEXCEL{
+        //background-color: #80ffff;
+        @include mixins.crear-flexbox();
+    }
     &__EXCEL{
         content: url('../img/Office/icons8-microsoft-excel-2019-480.svg');
         @include mixins.tamaño-logo();
     }
 
+
+    &__SPROJECT{
+        //background-color: #0000ff;
+        @include mixins.crear-flexbox();
+    }
     &__PROJECT{
         content: url('../img/Office/Microsoft_Project_2019_present.svg');
         @include mixins.tamaño-logo();
     }
 
+
+    &__SSHAREPOINT{
+        //background-color: #ff0000;
+        @include mixins.crear-flexbox();
+    }
     &__SHAREPOINT{
         content: url('../img/Office/icons8-microsoft-sharepoint-2019-480.svg');
         @include mixins.tamaño-logo();
     }
  
+
+    &__SPOWERBI{
+        //background-color: #008080;
+        @include mixins.crear-flexbox();
+    }
     &__POWERBI{
         content: url('../img/Office/New_Power_BI_Logo.svg');
         @include mixins.tamaño-logo();
     }
 
+
+    &__SVISIO{
+        //background-color: #8000ff;
+        @include mixins.crear-flexbox();
+    }
     &__VISIO{
         content: url('../img/Office/icons8-microsoft-visio-2019-480.svg');
         @include mixins.tamaño-logo();
     }
 
+
+    &__SPP{
+        //background-color: #804000;
+        @include mixins.crear-flexbox();
+    }
     &__PP{
         content: url('../img/Office/icons8-microsoft-powerpoint-2019-480.svg');
         @include mixins.tamaño-logo();
+    }
+
+    &__stats{
+        //background-color: #ffffff;
+        @include mixins.ajusteHabilidadstats();
+        @include mixins.emerger-texto();
     }
 }
 

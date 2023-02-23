@@ -5,7 +5,7 @@
     
     &__SHTML5{
         //background-color: #ff8080;  // Para debug
-        display: flex;
+        @include mixins.crear-flexbox();
         @include mixins.ajusteHabilidad();
     }
     &__HTML5{
@@ -17,7 +17,7 @@
 
     &__Styles{
         //background-color: #ffff00;
-        display: flex;
+        @include mixins.crear-flexbox();
         @include mixins.ajusteHabilidad();
     }
     &__CSS{
@@ -26,7 +26,7 @@
     }
     &__PLUS{
         //background-color: #ffffff;
-        display: flex;
+        @include mixins.crear-flexbox();
         @include mixins.ajustePlus();
     }
     &__SASS{
@@ -37,7 +37,7 @@
 
     &__SJS{
         //background-color: #00ff40;
-        display: flex;
+        @include mixins.crear-flexbox();
         @include mixins.ajusteHabilidad();
     }
     &__JS{
@@ -48,7 +48,7 @@
 
     &__SPHP{
         //background-color: #ff80c0;
-        display: flex;
+        @include mixins.crear-flexbox();
         @include mixins.ajusteHabilidad();
     }
     &__PHP{
@@ -58,7 +58,7 @@
 
     &__SREACT{
         //background-color: #ff00ff;
-        display: flex;
+        @include mixins.crear-flexbox();
         @include mixins.ajusteHabilidad();
     }
     &__REACT{

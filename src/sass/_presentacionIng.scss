@@ -12,7 +12,7 @@
 
    &__Spersonal{
       //background-color: #ffd6cc;
-      display:flex;
+      @include mixins.crear-flexbox();
    }
    &--personal{
       content: url('../img/20230131_124854.jpg');
@@ -30,7 +30,7 @@
    &__Sacademy{
      //background-color: #9999ff;
      
-     display: flex;
+     @include mixins.crear-flexbox();
    }
    &--academy{
       content: url('../img/bellavista-7___Selected.jpg');
@@ -46,7 +46,7 @@
 
 
    &__Sjob{
-       display: flex;
+      @include mixins.crear-flexbox();
        //background-color: #adebad;
    }
     &--job{

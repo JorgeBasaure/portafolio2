@@ -4,7 +4,7 @@
 .BElogo{
 
     &__SVBNET{
-        display: flex;
+        @include mixins.crear-flexbox();
         //background-color: #ff0000; // Para debug
     }
     &__VBNET{
@@ -13,7 +13,7 @@
        //background-color: #00ffff
     }
     &__SJAVA{
-        display: flex;
+        @include mixins.crear-flexbox();
        //background-color: #0080ff
         
     }
@@ -23,7 +23,7 @@
         //background-color: #1ea427
     }
     &__SCSHARP{
-        display: flex;
+        @include mixins.crear-flexbox();
         //background-color: #00ff00
     }
     &__CSHARP{

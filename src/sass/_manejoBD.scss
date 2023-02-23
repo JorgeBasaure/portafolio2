@@ -3,10 +3,16 @@
 .SQLlogo{
 
     &__SMSQL{
+        //background-color: #ff8040;  Para debug
         @include mixins.crear-flexbox();
     }
     &__MSQL{
         content: url('../img/BBDD/microsoft-sql-server-logo-svgrepo-com.svg');
         @include mixins.tamaño-logo();
+    }
+    &__stats{
+        //background-color: #00ffff;
+        @include mixins.ajusteHabilidadstats();
+        @include mixins.emerger-texto();
     }
 }

@@ -11,7 +11,7 @@ class PortafolioOffice extends Component
         const subtitleLines = [this.props.subtitle];
       if (!this.state.show){
         return(
-          <p className="PortOffice__specs">{this.props.mytext} <Typed strings={subtitleLines}  typeSpeed={20} startDelay={40} /></p>
+          <p className="PortOffice__specs">{this.props.mytext} <Typed strings={subtitleLines}  typeSpeed={10} startDelay={4000} /></p>
         )
       }   
     }
@@ -28,7 +28,7 @@ class HerramientasOffice extends Component{
                 <div className="Officelogo__SWORD">
                         <div className="Officelogo__WORD"></div>
 
-                        <div>
+                        <div className="Officelogo__stats">
                                   <p className='PerkOffice__name'>{Officeperk[0].title}</p>
 
                                   <PortafolioOffice mytext={DData[0].Level_Perk}  subtitle= {Officeperk[0].Level_Perk} />
@@ -42,7 +42,7 @@ class HerramientasOffice extends Component{
                 <div className="Officelogo__SEXCEL">
                         <div className="Officelogo__EXCEL"></div>
 
-                        <div>
+                        <div className="Officelogo__stats">
                                 <p className='PerkOffice__name'>{Officeperk[1].title}</p>
 
                                 <PortafolioOffice mytext={DData[0].Level_Perk}  subtitle= {Officeperk[1].Level_Perk} />
@@ -56,7 +56,7 @@ class HerramientasOffice extends Component{
                 <div className="Officelogo__SPROJECT">
                         <div className="Officelogo__PROJECT"></div>
 
-                        <div>
+                        <div className="Officelogo__stats">
                                 <p className='PerkOffice__name'>{Officeperk[2].title}</p>
 
                                 <PortafolioOffice mytext={DData[0].Level_Perk}  subtitle= {Officeperk[2].Level_Perk} />
@@ -70,7 +70,7 @@ class HerramientasOffice extends Component{
                 <div className="Officelogo__SSHAREPOINT">
                        <div className="Officelogo__SHAREPOINT"></div>
 
-                       <div>
+                       <div className="Officelogo__stats">
                               <p className='PerkOffice__name'>{Officeperk[3].title}</p>
 
                               <PortafolioOffice mytext={DData[0].Level_Perk}  subtitle= {Officeperk[3].Level_Perk} />
@@ -84,7 +84,7 @@ class HerramientasOffice extends Component{
                 <div className="Officelogo__SPOWERBI">
                       <div className="Officelogo__POWERBI"></div>
 
-                      <div>
+                      <div className="Officelogo__stats">
                               <p className='PerkOffice__name'>{Officeperk[4].title}</p>
 
                               <PortafolioOffice mytext={DData[0].Level_Perk}  subtitle= {Officeperk[4].Level_Perk} />
@@ -98,7 +98,7 @@ class HerramientasOffice extends Component{
                 <div className="Officelogo__SVISIO">
                       <div className="Officelogo__VISIO"></div>
 
-                      <div>
+                      <div className="Officelogo__stats">
                               <p className='PerkOffice__name'>{Officeperk[5].title}</p>
 
                               <PortafolioOffice mytext={DData[0].Level_Perk}  subtitle= {Officeperk[5].Level_Perk} />
@@ -112,7 +112,7 @@ class HerramientasOffice extends Component{
                 <div className="Officelogo__SPP">
                       <div className="Officelogo__PP"></div>
 
-                      <div>
+                      <div className="Officelogo__stats">
                               <p className='PerkOffice__name'>{Officeperk[6].title}</p>
 
                               <PortafolioOffice mytext={DData[0].Level_Perk}  subtitle= {Officeperk[6].Level_Perk} />

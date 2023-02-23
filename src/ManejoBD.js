@@ -10,7 +10,7 @@ class PortafolioSQL extends Component
       const subtitleLines = [this.props.subtitle];
       if (!this.state.show){
         return(
-          <p id="PortSQL__specs">{this.props.mytext} <Typed strings={subtitleLines}  typeSpeed={20} startDelay={40} /></p>
+          <p id="PortSQL__specs">{this.props.mytext} <Typed strings={subtitleLines}  typeSpeed={10} startDelay={4000} /></p>
         )
       }   
     }
@@ -28,7 +28,7 @@ class ManejoSQL extends Component{
               <div className="SQLlogo__SMSQL">
                     <div className="SQLlogo__MSQL"></div>
 
-                    <div>
+                    <div className="SQLlogo__stats">
                           <p className='PerkSQL__name'>{SQLPerk[0].title}</p>
 
                           <PortafolioSQL mytext={DData[0].Level_Perk}  subtitle= {SQLPerk[0].Level_Perk} />
