@@ -27,7 +27,7 @@ class HerramientasFE extends Component{
   {
     
     return(
-      <div className='PerkFe'> 
+      <div className='PerkFe' id='sector_02'> 
       <div className='PerkFe__title'><h1>Habilidades Front-End</h1></div>
         
 

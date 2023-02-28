@@ -176,6 +176,12 @@
         position: center;
         attachment: fixed;
     }
+    animation: emerger-fondo .5s;
+
+    @keyframes emerger-fondo {
+        from {opacity: 0}
+        to {opacity: 1}
+    }
 }
 
 //TODO: DEBUGEAR EL MIXINS. LO QUE ESTÁ ARRIBA ESTÁ LISTO

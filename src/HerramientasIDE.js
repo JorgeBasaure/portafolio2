@@ -23,7 +23,7 @@ class HerramientasIDE extends Component{
     {
       
       return(
-        <div className='PerkIDE'> 
+        <div className='PerkIDE' id='sector_04'> 
             <h1 className='PerkIDE__title'>Habilidades en IDE</h1>
 
             <div className="IDElogo__SVS">

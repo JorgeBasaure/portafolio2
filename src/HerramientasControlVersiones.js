@@ -22,7 +22,7 @@ class HerramientasCtrlVer extends Component{
     {
       
       return(
-        <div className='PerkCtrlVer'>
+        <div className='PerkCtrlVer' id='sector_08'>
               <h1 className='PerkCtrlVer__title'>Habilidades en control de versiones</h1>
                 
               <div className="CtrlVerlogo__SGIT">

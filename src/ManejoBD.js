@@ -22,7 +22,7 @@ class ManejoSQL extends Component{
     {
       
       return(
-        <div className='PerkSQL'> 
+        <div className='PerkSQL' id='sector_06'> 
               <h1 className='PerkSQL__title'>Habilidades Base de datos (Persistencia)</h1>
 
               <div className="SQLlogo__SMSQL">

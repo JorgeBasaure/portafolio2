@@ -21,7 +21,7 @@ class HerramientasConcept extends Component{
     {
       
       return(
-        <div className='PerkConcept'>
+        <div className='PerkConcept' id='sector_07'>
               <h1 className='PerkConcept__title'>Habilidades Herramientas de conceptos</h1>
 
 

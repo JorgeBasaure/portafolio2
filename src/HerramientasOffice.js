@@ -22,7 +22,7 @@ class HerramientasOffice extends Component{
     {
       
       return(
-        <div className='PerkOffice'> 
+        <div className='PerkOffice' id='sector_05'> 
                 <h1 className='PerkOffice__title'>Habilidades Microsoft Office</h1>
 
                 <div className="Officelogo__SWORD">

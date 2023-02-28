@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import '../src/sass/index.scss';
 import App from './App';
+import Navegador from './Navigator';
 import HerramientasFE from './HerramientasFE';
 import HerramientasBE from './HerramientasBE';
 import HerramientasIDE from './HerramientasIDE';
@@ -16,6 +17,7 @@ import DatosContacto from './Contacto';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Navegador/>
     <PresentacionDev/>
     <HerramientasFE />
     <HerramientasBE/>

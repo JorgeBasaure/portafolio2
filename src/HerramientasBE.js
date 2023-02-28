@@ -23,7 +23,7 @@ class HerramientasBE extends Component{
     {
       
       return(
-        <div className='PerkBe'> 
+        <div className='PerkBe' id='sector_03'> 
         
         <div className='PerkBe__title'><h1 >Habilidades Back-End</h1></div>
         
