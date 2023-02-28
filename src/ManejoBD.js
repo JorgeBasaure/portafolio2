@@ -10,7 +10,7 @@ class PortafolioSQL extends Component
       const subtitleLines = [this.props.subtitle];
       if (!this.state.show){
         return(
-          <p id="PortSQL__specs">{this.props.mytext} <Typed strings={subtitleLines}  typeSpeed={10} startDelay={4000} /></p>
+          <p id="PortSQL__specs">{this.props.mytext} <Typed strings={subtitleLines}  typeSpeed={10} startDelay={5000} /></p>
         )
       }   
     }

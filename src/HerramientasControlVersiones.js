@@ -10,7 +10,7 @@ class PortafolioCtrlVer extends Component
       const subtitleLines = [this.props.subtitle];
       if (!this.state.show){
         return(
-          <p className="PortCtrlVer__specs">{this.props.mytext}<Typed strings={subtitleLines}  typeSpeed={10} startDelay={4000} /></p>
+          <p className="PortCtrlVer__specs">{this.props.mytext}<Typed strings={subtitleLines}  typeSpeed={10} startDelay={5000} /></p>
         )
       }   
     }

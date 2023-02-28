@@ -12,7 +12,7 @@ class PortafolioBE extends Component
         const subtitleLines = [this.props.subtitle];
       if (!this.state.show){
         return(
-          <p className="PortBE__specs">{this.props.mytext} <Typed strings={subtitleLines}  typeSpeed={10} startDelay={4000} /></p>
+          <p className="PortBE__specs">{this.props.mytext} <Typed strings={subtitleLines}  typeSpeed={10} startDelay={5000} /></p>
         )
       }   
     }

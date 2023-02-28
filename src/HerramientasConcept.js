@@ -11,13 +11,12 @@ class PortafolioConcept extends Component
       const subtitleLines = [this.props.subtitle];
       if (!this.state.show){
         return(
-          <p className="PortConcept__specs">{this.props.mytext}<Typed strings={subtitleLines}  typeSpeed={10} startDelay={4000} /></p>
+          <p className="PortConcept__specs">{this.props.mytext}<Typed strings={subtitleLines}  typeSpeed={10} startDelay={5000} /></p>
         )
       }   
     }
 }
 class HerramientasConcept extends Component{
-    //TODO  Colocar los logos faltantes
     render()
     {
       

@@ -11,7 +11,7 @@ class Contact extends Component
       const subtitleLines = [this.props.subtitle];
       if (!this.state.show){
         return(
-          <p className='Contacto__specs'>{this.props.mytext}<Typed strings={subtitleLines}  typeSpeed={10} startDelay={4000} /></p>
+          <p className='Contacto__specs'>{this.props.mytext}<Typed strings={subtitleLines}  typeSpeed={10} startDelay={5000} /></p>
         )
       }   
     }
@@ -24,7 +24,7 @@ class Emailr extends Component
       const subtitleLines = [this.props.subtitle];
        if (!this.state.show){
          return(
-            <p className='ContactoMail'>{this.props.mytext} <a href={subtitleLines}><Typed strings={subtitleLines}   typeSpeed={10} startDelay={4000} /></a></p>
+            <p className='ContactoMail'>{this.props.mytext} <a href={subtitleLines}><Typed strings={subtitleLines}   typeSpeed={10} startDelay={5000} /></a></p>
             
          );
        }

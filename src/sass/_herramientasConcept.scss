@@ -1,6 +1,11 @@
 @use 'mixins';
 
-
+.PerkConcept
+{
+    &__title{
+        @include mixins.Emerging-headers(); 
+    }
+}
 .Conceptlogo{
 
 

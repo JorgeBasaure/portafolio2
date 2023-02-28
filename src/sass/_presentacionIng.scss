@@ -4,10 +4,11 @@
 
 .profile{
    
-   &--title{
+   &--title, h1{
         //background-color: #00ffff; //Para debug
         @include mixins.ajusteEncabezado();
         @include mixins.emergerEncabezado();
+        @include mixins.Emerging-headers(); 
    }
 
    &__Spersonal{

@@ -1,5 +1,12 @@
 @use 'mixins';
-//@include mixins.crear-flexbox(30);
+
+.PerkIDE
+{
+    &__title{
+        @include mixins.Emerging-headers(); 
+    }
+}
+
 .IDElogo{
 
     &__SVS{

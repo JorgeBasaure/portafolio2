@@ -1,5 +1,11 @@
 @use 'mixins';
 
+.PerkCtrlVer
+{
+    &__title{
+        @include mixins.Emerging-headers(); 
+    }
+}
 .CtrlVerlogo{
 
     &__SGIT{

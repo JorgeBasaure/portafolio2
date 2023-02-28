@@ -1,5 +1,13 @@
 @use 'mixins';
 
+.PerkOffice
+{
+    &__title{
+        @include mixins.Emerging-headers(); 
+    }
+}
+
+
 .Officelogo{
 
 

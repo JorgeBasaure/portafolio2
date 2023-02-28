@@ -1,5 +1,12 @@
 @use 'mixins';
 
+.PerkFe
+{
+    &__title{
+        @include mixins.Emerging-headers(); 
+    }
+}
+
 .FElogo{
 
     

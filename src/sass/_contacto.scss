@@ -1,7 +1,9 @@
 @use 'mixins';
 
 .ContactoDev{
-
+    &__title{
+        @include mixins.Emerging-headers(); 
+    }
     &__Sector{
         @include mixins.crear-flexbox();
     }

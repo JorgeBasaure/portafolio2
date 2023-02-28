@@ -1,5 +1,11 @@
 @use 'mixins';
 
+.PerkSQL
+{
+        &__title{
+            @include mixins.Emerging-headers(); 
+        }
+}
 .SQLlogo{
 
     &__SMSQL{

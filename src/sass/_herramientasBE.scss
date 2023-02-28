@@ -1,6 +1,14 @@
 @use 'mixins';
 //TODO: DEBUGEAR TODAS LAS HOJAS CONTIGUAS A TRAVES DEL MIXINS
 //COLOREANDO EL DIV CON MARGIN Y PADDING.
+.PerkBe
+{
+    &__title{
+    
+        @include mixins.Emerging-headers(); 
+    }
+}
+
 .BElogo{
 
     &__SVBNET{
