@@ -3,6 +3,9 @@
 //TODO: Encender el fondo de pantalla uns vez debugeado.
 
 .profile{
+  @include mixins.Margin-top(90);
+   @include mixins.Margin-bottom(90);
+   
    
    &--title, h1{
         //background-color: #00ffff; //Para debug

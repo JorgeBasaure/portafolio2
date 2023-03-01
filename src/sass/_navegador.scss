@@ -1,0 +1,27 @@
+@use 'mixins';
+
+.Navigator
+{
+    overflow:hidden;
+    &__container
+    {
+        background-image: linear-gradient(rgb(97, 218, 251),rgba(255, 255, 255, 0));
+        border-bottom-left-radius:  25px;
+        border-bottom-right-radius:  25px;
+        padding: 30px 15px;
+        @include mixins.crear-flexbox();
+        align-items:center;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top:0;
+    }
+    &__links
+    {
+        background-color: azure;
+        padding-left:25px;
+        padding-right: 25px;
+        text-align: center;
+    }
+}
