@@ -14,8 +14,7 @@
 //TODO: Encender el fondo de pantalla uns vez debugeado.
 html
 {
-      scroll-behavior: smooth;   
-      scroll-padding: 90px;
+    @include mixins.scroll();
 }
 body
 {
@@ -23,8 +22,36 @@ body
                                      , url('../img/space-7273891.jpg');
     @include mixins.crear-flexbox();
     @include mixins.arreglar-imagen();
+
+
 }
 
 
+@media only screen and (max-width: 800px){
+   html
+   {
+    @include mixins.scroll-resp(120);
+   }
 
+    body {
+        
+        background-image: linear-gradient(rgb(0, 0, 0),rgba(255, 255, 255, 0))
+                                     , url('../img/space-7273891.jpg');
+        @include mixins.crear-flexbox();
+        @include mixins.arreglar-imagen();
+        
+    }
+    
+        .profile{
+           
+           @include mixins.Margin-bottom(120);
+        }
+        .Navigator
+        {
+            
+            @include mixins.crear-flexbox();
+            @include mixins.Margin-bottom(120);
+        }
+     
 
+}

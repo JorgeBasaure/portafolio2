@@ -2,8 +2,10 @@
 
 //TODO: Encender el fondo de pantalla uns vez debugeado.
 
+
+
 .profile{
-  @include mixins.Margin-top(90);
+   @include mixins.Margin-top(90);
    @include mixins.Margin-bottom(90);
    
    
@@ -64,6 +66,7 @@
       @include mixins.emerger-texto();
       //background-color: #70db70;
    }
+
 }
    
 

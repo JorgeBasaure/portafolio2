@@ -1,3 +1,40 @@
+//AJUSTES EN BARRA DE NAVEGACIÓN
+@mixin adapt-navbar()
+{
+    background-image: linear-gradient(rgb(97, 218, 251),rgba(255, 255, 255, 0));
+    border-bottom-left-radius:  25px;
+    border-bottom-right-radius:  25px;
+    padding: 30px 15px;
+    display:flex;
+    align-items:center;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top:0;
+    z-index: 9999;
+}
+@mixin adapt-navbar-links()
+{
+    color: aqua;
+    padding-left:25px;
+    padding-right: 25px;
+    text-align: center;
+}
+//AJUSTES DE  DESPLAZAMIENTO (SCROLL)
+@mixin scroll()
+{
+    overflow: hidden;
+    scroll-behavior: smooth;   
+    scroll-padding: 90px;
+}
+@mixin scroll-resp($value)
+{
+    overflow:hidden;
+    scroll-behavior: smooth;   
+    scroll-padding: ($value)+px;
+}
+
 //AJUSTE DE DIV
 @mixin crear-flexbox(){
     display:flex;
