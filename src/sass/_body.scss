@@ -26,11 +26,13 @@ body
 
 }
 
-
+//PARA SMARTPHONES
 @media only screen and (max-width: 800px){
    html
    {
-    @include mixins.scroll-resp(120);
+    //@include mixins.scroll-resp(120);
+   overflow: auto;
+    //white-space: nowrap;
    }
 
     body {
@@ -41,17 +43,37 @@ body
         @include mixins.arreglar-imagen();
         
     }
-    
+    .Navigator
+    {
+        
+        @include mixins.crear-flexbox();
+        @include mixins.Margin-bottom(120);
+    }
         .profile{
-           
+           //background-color: chartreuse;
            @include mixins.Margin-bottom(120);
+           width: 41.5%;
+            display: grid;
+            text-align: center;
+            margin-top: 140px;
+
+            &__Spersonal, &__Sacademy, &__Sjob{
+                display: block;
+            }
+            &--personal, &--academy,&--job{
+                margin: auto;
+                margin: {
+                    top: 17px;
+                    bottom: 17px;
+                }
+            }
+            &--Pparagraph,&--Aparagraph,&--Jparagraph{
+                text-align: left;
+            }
         }
-        .Navigator
-        {
-            
-            @include mixins.crear-flexbox();
-            @include mixins.Margin-bottom(120);
-        }
+
+
+       
      
 
 }
