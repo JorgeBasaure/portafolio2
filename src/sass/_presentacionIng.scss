@@ -10,61 +10,61 @@
    
    
    &--title, h1{
-        background-color: #00ffff; //Para debug
+        //background-color: #00ffff; //Para debug
         @include mixins.ajusteEncabezado();
         @include mixins.emergerEncabezado();
         @include mixins.Emerging-headers(); 
    }
 
    &__Spersonal{
-      background-color: #ffd6cc;
+      //background-color: #ffd6cc;
       @include mixins.crear-flexbox();
    }
    &--personal{
       content: url('../img/20230131_124854.jpg');
       @include mixins.ajustePersonal-img();
-      background-color:#ff3300;
+      //background-color:#ff3300;
    }
    &--Pparagraph{
       @include mixins.ajustePersonal();
       @include mixins.emerger-texto();
-      background-color:#ff5c33 ;
+      //background-color:#ff5c33 ;
     }
 
 
 
    &__Sacademy{
-     background-color: #9999ff;
+     //background-color: #9999ff;
      
      @include mixins.crear-flexbox();
    }
    &--academy{
       content: url('../img/bellavista-7___Selected.jpg');
       @include mixins.ajusteAcademico-img();
-      background-color:  #3333ff;
+      //background-color:  #3333ff;
    }
    &--Aparagraph{
       @include mixins.ajusteAcademico();
       @include mixins.emerger-texto();
-      background-color: #6666ff;
+      //background-color: #6666ff;
    }
 
 
 
    &__Sjob{
       @include mixins.crear-flexbox();
-       background-color: #adebad;
+       //background-color: #adebad;
    }
     &--job{
       content:url('../img/1332946447-lmb-bic-mut-10.jpg');
       @include mixins.ajusteLaboral-img();
-     background-color: #33cc33;
+     //background-color: #33cc33;
 
    }
    &--Jparagraph{
       @include mixins.ajusteLaboral();
       @include mixins.emerger-texto();
-      background-color: #70db70;
+      //background-color: #70db70;
    }
 
 }

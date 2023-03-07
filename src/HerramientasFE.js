@@ -47,9 +47,12 @@ class HerramientasFE extends Component{
         
          <div className='FElogo__Styles'>
 
+                <div className='FElogo__Styles--container'>
                   <div className='FElogo__CSS'></div>
                   <div  className='FElogo__PLUS'><p>+</p></div>
                   <div  className="FElogo__SASS"></div>
+                </div>
+
                   <div className="FElogo__stats">
                             < p className='PerkFe__name'>{FEperk[1].title}</p>
 

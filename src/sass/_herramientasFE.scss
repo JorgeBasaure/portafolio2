@@ -27,6 +27,11 @@
         //background-color: #ffff00;
         @include mixins.crear-flexbox();
         @include mixins.ajusteHabilidad();
+        &--container
+        {
+            //background-color: blue;
+            @include mixins.crear-flexbox();
+        }
     }
     &__CSS{
         content: url('../img/FE/CSS3_logo_and_wordmark.svg');
@@ -76,7 +81,7 @@
 
 
     &__stats{
-        //background-color: #80ff80;
+        //ackground-color: #80ff80;
         @include mixins.ajusteHabilidadstats();
         @include mixins.emerger-texto();
     }

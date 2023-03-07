@@ -28,6 +28,7 @@ body
 
 //PARA SMARTPHONES
 //RESOLUCIÓN 1: 800px.
+//TODO: USAR EL MIXINS PARA REUTILIZAR CODIGO
 @media only screen and (max-width: 800px){
    html
    {
@@ -42,7 +43,7 @@ body
                                      , url('../img/space-7273891.jpg');
         @include mixins.crear-flexbox();
         @include mixins.arreglar-imagen();
-        
+        width:100%;
     }
     .Navigator
     {
@@ -50,6 +51,7 @@ body
         @include mixins.crear-flexbox();
         @include mixins.Margin-bottom(120);
     }
+    //PERFIL
         .profile{
            //background-color: chartreuse;
            @include mixins.Margin-bottom(120);
@@ -72,9 +74,274 @@ body
                 text-align: left;
             }
         }
+     //FE
+        .PerkFe{
+                       //background-color: chartreuse;
+           @include mixins.Margin-bottom(120);
+           width: 41.5%;
+            display: block;
+            text-align: center;
+            margin-top: 140px;
+        }
+        .FElogo{
+            @include mixins.Margin-bottom(120);
+            width: 41.5%;
+             display: block;
+             text-align: center;
+             margin-top: 140px;
+            &__SHTML5,&__SJS,&__SPHP,&__SREACT{
+                    width: 100%;
+                    display: block;
+                    @include mixins.Margin-bottom(227);
+                    
+            }
+            &__Styles
+            {
+                   &--container
+                   {
+                    justify-content: center;
+                    width: 100%;
+                    display: flex;
+                    margin: auto;
+                    //@include mixins.Margin-bottom(227);
+                   }
+                 width: 100%;
+                    display: block;
+                    @include mixins.Margin-bottom(227);
+            }
 
+            &__HTML5,&__JS,&__PHP,&__REACT{
+                margin: auto;
+                margin: {
+                    top: 17px;
+                    bottom: 17px;
+            }
+        }
+            &__stats{
+                text-align: left;
+                width: 100%;
+            }
+        
 
-       
-     
+        }
+    //BE
+    .PerkBe{
+        //background-color: chartreuse;
+        @include mixins.Margin-bottom(120);
+        width: 41.5%;
+        display: block;
+        text-align: center;
+        margin-top: 140px;
+        }
+    .BElogo{
+        @include mixins.Margin-bottom(120);
+        width: 41.5%;
+        display: block;
+        text-align: center;
+        margin-top: 140px;
 
+        &__SVBNET,&__SJAVA,&__SCSHARP
+            {
+                width: 100%;
+                display: block;
+                //@include mixins.Margin-bottom(17);
+            }
+            &__VBNET,&__JAVA,&__CSHARP{
+                margin: auto;
+                margin: {
+                    top: 17px;
+                    bottom: 17px;
+            }
+        }
+            &__stats{
+                text-align: left;
+                width: 100%;
+            }
+        }
+//IDE
+.PerkIDE{
+    //background-color: chartreuse;
+    @include mixins.Margin-bottom(120);
+    width: 41.5%;
+    display: block;
+    text-align: center;
+    margin-top: 140px;
+    }
+.IDElogo{
+    @include mixins.Margin-bottom(120);
+    width: 41.5%;
+    display: block;
+    text-align: center;
+    margin-top: 140px;
+
+    &__SVS,&__SVSC,&__SSQLMS,&__SNETBEANS,&__SNOTEPAD2PLUS
+        {
+            width: 100%;
+            display: block;
+            //@include mixins.Margin-bottom(17);
+        }
+        &__VS,&__VSC,&__SQLMS,&__NETBEANS,&__NOTEPAD2PLUS
+        {
+            margin: auto;
+            margin: {
+                top: 17px;
+                bottom: 17px;
+        }
+    }
+        &__stats{
+            text-align: left;
+            width: 100%;
+        }
+    }
+//OFFICE
+    .PerkOffice{
+        //background-color: chartreuse;
+        @include mixins.Margin-bottom(120);
+        width: 41.5%;
+        display: block;
+        text-align: center;
+        margin-top: 140px;
+        }
+    .Officelogo{
+        @include mixins.Margin-bottom(120);
+        width: 41.5%;
+        display: block;
+        text-align: center;
+        margin-top: 140px;
+    
+        &__SWORD,&__SEXCEL,&__SPROJECT,&__SSHAREPOINT,&__SPOWERBI, &__SVISIO, &__SPP
+            {
+                width: 100%;
+                display: block;
+                //@include mixins.Margin-bottom(17);
+            }
+            &__WORD,&__EXCEL,&__PROJECT,&__SHAREPOINT,&__POWERBI, &__VISIO, &__PP
+            {
+                margin: auto;
+                margin: {
+                    top: 17px;
+                    bottom: 17px;
+            }
+        }
+            &__stats{
+                text-align: left;
+                width: 100%;
+            }
+        }
+
+//BBDD
+        .PerkSQL{
+            //background-color: chartreuse;
+            @include mixins.Margin-bottom(120);
+            width: 41.5%;
+            display: block;
+            text-align: center;
+            margin-top: 140px;
+            }
+        .SQLlogo{
+            @include mixins.Margin-bottom(120);
+            width: 41.5%;
+            display: block;
+            text-align: center;
+            margin-top: 140px;
+        
+            &__SMSQL
+                {
+                    width: 100%;
+                    display: block;
+                    //@include mixins.Margin-bottom(17);
+                }
+                &__MSQL
+                {
+                    margin: auto;
+                    margin: {
+                        top: 17px;
+                        bottom: 17px;
+                }
+            }
+                &__stats{
+                    text-align: left;
+                    width: 100%;
+                }
+            }
+//CONCEPTOS
+.PerkConcept{
+    //background-color: chartreuse;
+    @include mixins.Margin-bottom(120);
+    width: 41.5%;
+    display: block;
+    text-align: center;
+    margin-top: 140px;
+    }
+.Conceptlogo{
+    @include mixins.Margin-bottom(120);
+    width: 41.5%;
+    display: block;
+    text-align: center;
+    margin-top: 140px;
+
+    &__SBIZAGIM, &__SSTARUML, &__SSAPPD, &__SBALSAMIQ
+        {
+            width: 100%;
+            display: block;
+            //@include mixins.Margin-bottom(17);
+        }
+        &__BIZAGIM, &__STARUML, &__SAPPD, &__BALSAMIQ
+        {
+            margin: auto;
+            margin: {
+                top: 17px;
+                bottom: 17px;
+        }
+    }
+        &__stats{
+            text-align: left;
+            width: 100%;
+        }
+    }
+//CONTROL DE VERSIONES
+.PerkCtrlVer{
+    //background-color: chartreuse;
+    @include mixins.Margin-bottom(120);
+    width: 41.5%;
+    display: block;
+    text-align: center;
+    margin-top: 140px;
+    }
+    .CtrlVerlogo{
+    @include mixins.Margin-bottom(120);
+    width: 41.5%;
+    display: block;
+    text-align: center;
+    margin-top: 140px;
+
+    &__SGIT
+        {
+            width: 100%;
+            display: block;
+            //@include mixins.Margin-bottom(17);
+        }
+        &__GIT
+        {
+            margin: auto;
+            margin: {
+                top: 17px;
+                bottom: 17px;
+        }
+    }
+        &__stats{
+            text-align: left;
+            width: 100%;
+        }
+    }
+//CONTACTO
+.ContactoDev{
+    //background-color: chartreuse;
+    @include mixins.Margin-bottom(120);
+    width: 41.5%;
+    display: block;
+    text-align: center;
+    margin-top: 140px;
+    }
+    
 }
