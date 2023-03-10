@@ -5,14 +5,16 @@
     &__title{
         @include mixins.Emerging-headers(); 
     }
-    &__Sector{
+}
+    .ContactoDevlogo{
+    &__SLDIN{
         @include mixins.crear-flexbox();
     }
-    &__LDINlogo{
+    &__LDIN{
         content: url('../img/icons8-linkedin-480.svg');
         @include mixins.tamaño-logo();
+        //background-color: #aa7940;
     }
-
 
     &__stats{
         //background-color: #00ffff;
@@ -20,3 +22,4 @@
         @include mixins.emerger-texto();
     }
 }
+

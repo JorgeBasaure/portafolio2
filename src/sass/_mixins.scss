@@ -59,7 +59,11 @@
 {
     margin-bottom: ($value)+px;
 }
-
+//AJUSTE DE ANCHO DE PANTALLA (RESPONSIVO)
+@mixin background-width($value)
+{
+    width: ($value);
+}
 
 // ANTECEDENTES
 @mixin ajustePersonal-img()

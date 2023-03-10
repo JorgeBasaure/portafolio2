@@ -31,26 +31,29 @@ class PresentacionDev extends Component {
         <h1>Presentación</h1>
 
 
-<div  className="profile--title"><p>{prof[0].title}</p></div>
 
-<div className='profile__Spersonal'>
-        <div className="profile--personal"></div>
-        <div  className="profile--Pparagraph"><PortafolioDev mytext={prof[0].description} /></div>
-</div>
 
-        <div  className="profile--title"><p>{prof[1].title}</p></div>
+<div className='profiletable'>
+
+<div  className="profiletable--title"><p>{prof[0].title}</p></div>
+      <div className='profiletable__Spersonal'>
+            <div className="profiletable--personal"></div>
+            <div  className="profiletable--Pparagraph"><PortafolioDev mytext={prof[0].description} /></div>
+      </div>
+
+        <div  className="profiletable--title"><p>{prof[1].title}</p></div>
         
-  <div className='profile__Sacademy'>
-      <div className="profile--academy"></div>
-      <div  className="profile--Aparagraph"><PortafolioDev mytext={prof[1].description} /></div>
-  </div>
+        <div className='profiletable__Sacademy'>
+            <div className="profiletable--academy"></div>
+            <div  className="profiletable--Aparagraph"><PortafolioDev mytext={prof[1].description} /></div>
+        </div>
 
-    <div className="profile--title"><p>{prof[2].title}</p></div>    
-    <div className='profile__Sjob'>
-      <div className="profile--job"></div>
-      <div  className="profile--Jparagraph"><PortafolioDev mytext={prof[2].description} /></div>
-    </div>
-        
+        <div className="profiletable--title"><p>{prof[2].title}</p></div>    
+            <div className='profiletable__Sjob'>
+                <div className="profiletable--job"></div>
+                <div  className="profiletable--Jparagraph"><PortafolioDev mytext={prof[2].description} /></div>
+            </div>
+    </div> 
       </div>
     );
   }

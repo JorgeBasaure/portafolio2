@@ -18,8 +18,7 @@ html
 }
 body
 {
-    background-image: linear-gradient(rgb(0, 0, 0),rgba(255, 255, 255, 0))
-                                     , url('../img/space-7273891.jpg');
+    background-image: linear-gradient(rgb(0, 0, 0),rgba(255, 255, 255, 0)) , url('../img/space-7273891.jpg');
     @include mixins.crear-flexbox();
     @include mixins.arreglar-imagen();
 
@@ -28,22 +27,20 @@ body
 
 //PARA SMARTPHONES
 //RESOLUCIÓN 1: 800px.
-//TODO: USAR EL MIXINS PARA REUTILIZAR CODIGO
+//TODO: MIGRAR A CADA UNO DE LAS HOJAS CORRESPONDIENTES A SU CLASE
+//LLEGAR A UNA MINIMA RESOLUCIÓN Y NO BAJAR DE AHI.
 @media only screen and (max-width: 800px){
    html
    {
-    //@include mixins.scroll-resp(120);
    overflow: auto;
-    //white-space: nowrap;
    }
 
     body {
         
-        background-image: linear-gradient(rgb(0, 0, 0),rgba(255, 255, 255, 0))
-                                     , url('../img/space-7273891.jpg');
-        @include mixins.crear-flexbox();
+        background-image: linear-gradient(rgb(0, 0, 0),rgba(255, 255, 255, 0)), url('../img/space-7273891.jpg');
         @include mixins.arreglar-imagen();
-        width:100%;
+        @include mixins.background-width(100%);
+        display: block;
     }
     .Navigator
     {
@@ -55,12 +52,19 @@ body
         .profile{
            //background-color: chartreuse;
            @include mixins.Margin-bottom(120);
-           width: 41.5%;
-            display: grid;
+           @include mixins.background-width(98.5%);
+            display: block;
             text-align: center;
             margin-top: 140px;
-
+        }
+            .profiletable{
+                @include mixins.Margin-bottom(120);
+                @include mixins.background-width(100%);
+                 display: block;
+                 text-align: center;
+                 margin-top: 21px;
             &__Spersonal, &__Sacademy, &__Sjob{
+                @include mixins.background-width(100%);
                 display: block;
             }
             &--personal, &--academy,&--job{
@@ -72,25 +76,28 @@ body
             }
             &--Pparagraph,&--Aparagraph,&--Jparagraph{
                 text-align: left;
+                @include mixins.background-width(100%);
+                display: block;
             }
         }
+    
      //FE
         .PerkFe{
                        //background-color: chartreuse;
            @include mixins.Margin-bottom(120);
-           width: 41.5%;
+           @include mixins.background-width(98.5%);
             display: block;
             text-align: center;
             margin-top: 140px;
         }
         .FElogo{
             @include mixins.Margin-bottom(120);
-            width: 41.5%;
+            @include mixins.background-width(100%);
              display: block;
              text-align: center;
              margin-top: 140px;
             &__SHTML5,&__SJS,&__SPHP,&__SREACT{
-                    width: 100%;
+                @include mixins.background-width(100%);
                     display: block;
                     @include mixins.Margin-bottom(227);
                     
@@ -100,12 +107,12 @@ body
                    &--container
                    {
                     justify-content: center;
-                    width: 100%;
+                    @include mixins.background-width(95%);
                     display: flex;
                     margin: auto;
                     //@include mixins.Margin-bottom(227);
                    }
-                 width: 100%;
+                   @include mixins.background-width(98.5%);
                     display: block;
                     @include mixins.Margin-bottom(227);
             }
@@ -119,7 +126,8 @@ body
         }
             &__stats{
                 text-align: left;
-                width: 100%;
+                @include mixins.background-width(98%);
+                
             }
         
 
@@ -128,21 +136,21 @@ body
     .PerkBe{
         //background-color: chartreuse;
         @include mixins.Margin-bottom(120);
-        width: 41.5%;
+        @include mixins.background-width(98.5%);
         display: block;
         text-align: center;
         margin-top: 140px;
         }
     .BElogo{
         @include mixins.Margin-bottom(120);
-        width: 41.5%;
+        @include mixins.background-width(100%);
         display: block;
         text-align: center;
         margin-top: 140px;
 
         &__SVBNET,&__SJAVA,&__SCSHARP
             {
-                width: 100%;
+                @include mixins.background-width(100%);
                 display: block;
                 //@include mixins.Margin-bottom(17);
             }
@@ -155,28 +163,28 @@ body
         }
             &__stats{
                 text-align: left;
-                width: 100%;
+                @include mixins.background-width(98%);
             }
         }
 //IDE
 .PerkIDE{
     //background-color: chartreuse;
     @include mixins.Margin-bottom(120);
-    width: 41.5%;
+    @include mixins.background-width(98.5%);
     display: block;
     text-align: center;
     margin-top: 140px;
     }
 .IDElogo{
     @include mixins.Margin-bottom(120);
-    width: 41.5%;
+    @include mixins.background-width(100%);
     display: block;
     text-align: center;
     margin-top: 140px;
 
     &__SVS,&__SVSC,&__SSQLMS,&__SNETBEANS,&__SNOTEPAD2PLUS
         {
-            width: 100%;
+            @include mixins.background-width(100%);
             display: block;
             //@include mixins.Margin-bottom(17);
         }
@@ -190,28 +198,28 @@ body
     }
         &__stats{
             text-align: left;
-            width: 100%;
+            @include mixins.background-width(98%);
         }
     }
 //OFFICE
     .PerkOffice{
         //background-color: chartreuse;
         @include mixins.Margin-bottom(120);
-        width: 41.5%;
+        @include mixins.background-width(98.5%);
         display: block;
         text-align: center;
         margin-top: 140px;
         }
     .Officelogo{
         @include mixins.Margin-bottom(120);
-        width: 41.5%;
+        @include mixins.background-width(100%);
         display: block;
         text-align: center;
         margin-top: 140px;
     
         &__SWORD,&__SEXCEL,&__SPROJECT,&__SSHAREPOINT,&__SPOWERBI, &__SVISIO, &__SPP
             {
-                width: 100%;
+                @include mixins.background-width(98.5%);
                 display: block;
                 //@include mixins.Margin-bottom(17);
             }
@@ -225,7 +233,7 @@ body
         }
             &__stats{
                 text-align: left;
-                width: 100%;
+                @include mixins.background-width(98%);
             }
         }
 
@@ -233,21 +241,21 @@ body
         .PerkSQL{
             //background-color: chartreuse;
             @include mixins.Margin-bottom(120);
-            width: 41.5%;
+            @include mixins.background-width(98.5%);
             display: block;
             text-align: center;
             margin-top: 140px;
             }
         .SQLlogo{
             @include mixins.Margin-bottom(120);
-            width: 41.5%;
+            @include mixins.background-width(100%);
             display: block;
             text-align: center;
             margin-top: 140px;
         
             &__SMSQL
                 {
-                    width: 100%;
+                    @include mixins.background-width(100%);
                     display: block;
                     //@include mixins.Margin-bottom(17);
                 }
@@ -261,28 +269,28 @@ body
             }
                 &__stats{
                     text-align: left;
-                    width: 100%;
+                    @include mixins.background-width(98%);
                 }
             }
 //CONCEPTOS
 .PerkConcept{
     //background-color: chartreuse;
     @include mixins.Margin-bottom(120);
-    width: 41.5%;
+    @include mixins.background-width(98.5%);
     display: block;
     text-align: center;
     margin-top: 140px;
     }
 .Conceptlogo{
     @include mixins.Margin-bottom(120);
-    width: 41.5%;
+    @include mixins.background-width(100%);
     display: block;
     text-align: center;
     margin-top: 140px;
 
     &__SBIZAGIM, &__SSTARUML, &__SSAPPD, &__SBALSAMIQ
         {
-            width: 100%;
+            @include mixins.background-width(100%);
             display: block;
             //@include mixins.Margin-bottom(17);
         }
@@ -296,28 +304,28 @@ body
     }
         &__stats{
             text-align: left;
-            width: 100%;
+            @include mixins.background-width(98%);
         }
     }
 //CONTROL DE VERSIONES
 .PerkCtrlVer{
     //background-color: chartreuse;
     @include mixins.Margin-bottom(120);
-    width: 41.5%;
+    @include mixins.background-width(98.5%);
     display: block;
     text-align: center;
     margin-top: 140px;
     }
     .CtrlVerlogo{
     @include mixins.Margin-bottom(120);
-    width: 41.5%;
+    @include mixins.background-width(100%);
     display: block;
     text-align: center;
     margin-top: 140px;
 
     &__SGIT
         {
-            width: 100%;
+            @include mixins.background-width(100%);
             display: block;
             //@include mixins.Margin-bottom(17);
         }
@@ -331,17 +339,40 @@ body
     }
         &__stats{
             text-align: left;
-            width: 100%;
+            @include mixins.background-width(98%);
         }
     }
 //CONTACTO
 .ContactoDev{
-    //background-color: chartreuse;
+    ///background-color: chartreuse;
     @include mixins.Margin-bottom(120);
-    width: 41.5%;
+    @include mixins.background-width(98.5%);
+    display: block;
+    text-align: center;
+    //margin-top: 140px;
+}
+.ContactoDevlogo{
+    @include mixins.Margin-bottom(120);
+    @include mixins.background-width(100%);
     display: block;
     text-align: center;
     margin-top: 140px;
+
+    &__SLDIN{
+        @include mixins.background-width(100%);
+        display: block;
+        //margin-top: 140px;
     }
-    
-}
+    &__LDIN{
+        margin: auto;
+        margin: {
+            top: 17px;
+            bottom: 17px;
+    }
+    }
+    &__stats{
+        text-align: center;
+        @include mixins.background-width(98%);
+    }
+    }
+}   

@@ -7,7 +7,9 @@
 .profile{
    @include mixins.Margin-top(90);
    @include mixins.Margin-bottom(90);
-   
+}
+
+.profiletable{
    
    &--title, h1{
         //background-color: #00ffff; //Para debug
@@ -66,8 +68,8 @@
       @include mixins.emerger-texto();
       //background-color: #70db70;
    }
-
 }
+
    
 
   

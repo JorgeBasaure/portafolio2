@@ -40,10 +40,10 @@ class DatosContacto extends Component{
         <div className="ContactoDev" id='sector_09'> 
               <h1  className="ContactoDev__title">{Contacto[0].title}</h1>
 
-              <div className="ContactoDev__Sector">
-                    <div className="ContactoDev__LDINlogo"></div>
+              <div className="ContactoDevlogo__SLDIN">
+                    <div className="ContactoDevlogo__LDIN"></div>
                     
-                    <div className="ContactoDev__stats">
+                    <div className="ContactoDevlogo__stats">
                           <ul>
                                 <li><Contact mytext={Contacto[0].Address}  subtitle= {Contacto[1].Address} /></li>
                                 <li><Contact mytext={Contacto[0].Contact_phone}  subtitle={Contacto[1].Contact_phone} /></li>
