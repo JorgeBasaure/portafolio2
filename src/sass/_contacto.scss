@@ -22,4 +22,38 @@
         @include mixins.emerger-texto();
     }
 }
+@media only screen and (max-width: 800px){
+.ContactoDev{
+    ///background-color: chartreuse;
+    @include mixins.Margin-bottom(120);
+    @include mixins.background-width(98.5%);
+    display: block;
+    text-align: center;
+    //margin-top: 140px;
+}
+.ContactoDevlogo{
+    @include mixins.Margin-bottom(120);
+    @include mixins.background-width(100%);
+    display: block;
+    text-align: center;
+    margin-top: 140px;
 
+    &__SLDIN{
+        @include mixins.background-width(100%);
+        display: block;
+        //margin-top: 140px;
+    }
+    &__LDIN{
+        margin: auto;
+        margin: {
+            top: 17px;
+            bottom: 17px;
+    }
+    }
+    &__stats{
+        text-align: center;
+        @include mixins.background-width(98%);
+    }
+    }
+
+}

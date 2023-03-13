@@ -88,3 +88,40 @@
     }
 }
 
+@media only screen and (max-width: 800px){
+    .PerkOffice{
+        //background-color: chartreuse;
+        @include mixins.Margin-bottom(120);
+        @include mixins.background-width(98.5%);
+        display: block;
+        text-align: center;
+        margin-top: 140px;
+        }
+    .Officelogo{
+        @include mixins.Margin-bottom(120);
+        @include mixins.background-width(100%);
+        display: block;
+        text-align: center;
+        margin-top: 140px;
+    
+        &__SWORD,&__SEXCEL,&__SPROJECT,&__SSHAREPOINT,&__SPOWERBI, &__SVISIO, &__SPP
+            {
+                @include mixins.background-width(98.5%);
+                display: block;
+                //@include mixins.Margin-bottom(17);
+            }
+            &__WORD,&__EXCEL,&__PROJECT,&__SHAREPOINT,&__POWERBI, &__VISIO, &__PP
+            {
+                margin: auto;
+                margin: {
+                    top: 17px;
+                    bottom: 17px;
+            }
+        }
+            &__stats{
+                text-align: left;
+                @include mixins.background-width(98%);
+            }
+        }
+
+}

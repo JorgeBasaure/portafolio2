@@ -14,8 +14,12 @@
         //background-color: azure;
        @include mixins.adapt-navbar-links();
     }
-//AJUSTE DE RESOLUCIONES
-
-
-
+}
+@media only screen and (max-width: 800px){
+    .Navigator
+    {
+        
+        @include mixins.crear-flexbox();
+        @include mixins.Margin-bottom(120);
+    }
 }

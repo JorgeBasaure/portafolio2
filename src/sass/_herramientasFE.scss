@@ -85,6 +85,52 @@
         @include mixins.ajusteHabilidadstats();
         @include mixins.emerger-texto();
     }
-    
+}
+@media only screen and (max-width: 800px){
+    .PerkFe{
+@include mixins.Margin-bottom(120);
+@include mixins.background-width(98.5%);
+display: block;
+text-align: center;
+margin-top: 140px;
+}
+.FElogo{
+@include mixins.Margin-bottom(120);
+@include mixins.background-width(100%);
+display: block;
+text-align: center;
+margin-top: 140px;
+&__SHTML5,&__SJS,&__SPHP,&__SREACT{
+ @include mixins.background-width(100%);
+     display: block;
+     @include mixins.Margin-bottom(227);
+     
+}
+&__Styles
+{
+    &--container
+    {
+     justify-content: center;
+     @include mixins.background-width(95%);
+     display: flex;
+     margin: auto;
+    }
+    @include mixins.background-width(98.5%);
+     display: block;
+     @include mixins.Margin-bottom(227);
+}
 
+&__HTML5,&__JS,&__PHP,&__REACT{
+ margin: auto;
+ margin: {
+     top: 17px;
+     bottom: 17px;
+}
+}
+&__stats{
+ text-align: left;
+ @include mixins.background-width(98%);
+ 
+}
+}
 }

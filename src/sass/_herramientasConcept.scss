@@ -56,3 +56,40 @@
         @include mixins.emerger-texto();
     }
 }
+@media only screen and (max-width: 800px){
+    .PerkConcept{
+        //background-color: chartreuse;
+        @include mixins.Margin-bottom(120);
+        @include mixins.background-width(98.5%);
+        display: block;
+        text-align: center;
+        margin-top: 140px;
+        }
+    .Conceptlogo{
+        @include mixins.Margin-bottom(120);
+        @include mixins.background-width(100%);
+        display: block;
+        text-align: center;
+        margin-top: 140px;
+    
+        &__SBIZAGIM, &__SSTARUML, &__SSAPPD, &__SBALSAMIQ
+            {
+                @include mixins.background-width(100%);
+                display: block;
+                //@include mixins.Margin-bottom(17);
+            }
+            &__BIZAGIM, &__STARUML, &__SAPPD, &__BALSAMIQ
+            {
+                margin: auto;
+                margin: {
+                    top: 17px;
+                    bottom: 17px;
+            }
+        }
+            &__stats{
+                text-align: left;
+                @include mixins.background-width(98%);
+            }
+        }
+    
+}

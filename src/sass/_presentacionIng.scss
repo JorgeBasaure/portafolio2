@@ -69,7 +69,38 @@
       //background-color: #70db70;
    }
 }
-
+@media only screen and (max-width: 800px){
+   .profile{
+      @include mixins.Margin-bottom(120);
+      @include mixins.background-width(98.5%);
+       display: block;
+       text-align: center;
+       margin-top: 140px;
+   }
+       .profiletable{
+           @include mixins.Margin-bottom(120);
+           @include mixins.background-width(100%);
+            display: block;
+            text-align: center;
+            margin-top: 21px;
+       &__Spersonal, &__Sacademy, &__Sjob{
+           @include mixins.background-width(100%);
+           display: block;
+       }
+       &--personal, &--academy,&--job{
+           margin: auto;
+           margin: {
+               top: 17px;
+               bottom: 17px;
+           }
+       }
+       &--Pparagraph,&--Aparagraph,&--Jparagraph{
+           text-align: left;
+           @include mixins.background-width(100%);
+           display: block;
+       }
+   }
+}
    
 
   

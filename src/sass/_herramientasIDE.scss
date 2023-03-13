@@ -66,3 +66,39 @@
         @include mixins.emerger-texto();
     }
 }
+@media only screen and (max-width: 800px){
+    .PerkIDE{
+        //background-color: chartreuse;
+        @include mixins.Margin-bottom(120);
+        @include mixins.background-width(98.5%);
+        display: block;
+        text-align: center;
+        margin-top: 140px;
+        }
+    .IDElogo{
+        @include mixins.Margin-bottom(120);
+        @include mixins.background-width(100%);
+        display: block;
+        text-align: center;
+        margin-top: 140px;
+    
+        &__SVS,&__SVSC,&__SSQLMS,&__SNETBEANS,&__SNOTEPAD2PLUS
+            {
+                @include mixins.background-width(100%);
+                display: block;
+                //@include mixins.Margin-bottom(17);
+            }
+            &__VS,&__VSC,&__SQLMS,&__NETBEANS,&__NOTEPAD2PLUS
+            {
+                margin: auto;
+                margin: {
+                    top: 17px;
+                    bottom: 17px;
+            }
+        }
+            &__stats{
+                text-align: left;
+                @include mixins.background-width(98%);
+            }
+        }
+}
