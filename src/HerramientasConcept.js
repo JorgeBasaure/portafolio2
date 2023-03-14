@@ -26,7 +26,10 @@ class HerramientasConcept extends Component{
 
 
               <div className="Conceptlogo__SBIZAGIM">
-                    <div className="Conceptlogo__BIZAGIM"></div>
+                  <div className="Conceptlogo__SBIZAGIM--container">
+                        <div className="Conceptlogo__BIZAGIM"></div>
+                  </div>
+                    
 
                     <div className="Conceptlogo__stats">
                           <p className='PerkConcept__name'>{Conceptperk[0].title}</p>
@@ -38,7 +41,10 @@ class HerramientasConcept extends Component{
               </div>
               
               <div className="Conceptlogo__SSTARUML">
-                    <div className="Conceptlogo__STARUML"></div>
+                  <div className="Conceptlogo__SSTARUML--container">
+                        <div className="Conceptlogo__STARUML"></div>
+                  </div>
+                    
 
                     <div className="Conceptlogo__stats">
                           <p className='PerkConcept__name'>{Conceptperk[1].title}</p>
@@ -50,7 +56,9 @@ class HerramientasConcept extends Component{
               </div>
               
               <div className="Conceptlogo__SSAPPD">
-                    <div className="Conceptlogo__SAPPD"></div>
+                  <div className="Conceptlogo__SSAPPD--container">
+                        <div className="Conceptlogo__SAPPD"></div>
+                  </div>
 
                     <div className="Conceptlogo__stats">
                           <p className='PerkConcept__name'>{Conceptperk[2].title}</p>
@@ -62,7 +70,9 @@ class HerramientasConcept extends Component{
               </div>
               
               <div className="Conceptlogo__SBALSAMIQ">
-                    <div className="Conceptlogo__BALSAMIQ"></div>
+                  <div className="Conceptlogo__SBALSAMIQ--container">
+                        <div className="Conceptlogo__BALSAMIQ"></div>
+                  </div>
 
                     <div className="Conceptlogo__stats">
                           <p className='PerkConcept__name'>{Conceptperk[3].title}</p>

@@ -36,8 +36,8 @@
 
 
    &__Sacademy{
+
      //background-color: #9999ff;
-     
      @include mixins.crear-flexbox();
    }
    &--academy{
@@ -69,10 +69,13 @@
       //background-color: #70db70;
    }
 }
+
+
+
 @media only screen and (max-width: 800px){
    .profile{
       @include mixins.Margin-bottom(120);
-      @include mixins.background-width(98.5%);
+      @include mixins.background-width(95%);
        display: block;
        text-align: center;
        margin-top: 140px;
@@ -93,10 +96,13 @@
                top: 17px;
                bottom: 17px;
            }
+           @include mixins.background-width(50%);
+           @include mixins.background-heigth(50%);
        }
        &--Pparagraph,&--Aparagraph,&--Jparagraph{
+        @include mixins.vw-font-size(2.5vw);
            text-align: left;
-           @include mixins.background-width(100%);
+           @include mixins.background-width(97%);
            display: block;
        }
    }

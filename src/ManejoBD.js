@@ -26,7 +26,10 @@ class ManejoSQL extends Component{
               <h1 className='PerkSQL__title'>Habilidades Base de datos (Persistencia)</h1>
 
               <div className="SQLlogo__SMSQL">
-                    <div className="SQLlogo__MSQL"></div>
+                <div className="SQLlogo__SMSQL--container">
+                          <div className="SQLlogo__MSQL"></div>
+                </div>
+                    
 
                     <div className="SQLlogo__stats">
                           <p className='PerkSQL__name'>{SQLPerk[0].title}</p>

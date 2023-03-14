@@ -78,36 +78,50 @@
         content: url('../logo.svg');
         @include mixins.tamaño-logo();
     }
-
-
     &__stats{
         //ackground-color: #80ff80;
         @include mixins.ajusteHabilidadstats();
         @include mixins.emerger-texto();
     }
 }
+
+
+
 @media only screen and (max-width: 800px){
-    .PerkFe{
-@include mixins.Margin-bottom(120);
-@include mixins.background-width(98.5%);
-display: block;
-text-align: center;
-margin-top: 140px;
-}
-.FElogo{
-@include mixins.Margin-bottom(120);
-@include mixins.background-width(100%);
-display: block;
-text-align: center;
-margin-top: 140px;
-&__SHTML5,&__SJS,&__SPHP,&__SREACT{
- @include mixins.background-width(100%);
-     display: block;
-     @include mixins.Margin-bottom(227);
-     
-}
+    .PerkFe
+    {
+                    @include mixins.Margin-bottom(120);
+                    @include mixins.background-width(95%);
+                    display: block;
+                    text-align: center;
+                    margin-top: 140px;
+    }
+.FElogo
+{
+        @include mixins.Margin-bottom(120);
+        @include mixins.background-width(100%);
+        display: block;
+        text-align: center;
+        margin-top: 140px;
+    &__SHTML5,&__SJS,&__SPHP,&__SREACT
+        {
+            @include mixins.background-width(100%);
+            display: block;
+            @include mixins.Margin-bottom(227);
+            &--container{
+                justify-content: center;
+                @include mixins.background-width(95%);
+                display: flex;
+                margin: auto;
+            }
+         
+        }
+
 &__Styles
 {
+    @include mixins.background-width(98.5%);
+    display: block;
+    @include mixins.Margin-bottom(227);
     &--container
     {
      justify-content: center;
@@ -115,22 +129,63 @@ margin-top: 140px;
      display: flex;
      margin: auto;
     }
-    @include mixins.background-width(98.5%);
-     display: block;
-     @include mixins.Margin-bottom(227);
 }
 
-&__HTML5,&__JS,&__PHP,&__REACT{
+&__HTML5,&__JS,&__REACT{
+    @include mixins.background-width(26%);
+    @include mixins.background-heigth(100%);
+    border-radius: 5px;
  margin: auto;
  margin: {
      top: 17px;
      bottom: 17px;
 }
 }
+&__PHP
+{
+    @include mixins.background-width(38%);
+    @include mixins.background-heigth(100%);
+    border-radius: 5px;
+ margin: auto;
+ margin: {
+     top: 17px;
+     bottom: 17px;
+
+}
+}
+&__CSS
+{
+    @include mixins.background-width(20%);
+    @include mixins.background-heigth(100%);
+    border-radius: 5px;
+ margin: auto;
+ margin: {
+     top: 17px;
+     bottom: 17px;
+} 
+}
+&__SASS
+{
+    @include mixins.background-width(38%);
+    @include mixins.background-heigth(100%);
+    border-radius: 5px;
+ margin: auto;
+ margin: {
+     top: 17px;
+     bottom: 17px;
+} 
+}
+
+&__PLUS
+{
+    margin-top: 0px;
+    margin-left: 3px;
+    @include mixins.vw-font-size(9vw);
+}
 &__stats{
  text-align: left;
- @include mixins.background-width(98%);
- 
+ @include mixins.background-width(97%);
+ @include mixins.vw-font-size(2vw);
 }
 }
 }

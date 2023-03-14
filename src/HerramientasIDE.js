@@ -27,7 +27,10 @@ class HerramientasIDE extends Component{
             <h1 className='PerkIDE__title'>Habilidades en IDE</h1>
 
             <div className="IDElogo__SVS">
-                    <div className="IDElogo__VS"></div>
+            <div className="IDElogo__SVS--container">
+                        <div className="IDElogo__VS"></div>
+            </div>
+                    
 
                     <div className="IDElogo__stats">
                             <p className='PerkIDE__name'>{IDEperk[0].title}</p>
@@ -42,7 +45,10 @@ class HerramientasIDE extends Component{
            
 
            <div className="IDElogo__SVSC">
-                    <div className="IDElogo__VSC"></div>
+                 <div className="IDElogo__SVSC--container">
+                         <div className="IDElogo__VSC"></div>
+                </div>
+                    
 
                     <div className="IDElogo__stats">
                             <p className='PerkIDE__name'>{IDEperk[1].title}</p>
@@ -57,7 +63,10 @@ class HerramientasIDE extends Component{
           
 
             <div className="IDElogo__SSQLMS">
-                    <div className="IDElogo__SQLMS"></div>
+                <div className="IDElogo__SSQLMS--container">
+                        <div className="IDElogo__SQLMS"></div>
+                </div>
+                   
 
                     <div className="IDElogo__stats">
                             <p className='PerkIDE__name'>{IDEperk[2].title}</p>
@@ -71,7 +80,10 @@ class HerramientasIDE extends Component{
 
            
             <div className="IDElogo__SNETBEANS">
-                    <div className="IDElogo__NETBEANS"></div>
+                <div className="IDElogo__SNETBEANS--container">
+                        <div className="IDElogo__NETBEANS"></div>
+                 </div>
+                    
 
                     <div className="IDElogo__stats">
                             <p className='PerkIDE__name'>{IDEperk[3].title}</p>
@@ -86,7 +98,10 @@ class HerramientasIDE extends Component{
 
            
            <div className="IDElogo__SNOTEPAD2PLUS">
-                  <div className="IDElogo__NOTEPAD2PLUS"></div>
+                <div className="IDElogo__SNOTEPAD2PLUS--container">
+                        <div className="IDElogo__NOTEPAD2PLUS"></div>
+                </div>
+                  
 
                   <div className="IDElogo__stats">
                           <p className='PerkIDE__name'>{IDEperk[4].title}</p>

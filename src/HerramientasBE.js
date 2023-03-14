@@ -29,7 +29,10 @@ class HerramientasBE extends Component{
         
 
            <div className="BElogo__SVBNET">
-                    <div className="BElogo__VBNET"></div>
+           <div className="BElogo__SVBNET--container">
+                <div className="BElogo__VBNET"></div>
+           </div>
+                    
                     
                     <div className='BElogo__stats'>
                               <p className='PerkBe__name'>{BEperk[0].title}</p>
@@ -42,7 +45,10 @@ class HerramientasBE extends Component{
            
 
            <div className="BElogo__SJAVA">
-                  <div className="BElogo__JAVA"></div>
+           <div className="BElogo__SJAVA--container">
+                   <div className="BElogo__JAVA"></div>
+           </div>
+                  
 
                  <div  className='BElogo__stats'>
                           < p className='PerkBe__name'>{BEperk[1].title}</p>
@@ -57,7 +63,10 @@ class HerramientasBE extends Component{
 
 
             <div className="BElogo__SCSHARP">
-                    <div className="BElogo__CSHARP"></div>
+            <div className="BElogo__SCSHARP--container">
+            <div className="BElogo__CSHARP"></div>
+            </div>
+                    
 
                     <div  className='BElogo__stats'>
                             <p className='PerkBe__name'>{BEperk[2].title}</p>

@@ -42,8 +42,16 @@
         @include mixins.background-width(100%);
         display: block;
         //margin-top: 140px;
+        &--container{
+                    justify-content: center;
+                    @include mixins.background-width(95%);
+                    display: flex;
+                    margin: auto;
+                }
     }
     &__LDIN{
+               @include mixins.background-width(26%);
+                @include mixins.background-heigth(100%);
         margin: auto;
         margin: {
             top: 17px;
@@ -53,6 +61,7 @@
     &__stats{
         text-align: center;
         @include mixins.background-width(98%);
+         @include mixins.vw-font-size(2vw);
     }
     }
 

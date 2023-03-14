@@ -32,8 +32,9 @@ class HerramientasFE extends Component{
         
 
          <div  className='FElogo__SHTML5'>
-                    <div className="FElogo__HTML5"> </div>
-
+                    <div  className='FElogo__SHTML5--container'>
+                         <div className="FElogo__HTML5"> </div>
+                    </div>
                     <div className="FElogo__stats">
                           <p className='PerkFe__name'>{FEperk[0].title}</p>
 
@@ -42,8 +43,6 @@ class HerramientasFE extends Component{
                           <PortafolioFE mytext={DData[0].description_Perk}  subtitle={FEperk[0].description_Perk} /> 
                   </div>
          </div>
-         
-
         
          <div className='FElogo__Styles'>
 
@@ -63,8 +62,10 @@ class HerramientasFE extends Component{
          </div>
         
          <div className='FElogo__SJS'>
-
-                  <div className="FElogo__JS"></div>
+                <div className='FElogo__SJS--container'>
+                      <div className="FElogo__JS"></div>
+                </div>
+                  
                   <div className="FElogo__stats">
                           <p className='PerkFe__name'>{FEperk[2].title}</p>
 
@@ -75,7 +76,10 @@ class HerramientasFE extends Component{
          </div>
         
         <div  className='FElogo__SPHP'>
+            <div  className='FElogo__SPHP--container'>
             <div  className="FElogo__PHP"></div>
+            </div>
+            
             <div className="FElogo__stats">
                       <p className='PerkFe__name'>{FEperk[3].title}</p>
 
@@ -86,7 +90,10 @@ class HerramientasFE extends Component{
          </div>
         
         <div className="FElogo__SREACT">
-          <div className="FElogo__REACT"></div>
+        <div className="FElogo__SREACT--container">
+        <div className="FElogo__REACT"></div>
+        </div>
+          
                 <div className="FElogo__stats">
                       <p className='PerkFe__name'>{FEperk[4].title}</p>
         

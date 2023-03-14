@@ -26,7 +26,10 @@ class HerramientasCtrlVer extends Component{
               <h1 className='PerkCtrlVer__title'>Habilidades en control de versiones</h1>
                 
               <div className="CtrlVerlogo__SGIT">
-                     <div className="CtrlVerlogo__GIT"></div>
+                <div className="CtrlVerlogo__SGIT--container">
+                  <div className="CtrlVerlogo__GIT"></div>
+                </div>
+                    
 
                      <div className="CtrlVerlogo__stats">
                             <p  className='PerkCtrlVer__name'>{CtrlVerperk[0].title}</p>

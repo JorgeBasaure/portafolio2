@@ -17,7 +17,7 @@ class PortafolioOffice extends Component
     }
 }
 class HerramientasOffice extends Component{
-    //TODO :  Ponerle div a cada etiquieta y nombre de clase, si se puede
+    //TODO :  colocar  --container    a los logos
     render()
     {
       
@@ -26,7 +26,10 @@ class HerramientasOffice extends Component{
                 <h1 className='PerkOffice__title'>Habilidades Microsoft Office</h1>
 
                 <div className="Officelogo__SWORD">
-                        <div className="Officelogo__WORD"></div>
+                        <div className="Officelogo__SWORD--container">
+                                <div className="Officelogo__WORD"></div>
+                        </div>
+                        
 
                         <div className="Officelogo__stats">
                                   <p className='PerkOffice__name'>{Officeperk[0].title}</p>
@@ -40,7 +43,10 @@ class HerramientasOffice extends Component{
 
 
                 <div className="Officelogo__SEXCEL">
-                        <div className="Officelogo__EXCEL"></div>
+                        <div className="Officelogo__SEXCEL--container">
+                                <div className="Officelogo__EXCEL"></div>
+                        </div>
+                        
 
                         <div className="Officelogo__stats">
                                 <p className='PerkOffice__name'>{Officeperk[1].title}</p>
@@ -54,7 +60,10 @@ class HerramientasOffice extends Component{
 
 
                 <div className="Officelogo__SPROJECT">
-                        <div className="Officelogo__PROJECT"></div>
+                        <div className="Officelogo__SPROJECT--container ">
+                                <div className="Officelogo__PROJECT"></div>
+                        </div>
+                        
 
                         <div className="Officelogo__stats">
                                 <p className='PerkOffice__name'>{Officeperk[2].title}</p>
@@ -68,7 +77,10 @@ class HerramientasOffice extends Component{
 
 
                 <div className="Officelogo__SSHAREPOINT">
-                       <div className="Officelogo__SHAREPOINT"></div>
+                        <div className="Officelogo__SSHAREPOINT--container">
+                                <div className="Officelogo__SHAREPOINT"></div>
+                         </div>
+                       
 
                        <div className="Officelogo__stats">
                               <p className='PerkOffice__name'>{Officeperk[3].title}</p>
@@ -82,7 +94,10 @@ class HerramientasOffice extends Component{
 
 
                 <div className="Officelogo__SPOWERBI">
-                      <div className="Officelogo__POWERBI"></div>
+                        <div className="Officelogo__SPOWERBI--container">
+                                <div className="Officelogo__POWERBI"></div>
+                        </div>
+                      
 
                       <div className="Officelogo__stats">
                               <p className='PerkOffice__name'>{Officeperk[4].title}</p>
@@ -96,7 +111,10 @@ class HerramientasOffice extends Component{
 
 
                 <div className="Officelogo__SVISIO">
-                      <div className="Officelogo__VISIO"></div>
+                        <div className="Officelogo__SVISIO--container">
+                                <div className="Officelogo__VISIO"></div>
+                        </div>
+                      
 
                       <div className="Officelogo__stats">
                               <p className='PerkOffice__name'>{Officeperk[5].title}</p>
@@ -110,7 +128,10 @@ class HerramientasOffice extends Component{
 
 
                 <div className="Officelogo__SPP">
-                      <div className="Officelogo__PP"></div>
+                        <div className="Officelogo__SPP--container">
+                                <div className="Officelogo__PP"></div>
+                        </div>
+                      
 
                       <div className="Officelogo__stats">
                               <p className='PerkOffice__name'>{Officeperk[6].title}</p>

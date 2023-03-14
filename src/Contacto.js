@@ -41,7 +41,10 @@ class DatosContacto extends Component{
               <h1  className="ContactoDev__title">{Contacto[0].title}</h1>
 
               <div className="ContactoDevlogo__SLDIN">
-                    <div className="ContactoDevlogo__LDIN"></div>
+              <div className="ContactoDevlogo__SLDIN--container">
+              <div className="ContactoDevlogo__LDIN"></div>
+              </div>
+                   
                     
                     <div className="ContactoDevlogo__stats">
                           <ul>

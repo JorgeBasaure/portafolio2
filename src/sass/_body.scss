@@ -28,6 +28,7 @@ body
 //PARA SMARTPHONES
 //RESOLUCIÓN 1: 800px.
 //TODO: LLEGAR A UNA MINIMA RESOLUCIÓN Y NO BAJAR DE AHI.
+//TODO 2: ADAPTAR A LAS DEMAS RESOLUCIONES TANTO ANCHO COMO ALTO
 @media only screen and (max-width: 800px){
    html
    {
@@ -42,3 +43,5 @@ body
         display: block;
     }
 }   
+//Resoluciones (Ancho px): 414, 412, 384, 360, (SAMSUNG).  1024, 834,820, 810, 768,428,414,390,  375,320, (MAC).  
+//                                             384 (LG). 600 (NEXUS). 240 (NOKIA). 411. 393 (PIXEL)

@@ -77,9 +77,17 @@
                 @include mixins.background-width(100%);
                 display: block;
                 //@include mixins.Margin-bottom(17);
+                &--container{
+                    justify-content: center;
+                    @include mixins.background-width(95%);
+                    display: flex;
+                    margin: auto;
+                }
             }
             &__BIZAGIM, &__STARUML, &__SAPPD, &__BALSAMIQ
             {
+                @include mixins.background-width(26%);
+                @include mixins.background-heigth(100%);
                 margin: auto;
                 margin: {
                     top: 17px;
@@ -89,6 +97,7 @@
             &__stats{
                 text-align: left;
                 @include mixins.background-width(98%);
+                @include mixins.vw-font-size(2vw);
             }
         }
     
