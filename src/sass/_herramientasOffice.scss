@@ -107,8 +107,9 @@
         &__SWORD,&__SEXCEL,&__SPROJECT,&__SSHAREPOINT,&__SPOWERBI, &__SVISIO, &__SPP
             {
                 @include mixins.background-width(98.5%);
+                @include mixins.background-heigth(510px);
                 display: block;
-                //@include mixins.Margin-bottom(17);
+                @include mixins.Margin-bottom(0);
                 &--container{
                     justify-content: center;
                     @include mixins.background-width(95%);
@@ -120,6 +121,7 @@
             {
                 @include mixins.background-width(26%);
                 @include mixins.background-heigth(100%);
+                border-radius: 5px;
                 margin: auto;
                 margin: {
                     top: 17px;
@@ -129,7 +131,16 @@
             &__stats{
                 text-align: left;
                 @include mixins.background-width(98%);
-                @include mixins.vw-font-size(2vw);
+                @include mixins.background-heigth(50%);
+                @include mixins.vw-font-size(90%);
+                 margin: 
+                            {
+                                left: 3px;
+                                right: 0px;
+                                top: 0px;
+                                bottom: 0px;
+                             }
+                            padding-left: 0px;
             }
         }
 

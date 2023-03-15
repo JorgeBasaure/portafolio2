@@ -40,6 +40,42 @@
     display:flex;
 
 }
+//EL PRIMER MIXIN QUE HAY QUE HACER PRIMERO DE AHORA EN ADELANTE
+@mixin Margin-LT-RT-UP-DN($value1,$value2,$value3,$value4)
+{
+    margin: 
+                            {
+                                left: ($value1);
+                                right: ($value2);
+                                top: ($value3);
+                                bottom: ($value4);
+                             }
+}
+@mixin BorderWidth-LT-RT-UP-DN($value1,$value2,$value3,$value4)
+{
+    border: 
+            {
+                    left-width: ($value1);
+                    right-width: ($value2);
+                    top-width: ($value3);
+                    bottom-width: ($value4);
+            }
+}
+@mixin Padding-LT-RT-UP-DN($value1,$value2,$value3,$value4)
+{
+    padding: 
+                            {
+                                left: ($value1);
+                                right: ($value2);
+                                top: ($value3);
+                                bottom: ($value4);
+                             }
+}
+@mixin div-size-WD-HG($value1,$value2)
+{
+    width: ($value1);
+    height: ($value2);
+}
 //ENCABEZADOS
 @mixin Emerging-headers()
 {
@@ -163,7 +199,7 @@
 
 @mixin ajusteHabilidad()
 {
-    height: 200px;
+    height: 220px;
     padding: 1px;
     margin: {
         top: 10px;
@@ -194,7 +230,7 @@
         top: 10px;
         bottom: 10px;
     }
-    //padding-left: 10px;
+    padding-left: 5px;
     border: 5px;
 }
 

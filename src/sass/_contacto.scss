@@ -40,8 +40,9 @@
 
     &__SLDIN{
         @include mixins.background-width(100%);
+        @include mixins.background-heigth(510px);
         display: block;
-        //margin-top: 140px;
+        @include mixins.Margin-bottom(0);
         &--container{
                     justify-content: center;
                     @include mixins.background-width(95%);
@@ -52,6 +53,7 @@
     &__LDIN{
                @include mixins.background-width(26%);
                 @include mixins.background-heigth(100%);
+                border-radius: 5px;
         margin: auto;
         margin: {
             top: 17px;
@@ -59,9 +61,18 @@
     }
     }
     &__stats{
-        text-align: center;
+        text-align: left;
         @include mixins.background-width(98%);
-         @include mixins.vw-font-size(2vw);
+        @include mixins.background-heigth(50%);
+        @include mixins.vw-font-size(90%);
+         margin: 
+                    {
+                        left: 3px;
+                        right: 0px;
+                        top: 0px;
+                        bottom: 0px;
+                     }
+                    padding-left: 0px;
     }
     }
 
