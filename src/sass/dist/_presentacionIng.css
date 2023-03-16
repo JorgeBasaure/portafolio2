@@ -1,0 +1,225 @@
+.profile {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+.profiletable--title, .profiletable h1 {
+  height: 50px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  animation: emer-txt 1s, steps(500);
+  color: #268bd2;
+  animation: emerging-headers 3s, infinite;
+}
+@keyframes emer-txt {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes emerging-headers {
+  from {
+    color: transparent;
+  }
+  to {
+    color: #268bd2;
+  }
+}
+.profiletable__Spersonal {
+  display: flex;
+}
+.profiletable--personal {
+  content: url("../img/20230131_124854.jpg");
+  height: 300px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  animation: emerging-img 6s, cursor 0.75s step-end infinite alternate;
+}
+@keyframes emerging-img {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.profiletable--Pparagraph {
+  height: 300px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  animation: emer-txt 9s, steps(500);
+  color: #a98a34;
+}
+@keyframes emer-txt {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.profiletable__Sacademy {
+  display: flex;
+}
+.profiletable--academy {
+  content: url("../img/bellavista-7___Selected.jpg");
+  height: 200px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  animation: emerging-img 6s, cursor 0.75s step-end infinite alternate;
+}
+@keyframes emerging-img {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.profiletable--Aparagraph {
+  height: 200px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  animation: emer-txt 9s, steps(500);
+  color: #a98a34;
+}
+@keyframes emer-txt {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.profiletable__Sjob {
+  display: flex;
+}
+.profiletable--job {
+  content: url("../img/1332946447-lmb-bic-mut-10.jpg");
+  height: 240px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  animation: emerging-img 6s, cursor 0.75s step-end infinite alternate;
+}
+@keyframes emerging-img {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.profiletable--Jparagraph {
+  height: 240px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  animation: emer-txt 9s, steps(500);
+  color: #a98a34;
+}
+@keyframes emer-txt {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .profile {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 140px;
+    margin-bottom: 120px;
+    width: 95%;
+    display: block;
+    text-align: center;
+  }
+
+  .profiletable {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 21px;
+    margin-bottom: 120px;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .profiletable__Spersonal, .profiletable__Sacademy, .profiletable__Sjob {
+    width: 100%;
+    display: block;
+  }
+  .profiletable--personal, .profiletable--academy, .profiletable--job {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 50%;
+    height: 50%;
+  }
+  .profiletable--Pparagraph, .profiletable--Aparagraph, .profiletable--Jparagraph {
+    width: 97%;
+    height: 100%;
+    font-size: 2.5vw;
+    text-align: left;
+    display: block;
+  }
+}

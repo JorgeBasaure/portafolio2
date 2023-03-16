@@ -1,0 +1,276 @@
+.PerkIDE {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.PerkIDE__title {
+  color: #268bd2;
+  animation: emerging-headers 3s, infinite;
+}
+@keyframes emerging-headers {
+  from {
+    color: transparent;
+  }
+  to {
+    color: #268bd2;
+  }
+}
+
+.IDElogo__SVS {
+  display: flex;
+}
+.IDElogo__VS {
+  content: url("../img/IDE/Visual_Studio_Icon_2019.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.IDElogo__SVSC {
+  display: flex;
+}
+.IDElogo__VSC {
+  content: url("../img/IDE/vscode.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.IDElogo__SSQLMS {
+  display: flex;
+}
+.IDElogo__SQLMS {
+  content: url("../img/IDE/sql-server-icon-png-11348.png");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.IDElogo__SNETBEANS {
+  display: flex;
+}
+.IDElogo__NETBEANS {
+  content: url("../img/IDE/icons8-netbeans-512.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.IDElogo__SNOTEPAD2PLUS {
+  display: flex;
+}
+.IDElogo__NOTEPAD2PLUS {
+  content: url("../img/IDE/Notepad++_Logo.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.IDElogo__stats {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  padding-left: 5px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 1470px;
+  height: 200px;
+  animation: emer-txt 9s, steps(500);
+  color: #a98a34;
+}
+@keyframes emer-txt {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .PerkIDE {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 140px;
+    margin-bottom: 120px;
+    width: 98.5%;
+    display: block;
+    text-align: center;
+  }
+
+  .IDElogo {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 140px;
+    margin-bottom: 120px;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .IDElogo__SVS, .IDElogo__SVSC, .IDElogo__SSQLMS, .IDElogo__SNETBEANS, .IDElogo__SNOTEPAD2PLUS {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 510px;
+    display: block;
+  }
+  .IDElogo__SVS--container, .IDElogo__SVSC--container, .IDElogo__SSQLMS--container, .IDElogo__SNETBEANS--container, .IDElogo__SNOTEPAD2PLUS--container {
+    justify-content: center;
+    width: 95%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .IDElogo__VS, .IDElogo__VSC, .IDElogo__SQLMS, .IDElogo__NETBEANS, .IDElogo__NOTEPAD2PLUS {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 26%;
+    height: 100%;
+  }
+  .IDElogo__stats {
+    margin-left: 3px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 98%;
+    height: 50%;
+    font-size: 90%;
+    text-align: left;
+  }
+}

@@ -3,26 +3,26 @@
     display:flex;
 
 }
-//LOS PRIMEROS 5 MIXIN QUE HAY QUE HACER PRIMERO DE AHORA EN ADELANTE
+//LOS PRIMEROS 6 MIXIN QUE HAY QUE HACER PRIMERO DE AHORA EN ADELANTE
 @mixin Position-LT-RT-UP-DN($value1,$value2,$value3,$value4)
 {
     
-                                left: ($value1);
-                                right: ($value2);
-                                top: ($value3);
-                                bottom: ($value4);
+    left: ($value1);
+    right: ($value2);
+    top: ($value3);
+    bottom: ($value4);
     
 }
 
 @mixin Margin-LT-RT-UP-DN($value1,$value2,$value3,$value4)
 {
     margin: 
-                            {
-                                left: ($value1);
-                                right: ($value2);
-                                top: ($value3);
-                                bottom: ($value4);
-                             }
+            {
+                    left: ($value1);
+                    right: ($value2);
+                    top: ($value3);
+                    bottom: ($value4);
+            }
 }
 
 
@@ -39,30 +39,33 @@
 @mixin BorderRadius-TL-TR-BL-BR($value1,$value2,$value3,$value4)
 {
     border: 
-    {
-        top-left-radius: ($value1);
-        top-right-radius: ($value2);
-        bottom-left-radius: ($value3);
-        bottom-right-radius: ($value4);
-    }
+            {
+                    top-left-radius: ($value1);
+                    top-right-radius: ($value2);
+                    bottom-left-radius: ($value3);
+                    bottom-right-radius: ($value4);
+            }
 }
 
 @mixin Padding-LT-RT-UP-DN($value1,$value2,$value3,$value4)
 {
     padding: 
-                            {
-                                left: ($value1);
-                                right: ($value2);
-                                top: ($value3);
-                                bottom: ($value4);
-                             }
+            {
+                    left: ($value1);
+                    right: ($value2);
+                    top: ($value3);
+                    bottom: ($value4);
+            }
 }
 @mixin div-size-WD-HG($value1,$value2)
 {
     width: ($value1);
     height: ($value2);
 }
-
+@mixin DebugBackgroundColor($value)
+{
+    background-color:($value);
+}
 
 //DEPRECIADO
 @mixin Margin-top($value)

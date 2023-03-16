@@ -5,8 +5,7 @@
 
 
 .profile{
-   @include mixins.Margin-top(90);
-   @include mixins.Margin-bottom(90);
+   @include mixins.Margin-LT-RT-UP-DN(0px,0px,90px,90px);
    //background-color: aliceblue;
 }
 
@@ -73,40 +72,34 @@
 
 
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 834px){
    .profile{
-      @include mixins.Margin-bottom(120);
-      @include mixins.background-width(95%);
+
+       @include mixins.Margin-LT-RT-UP-DN(0px,0px,140px,120px);
+       @include mixins.background-width(95%);
        display: block;
        text-align: center;
-       margin-top: 140px;
    }
        .profiletable{
-           @include mixins.Margin-bottom(120);
-           @include mixins.background-width(100%);
+            @include mixins.Margin-LT-RT-UP-DN(0px,0px,21px,120px);
+            @include mixins.background-width(100%);
             display: block;
             text-align: center;
-            margin-top: 21px;
        &__Spersonal, &__Sacademy, &__Sjob{
-           @include mixins.background-width(100%);
-           display: block;
+            @include mixins.background-width(100%);
+            display: block;
        }
        &--personal, &--academy,&--job{
-         border-radius: 5px;
-           margin: auto;
-           margin: {
-               top: 17px;
-               bottom: 17px;
-           }
-           @include mixins.background-width(50%);
-           @include mixins.background-heigth(50%);
+            @include mixins.Margin-LT-RT-UP-DN(auto,auto,17px,17px);
+            @include mixins.BorderRadius-TL-TR-BL-BR(5px,5px,5px,5px);
+            @include mixins.div-size-WD-HG(50%,50%);
        }
        &--Pparagraph,&--Aparagraph,&--Jparagraph{
-        @include mixins.vw-font-size(2.5vw);
-           text-align: left;
-           @include mixins.background-width(97%);
-           display: block;
-           @include mixins.background-heigth(100%);
+
+            @include mixins.div-size-WD-HG(97%,100%);
+            @include mixins.vw-font-size(2.5vw);
+            text-align: left;
+            display: block;
        }
    }
 }

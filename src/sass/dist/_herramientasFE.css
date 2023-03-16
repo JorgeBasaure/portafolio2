@@ -1,0 +1,424 @@
+.PerkFe {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.PerkFe__title {
+  color: #268bd2;
+  animation: emerging-headers 3s, infinite;
+}
+@keyframes emerging-headers {
+  from {
+    color: transparent;
+  }
+  to {
+    color: #268bd2;
+  }
+}
+
+.FElogo__SHTML5 {
+  display: flex;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  height: 220px;
+}
+.FElogo__HTML5 {
+  content: url("../img/FE/HTML5_logo_and_wordmark.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.FElogo__Styles {
+  display: flex;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  height: 220px;
+}
+.FElogo__Styles--container {
+  display: flex;
+}
+.FElogo__CSS {
+  content: url("../img/FE/CSS3_logo_and_wordmark.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.FElogo__PLUS {
+  display: flex;
+  font-size: 50px;
+  color: #61dafb;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  animation: emergin-plus 12s, steps(500), infinite;
+}
+@keyframes emergin-plus {
+  from {
+    color: transparent;
+  }
+  to {
+    color: #61dafb;
+  }
+}
+.FElogo__SASS {
+  content: url("../img/FE/Sass_Logo_Color.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.FElogo__SJS {
+  display: flex;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  height: 220px;
+}
+.FElogo__JS {
+  content: url("../img/FE/javascript-logo-svgrepo-com.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.FElogo__SPHP {
+  display: flex;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  height: 220px;
+}
+.FElogo__PHP {
+  content: url("../img/FE/PHP-logo.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.FElogo__SREACT {
+  display: flex;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  height: 220px;
+}
+.FElogo__REACT {
+  content: url("../logo.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.FElogo__stats {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  padding-left: 5px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 1470px;
+  height: 200px;
+  animation: emer-txt 9s, steps(500);
+  color: #a98a34;
+}
+@keyframes emer-txt {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .PerkFe {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 140px;
+    margin-bottom: 120px;
+    width: 95%;
+    display: block;
+    text-align: center;
+  }
+
+  .FElogo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 140px;
+    margin-bottom: 120px;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .FElogo__SHTML5, .FElogo__SJS, .FElogo__SPHP, .FElogo__SREACT {
+    width: 100%;
+    height: 510px;
+    display: block;
+    margin: 0px;
+  }
+  .FElogo__SHTML5--container, .FElogo__SJS--container, .FElogo__SPHP--container, .FElogo__SREACT--container {
+    justify-content: center;
+    width: 95%;
+    display: flex;
+    margin: auto;
+  }
+  .FElogo__Styles {
+    width: 98.5%;
+    height: 510px;
+    margin: 0px;
+    display: block;
+  }
+  .FElogo__Styles--container {
+    justify-content: center;
+    width: 95%;
+    display: flex;
+    margin: auto;
+  }
+  .FElogo__HTML5, .FElogo__JS, .FElogo__REACT {
+    width: 26%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    border-radius: 5px;
+  }
+  .FElogo__CSS {
+    width: 20%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    border-radius: 5px;
+  }
+  .FElogo__PHP, .FElogo__SASS {
+    width: 38%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    border-radius: 5px;
+  }
+  .FElogo__PLUS {
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 12vw;
+  }
+  .FElogo__stats {
+    text-align: left;
+    margin-left: 3px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 97%;
+    height: 50%;
+    font-size: 90%;
+  }
+}

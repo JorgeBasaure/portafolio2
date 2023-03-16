@@ -29,7 +29,7 @@ body
 //RESOLUCIÓN 1: 800px.
 //TODO: LLEGAR A UNA MINIMA RESOLUCIÓN Y NO BAJAR DE AHI.
 //TODO 2: ADAPTAR A LAS DEMAS RESOLUCIONES TANTO ANCHO COMO ALTO
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 834px){
    html
    {
       @include mixins.scroll();

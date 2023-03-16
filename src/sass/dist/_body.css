@@ -1,0 +1,2241 @@
+.Navigator {
+  overflow: hidden;
+}
+.Navigator__container {
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 90%;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+}
+.Navigator__links {
+  color: aqua;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 834px) {
+  .Navigator {
+    display: flex;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 120px;
+  }
+}
+.profile {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+.profiletable--title, .profiletable h1 {
+  height: 50px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  animation: emer-txt 1s, steps(500);
+  color: #268bd2;
+  animation: emerging-headers 3s, infinite;
+}
+@keyframes emer-txt {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes emerging-headers {
+  from {
+    color: transparent;
+  }
+  to {
+    color: #268bd2;
+  }
+}
+.profiletable__Spersonal {
+  display: flex;
+}
+.profiletable--personal {
+  content: url("../img/20230131_124854.jpg");
+  height: 300px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  animation: emerging-img 6s, cursor 0.75s step-end infinite alternate;
+}
+@keyframes emerging-img {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.profiletable--Pparagraph {
+  height: 300px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  animation: emer-txt 9s, steps(500);
+  color: #a98a34;
+}
+@keyframes emer-txt {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.profiletable__Sacademy {
+  display: flex;
+}
+.profiletable--academy {
+  content: url("../img/bellavista-7___Selected.jpg");
+  height: 200px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  animation: emerging-img 6s, cursor 0.75s step-end infinite alternate;
+}
+@keyframes emerging-img {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.profiletable--Aparagraph {
+  height: 200px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  animation: emer-txt 9s, steps(500);
+  color: #a98a34;
+}
+@keyframes emer-txt {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.profiletable__Sjob {
+  display: flex;
+}
+.profiletable--job {
+  content: url("../img/1332946447-lmb-bic-mut-10.jpg");
+  height: 240px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  animation: emerging-img 6s, cursor 0.75s step-end infinite alternate;
+}
+@keyframes emerging-img {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.profiletable--Jparagraph {
+  height: 240px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  animation: emer-txt 9s, steps(500);
+  color: #a98a34;
+}
+@keyframes emer-txt {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .profile {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 140px;
+    margin-bottom: 120px;
+    width: 95%;
+    display: block;
+    text-align: center;
+  }
+
+  .profiletable {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 21px;
+    margin-bottom: 120px;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .profiletable__Spersonal, .profiletable__Sacademy, .profiletable__Sjob {
+    width: 100%;
+    display: block;
+  }
+  .profiletable--personal, .profiletable--academy, .profiletable--job {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 50%;
+    height: 50%;
+  }
+  .profiletable--Pparagraph, .profiletable--Aparagraph, .profiletable--Jparagraph {
+    width: 97%;
+    height: 100%;
+    font-size: 2.5vw;
+    text-align: left;
+    display: block;
+  }
+}
+.PerkFe {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.PerkFe__title {
+  color: #268bd2;
+  animation: emerging-headers 3s, infinite;
+}
+@keyframes emerging-headers {
+  from {
+    color: transparent;
+  }
+  to {
+    color: #268bd2;
+  }
+}
+
+.FElogo__SHTML5 {
+  display: flex;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  height: 220px;
+}
+.FElogo__HTML5 {
+  content: url("../img/FE/HTML5_logo_and_wordmark.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.FElogo__Styles {
+  display: flex;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  height: 220px;
+}
+.FElogo__Styles--container {
+  display: flex;
+}
+.FElogo__CSS {
+  content: url("../img/FE/CSS3_logo_and_wordmark.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.FElogo__PLUS {
+  display: flex;
+  font-size: 50px;
+  color: #61dafb;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  animation: emergin-plus 12s, steps(500), infinite;
+}
+@keyframes emergin-plus {
+  from {
+    color: transparent;
+  }
+  to {
+    color: #61dafb;
+  }
+}
+.FElogo__SASS {
+  content: url("../img/FE/Sass_Logo_Color.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.FElogo__SJS {
+  display: flex;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  height: 220px;
+}
+.FElogo__JS {
+  content: url("../img/FE/javascript-logo-svgrepo-com.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.FElogo__SPHP {
+  display: flex;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  height: 220px;
+}
+.FElogo__PHP {
+  content: url("../img/FE/PHP-logo.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.FElogo__SREACT {
+  display: flex;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  height: 220px;
+}
+.FElogo__REACT {
+  content: url("../logo.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.FElogo__stats {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  padding-left: 5px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 1470px;
+  height: 200px;
+  animation: emer-txt 9s, steps(500);
+  color: #a98a34;
+}
+@keyframes emer-txt {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .PerkFe {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 140px;
+    margin-bottom: 120px;
+    width: 95%;
+    display: block;
+    text-align: center;
+  }
+
+  .FElogo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 140px;
+    margin-bottom: 120px;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .FElogo__SHTML5, .FElogo__SJS, .FElogo__SPHP, .FElogo__SREACT {
+    width: 100%;
+    height: 510px;
+    display: block;
+    margin: 0px;
+  }
+  .FElogo__SHTML5--container, .FElogo__SJS--container, .FElogo__SPHP--container, .FElogo__SREACT--container {
+    justify-content: center;
+    width: 95%;
+    display: flex;
+    margin: auto;
+  }
+  .FElogo__Styles {
+    width: 98.5%;
+    height: 510px;
+    margin: 0px;
+    display: block;
+  }
+  .FElogo__Styles--container {
+    justify-content: center;
+    width: 95%;
+    display: flex;
+    margin: auto;
+  }
+  .FElogo__HTML5, .FElogo__JS, .FElogo__REACT {
+    width: 26%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    border-radius: 5px;
+  }
+  .FElogo__CSS {
+    width: 20%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    border-radius: 5px;
+  }
+  .FElogo__PHP, .FElogo__SASS {
+    width: 38%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    border-radius: 5px;
+  }
+  .FElogo__PLUS {
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 12vw;
+  }
+  .FElogo__stats {
+    text-align: left;
+    margin-left: 3px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 97%;
+    height: 50%;
+    font-size: 90%;
+  }
+}
+.PerkBe {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.PerkBe__title {
+  color: #268bd2;
+  animation: emerging-headers 3s, infinite;
+}
+@keyframes emerging-headers {
+  from {
+    color: transparent;
+  }
+  to {
+    color: #268bd2;
+  }
+}
+
+.BElogo__SVBNET {
+  display: flex;
+}
+.BElogo__VBNET {
+  content: url("../img/BE/VB.NET_Logo.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.BElogo__SJAVA {
+  display: flex;
+}
+.BElogo__JAVA {
+  content: url("../img/BE/java-logo-svgrepo-com.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.BElogo__SCSHARP {
+  display: flex;
+}
+.BElogo__CSHARP {
+  content: url(../img/BE/c--4.svg);
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.BElogo__stats {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  padding-left: 5px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 1470px;
+  height: 200px;
+  animation: emer-txt 9s, steps(500);
+  color: #a98a34;
+}
+@keyframes emer-txt {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .PerkBe {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 140px;
+    margin-bottom: 120px;
+    width: 98.5%;
+    display: block;
+    text-align: center;
+  }
+
+  .BElogo {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 140px;
+    margin-bottom: 120px;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .BElogo__SVBNET, .BElogo__SJAVA, .BElogo__SCSHARP {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 510px;
+    display: block;
+  }
+  .BElogo__SVBNET--container, .BElogo__SJAVA--container, .BElogo__SCSHARP--container {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 95%;
+    display: flex;
+  }
+  .BElogo__VBNET, .BElogo__JAVA, .BElogo__CSHARP {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 26%;
+    height: 100%;
+  }
+  .BElogo__stats {
+    margin-left: 3px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 98%;
+    height: 50%;
+    font-size: 90%;
+    text-align: left;
+  }
+}
+.PerkIDE {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.PerkIDE__title {
+  color: #268bd2;
+  animation: emerging-headers 3s, infinite;
+}
+@keyframes emerging-headers {
+  from {
+    color: transparent;
+  }
+  to {
+    color: #268bd2;
+  }
+}
+
+.IDElogo__SVS {
+  display: flex;
+}
+.IDElogo__VS {
+  content: url("../img/IDE/Visual_Studio_Icon_2019.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.IDElogo__SVSC {
+  display: flex;
+}
+.IDElogo__VSC {
+  content: url("../img/IDE/vscode.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.IDElogo__SSQLMS {
+  display: flex;
+}
+.IDElogo__SQLMS {
+  content: url("../img/IDE/sql-server-icon-png-11348.png");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.IDElogo__SNETBEANS {
+  display: flex;
+}
+.IDElogo__NETBEANS {
+  content: url("../img/IDE/icons8-netbeans-512.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.IDElogo__SNOTEPAD2PLUS {
+  display: flex;
+}
+.IDElogo__NOTEPAD2PLUS {
+  content: url("../img/IDE/Notepad++_Logo.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.IDElogo__stats {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  padding-left: 5px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 1470px;
+  height: 200px;
+  animation: emer-txt 9s, steps(500);
+  color: #a98a34;
+}
+@keyframes emer-txt {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .PerkIDE {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 140px;
+    margin-bottom: 120px;
+    width: 98.5%;
+    display: block;
+    text-align: center;
+  }
+
+  .IDElogo {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 140px;
+    margin-bottom: 120px;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .IDElogo__SVS, .IDElogo__SVSC, .IDElogo__SSQLMS, .IDElogo__SNETBEANS, .IDElogo__SNOTEPAD2PLUS {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 510px;
+    display: block;
+  }
+  .IDElogo__SVS--container, .IDElogo__SVSC--container, .IDElogo__SSQLMS--container, .IDElogo__SNETBEANS--container, .IDElogo__SNOTEPAD2PLUS--container {
+    justify-content: center;
+    width: 95%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .IDElogo__VS, .IDElogo__VSC, .IDElogo__SQLMS, .IDElogo__NETBEANS, .IDElogo__NOTEPAD2PLUS {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 26%;
+    height: 100%;
+  }
+  .IDElogo__stats {
+    margin-left: 3px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 98%;
+    height: 50%;
+    font-size: 90%;
+    text-align: left;
+  }
+}
+.PerkOffice {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.PerkOffice__title {
+  color: #268bd2;
+  animation: emerging-headers 3s, infinite;
+}
+@keyframes emerging-headers {
+  from {
+    color: transparent;
+  }
+  to {
+    color: #268bd2;
+  }
+}
+
+.Officelogo__SWORD {
+  display: flex;
+}
+.Officelogo__WORD {
+  content: url("../img/Office/Microsoft_Office_Word_2019_present.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.Officelogo__SEXCEL {
+  display: flex;
+}
+.Officelogo__EXCEL {
+  content: url("../img/Office/icons8-microsoft-excel-2019-480.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.Officelogo__SPROJECT {
+  display: flex;
+}
+.Officelogo__PROJECT {
+  content: url("../img/Office/Microsoft_Project_2019_present.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.Officelogo__SSHAREPOINT {
+  display: flex;
+}
+.Officelogo__SHAREPOINT {
+  content: url("../img/Office/icons8-microsoft-sharepoint-2019-480.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.Officelogo__SPOWERBI {
+  display: flex;
+}
+.Officelogo__POWERBI {
+  content: url("../img/Office/New_Power_BI_Logo.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.Officelogo__SVISIO {
+  display: flex;
+}
+.Officelogo__VISIO {
+  content: url("../img/Office/icons8-microsoft-visio-2019-480.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.Officelogo__SPP {
+  display: flex;
+}
+.Officelogo__PP {
+  content: url("../img/Office/icons8-microsoft-powerpoint-2019-480.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.Officelogo__stats {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  padding-left: 5px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 1470px;
+  height: 200px;
+  animation: emer-txt 9s, steps(500);
+  color: #a98a34;
+}
+@keyframes emer-txt {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .PerkOffice {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 140px;
+    margin-bottom: 120px;
+    width: 98.5%;
+    display: block;
+    text-align: center;
+  }
+
+  .Officelogo {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 140px;
+    margin-bottom: 120px;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .Officelogo__SWORD, .Officelogo__SEXCEL, .Officelogo__SPROJECT, .Officelogo__SSHAREPOINT, .Officelogo__SPOWERBI, .Officelogo__SVISIO, .Officelogo__SPP {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 510px;
+    display: block;
+  }
+  .Officelogo__SWORD--container, .Officelogo__SEXCEL--container, .Officelogo__SPROJECT--container, .Officelogo__SSHAREPOINT--container, .Officelogo__SPOWERBI--container, .Officelogo__SVISIO--container, .Officelogo__SPP--container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 95%;
+    display: flex;
+  }
+  .Officelogo__WORD, .Officelogo__EXCEL, .Officelogo__PROJECT, .Officelogo__SHAREPOINT, .Officelogo__POWERBI, .Officelogo__VISIO, .Officelogo__PP {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 26%;
+    height: 100%;
+  }
+  .Officelogo__stats {
+    margin-left: 3px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 98%;
+    height: 50%;
+    font-size: 90%;
+    text-align: left;
+  }
+}
+.PerkSQL {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.PerkSQL__title {
+  color: #268bd2;
+  animation: emerging-headers 3s, infinite;
+}
+@keyframes emerging-headers {
+  from {
+    color: transparent;
+  }
+  to {
+    color: #268bd2;
+  }
+}
+
+.SQLlogo__SMSQL {
+  display: flex;
+}
+.SQLlogo__MSQL {
+  content: url("../img/BBDD/microsoft-sql-server-logo-svgrepo-com.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.SQLlogo__stats {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  padding-left: 5px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 1470px;
+  height: 200px;
+  animation: emer-txt 9s, steps(500);
+  color: #a98a34;
+}
+@keyframes emer-txt {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .PerkSQL {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 140px;
+    margin-bottom: 120px;
+    width: 98.5%;
+    display: block;
+    text-align: center;
+  }
+
+  .SQLlogo {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 140px;
+    margin-bottom: 120px;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .SQLlogo__SMSQL {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 510px;
+    display: block;
+  }
+  .SQLlogo__SMSQL--container {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 95%;
+    display: flex;
+  }
+  .SQLlogo__MSQL {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 26%;
+    height: 100%;
+  }
+  .SQLlogo__stats {
+    margin-left: 3px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 98%;
+    height: 50%;
+    font-size: 90%;
+    text-align: left;
+  }
+}
+.PerkConcept {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.PerkConcept__title {
+  color: #268bd2;
+  animation: emerging-headers 3s, infinite;
+}
+@keyframes emerging-headers {
+  from {
+    color: transparent;
+  }
+  to {
+    color: #268bd2;
+  }
+}
+
+.Conceptlogo__SBIZAGIM {
+  display: flex;
+}
+.Conceptlogo__BIZAGIM {
+  content: url("../img/CONCEPT/modeler-logo-md.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.Conceptlogo__SSTARUML {
+  display: flex;
+}
+.Conceptlogo__STARUML {
+  content: url("../img/CONCEPT/7642181.png");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.Conceptlogo__SSAPPD {
+  display: flex;
+}
+.Conceptlogo__SAPPD {
+  content: url("../img/CONCEPT/logo-powerdesigner.png");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.Conceptlogo__SBALSAMIQ {
+  display: flex;
+}
+.Conceptlogo__BALSAMIQ {
+  content: url("../img/CONCEPT/balsamiq-logo-screen-1000x500.png");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 200px;
+  height: 100px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  animation: emerging-logo-cuadrado 3.5s steps(500), cursor 1s step-end infinite alternate;
+}
+@keyframes emerging-logo-cuadrado {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.Conceptlogo__stats {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  padding-left: 5px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 1470px;
+  height: 200px;
+  animation: emer-txt 9s, steps(500);
+  color: #a98a34;
+}
+@keyframes emer-txt {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .PerkConcept {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 140px;
+    margin-bottom: 120px;
+    width: 98.5%;
+    display: block;
+    text-align: center;
+  }
+
+  .Conceptlogo {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 140px;
+    margin-bottom: 120px;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .Conceptlogo__SBIZAGIM, .Conceptlogo__SSTARUML, .Conceptlogo__SSAPPD, .Conceptlogo__SBALSAMIQ {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 510px;
+    display: block;
+  }
+  .Conceptlogo__SBIZAGIM--container, .Conceptlogo__SSTARUML--container, .Conceptlogo__SSAPPD--container, .Conceptlogo__SBALSAMIQ--container {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 95%;
+    display: flex;
+  }
+  .Conceptlogo__BIZAGIM, .Conceptlogo__STARUML, .Conceptlogo__SAPPD, .Conceptlogo__BALSAMIQ {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 26%;
+    height: 100%;
+  }
+  .Conceptlogo__stats {
+    margin-left: 3px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 98%;
+    height: 50%;
+    font-size: 90%;
+    text-align: left;
+  }
+}
+.PerkCtrlVer {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.PerkCtrlVer__title {
+  color: #268bd2;
+  animation: emerging-headers 3s, infinite;
+}
+@keyframes emerging-headers {
+  from {
+    color: transparent;
+  }
+  to {
+    color: #268bd2;
+  }
+}
+
+.CtrlVerlogo__SGIT {
+  display: flex;
+}
+.CtrlVerlogo__GIT {
+  content: url("../img/CTRLVER/Git-logo.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.CtrlVerlogo__stats {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  padding-left: 5px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 1470px;
+  height: 200px;
+  animation: emer-txt 9s, steps(500);
+  color: #a98a34;
+}
+@keyframes emer-txt {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .PerkCtrlVer {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 140px;
+    margin-bottom: 120px;
+    width: 98.5%;
+    display: block;
+    text-align: center;
+  }
+
+  .CtrlVerlogo {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 140px;
+    margin-bottom: 120px;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .CtrlVerlogo__SGIT {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 510px;
+    display: block;
+  }
+  .CtrlVerlogo__SGIT--container {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 95%;
+    display: flex;
+  }
+  .CtrlVerlogo__GIT {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 26%;
+    height: 100%;
+  }
+  .CtrlVerlogo__stats {
+    margin-left: 3px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 98%;
+    height: 50%;
+    font-size: 90%;
+    text-align: left;
+  }
+}
+.ContactoDev {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.ContactoDev__title {
+  color: #268bd2;
+  animation: emerging-headers 3s, infinite;
+}
+@keyframes emerging-headers {
+  from {
+    color: transparent;
+  }
+  to {
+    color: #268bd2;
+  }
+}
+
+.ContactoDevlogo__SLDIN {
+  display: flex;
+}
+.ContactoDevlogo__LDIN {
+  content: url("../img/icons8-linkedin-480.svg");
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(#61dafb, rgba(255, 255, 255, 0));
+  transform: skewY(0deg);
+  animation: emerging-logo 4s, cursor 0.25s step-end infinite alternate;
+}
+@keyframes emerging-logo {
+  from {
+    opacity: 0;
+    transform: skewY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: skewY(0deg);
+  }
+}
+.ContactoDevlogo__stats {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  padding-left: 5px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 1470px;
+  height: 200px;
+  animation: emer-txt 9s, steps(500);
+  color: #a98a34;
+}
+@keyframes emer-txt {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .ContactoDev {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 140px;
+    margin-bottom: 120px;
+    width: 98.5%;
+    display: block;
+    text-align: center;
+  }
+
+  .ContactoDevlogo {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 140px;
+    margin-bottom: 120px;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .ContactoDevlogo__SLDIN {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 510px;
+    display: block;
+  }
+  .ContactoDevlogo__SLDIN--container {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 95%;
+    display: flex;
+  }
+  .ContactoDevlogo__LDIN {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 26%;
+    height: 100%;
+  }
+  .ContactoDevlogo__stats {
+    margin-left: 3px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 98%;
+    height: 50%;
+    font-size: 90%;
+    text-align: left;
+  }
+}
+html {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scroll-padding: 90px;
+}
+
+body {
+  background-image: linear-gradient(black, rgba(255, 255, 255, 0)), url("../img/space-7273891.jpg");
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  animation: emerger-fondo 0.5s;
+}
+@keyframes emerger-fondo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  html {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scroll-padding: 90px;
+  }
+
+  body {
+    background-image: linear-gradient(black, rgba(255, 255, 255, 0)), url("../img/space-7273891.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    animation: emerger-fondo 0.5s;
+    width: 100%;
+    display: block;
+  }
+  @keyframes emerger-fondo {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
