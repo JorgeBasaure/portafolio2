@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import NavResp from '../src/NavigatorResponsive'
 
 class Navegador extends Component
 {
@@ -8,7 +9,7 @@ class Navegador extends Component
      if (!this.state.show)
      {
         return(
-            <nav className='Navigator'>
+            <nav className='Navigator' id='myNavigator'>
                 <div className='Navigator__container'>
                     <a href="#sector_01" className='Navigator__links'>Presentación</a>
                     <a href="#sector_02" className='Navigator__links'>Habilidades en Front-End</a>
@@ -20,6 +21,7 @@ class Navegador extends Component
                     <a href="#sector_08" className='Navigator__links'>Habilidades en Control de versiones</a>
                     <a href="#sector_09" className='Navigator__links'>Contacto</a>
                 </div>
+                <NavResp/>
             </nav>
         )
      }

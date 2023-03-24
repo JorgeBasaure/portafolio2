@@ -6,19 +6,139 @@
     &__container
     {
         //background-color: aqua;
-         @include mixins.adapt-navbar();
+        @include mixins.adapt-navbar();
 
     }
     &__links
     {
         //background-color: azure;
-       @include mixins.adapt-navbar-links();
+        @include mixins.adapt-navbar-links();
     }
 }
+
+
+.col {
+	display: block;
+	float:right;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-of-type {
+  margin-left: 0;
+}
+
+.container{
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+/* CLEARFIX */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+/* ALL */
+
+.row .three{
+  padding: 80px 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  color: aqua;
+  text-align: center;
+}
+
+.Hamburger .line{
+            width: 50px;
+            height: 5px;
+            background-color: aqua;
+            display: block;
+            margin: 8px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+          }
+          
+        
+        /* FIVE */
+        
+        #Hamburger-1.is-active{
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            transform: rotate(90deg);
+          }
+          
+          #Hamburger-1.is-active .line:nth-child(2){
+            -webkit-transition: none;
+            -o-transition: none;
+            transition: none;
+          }
+          
+          #Hamburger-1.line:nth-child(2){
+            -webkit-transition-delay: 0.3s;
+            -o-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+          }
+          
+          
+          #Hamburger-1.is-active .line:nth-child(2){
+            opacity: 0;
+          }
+          
+          #Hamburger-1.is-active .line:nth-child(1),
+          #Hamburger-1.is-active .line:nth-child(3){
+            width: 35px;
+            -webkit-transform-origin: right;
+            -moz-transform-origin: right;
+            -ms-transform-origin: right;
+            -o-transform-origin: right;
+            transform-origin: right;
+          }
+          
+          #Hamburger-1.is-active .line:nth-child(1){
+            -webkit-transform: translateY(15px) rotate(45deg);
+            -ms-transform: translateY(15px) rotate(45deg);
+            -o-transform: translateY(15px) rotate(45deg);
+            transform: translateY(15px) rotate(45deg);
+          }
+          
+          #Hamburger-1.is-active .line:nth-child(3){
+            -webkit-transform: translateY(-15px) rotate(-45deg);
+            -ms-transform: translateY(-15px) rotate(-45deg);
+            -o-transform: translateY(-15px) rotate(-45deg);
+            transform: translateY(-15px) rotate(-45deg);
+          }
+    
+  
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 834px){
     .Navigator
     {
         @include mixins.crear-flexbox();
         @include mixins.Margin-LT-RT-UP-DN(0px,0px,0px,120px);
     }
+
 }

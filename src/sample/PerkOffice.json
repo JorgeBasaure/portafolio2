@@ -12,7 +12,7 @@
         "title" :"Excel",
         "Level_Perk" :"Principiante.",
         "Hours_perk" : "340 Horas cronológicas.",
-        "description_Perk" : "Uso básico de software para reportes con uso de fórmulas básicas y exportación a Power BI.",
+        "description_Perk" : "Uso básico de software para reportes con uso de fórmulas básicas y exportación a Power BI. Ademas de la Introducción para programación en VBA",
         "done": false
 },
 {
