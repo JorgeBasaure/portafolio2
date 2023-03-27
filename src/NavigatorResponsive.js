@@ -1,17 +1,13 @@
 import React from 'react';
-
+//TODO Referenciar  className="Hamburger__line" despues en el span
 function BurguerButton()
 {
     return(
-        <div class="row cf">
-            <div class="three col">
-                <div className="Hamburger" id="Hamburger-1">
-                    <span className="line"></span>
-                    <span className="line"></span>
-                    <span className="line"></span>
+                <div className="Hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>                
-            </div>
-        </div>
     )
 }
 export default BurguerButton
