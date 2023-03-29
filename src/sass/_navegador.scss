@@ -2,13 +2,14 @@
 
 .Navigator
 {
+
     overflow:hidden;
     &__container
     {
         //background-color: aqua;
         @include mixins.adapt-navbar();
         position: absolute;
-        @include mixins.Position-LT-RT-UP-DN(-2000px,0px,-700px,0px);
+        @include mixins.Position-LT-RT-UP-DN(0px,0px,0px,0px);
         @include mixins.Margin-LT-RT-UP-DN(auto,auto,0px,0px);
         text-align: center;
         display: block;
@@ -51,9 +52,7 @@
       display: flex;
       justify-content: right;
       @include mixins.background-width(100%);
-      @media (min-width: 834px){
 
-      }
     }
 }
 
@@ -66,7 +65,7 @@
 
   position: relative;
   cursor: pointer;
-  display: inline-block;
+  display: none;
 
   & span
   {
@@ -122,8 +121,25 @@
 @media only screen and (max-width: 834px){
     .Navigator
     {
-        @include mixins.crear-flexbox();
+        //@include mixins.crear-flexbox();
+        display: grid;
         @include mixins.Margin-LT-RT-UP-DN(0px,0px,0px,120px);
+        &__container
+        {
+          display: none;
+        }
+        &__container.open
+        {
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: center;
+          @include mixins.Margin-LT-RT-UP-DN(0px,0px,57px,0px);
+        }
+    }
+    .Hamburger
+    {
+      @include mixins.crear-flexbox();
     }
 
 }
