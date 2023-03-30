@@ -96,8 +96,8 @@
     background-image: linear-gradient(rgb(97, 218, 251),rgba(255, 255, 255, 0));
     @include Position-LT-RT-UP-DN(0,0,0,90%);
     @include BorderRadius-TL-TR-BL-BR(0px,0px,25px,25px);
-    @include Padding-LT-RT-UP-DN(30px,30px,15px,15px);
-    @include background-width(100%);
+    @include Padding-LT-RT-UP-DN(0px,0px,15px,15px);
+    @include background-width(96.8%);
     @include crear-flexbox();
 
     align-items:center;
