@@ -8,47 +8,7 @@ $limite_ancho: 1848px;
     overflow:hidden;
     &__container
     {
-        //background-color: aqua;
         @include mixins.adapt-navbar();
-        position: fixed;
-        @include mixins.Position-LT-RT-UP-DN(0px,0px,0px,0px);
-        @include mixins.Margin-LT-RT-UP-DN(auto,auto,0px,0px);
-        text-align: center;
-        display: flex;
-
-
-
-
-        &.active{
-          //background-color: aliceblue;
-          @include mixins.Position-LT-RT-UP-DN(0,0,30%,0);
-          @include mixins.Margin-LT-RT-UP-DN(auto,auto,0px,0px);
-          @include mixins.BorderWidth-LT-RT-UP-DN(0px,0px,0px,0px);
-          @include mixins.BorderRadius-TL-TR-BL-BR(0px,0px,0px,0px);
-          @include mixins.Padding-LT-RT-UP-DN(0px,0px,0px,0px);
-          @include mixins.background-width(100%);
-          @include mixins.background-heigth(0px);
-
-
-          text-align: center;
-          display: flex;
-          color: black;
-          
-        @media (max-width: $limite_ancho) {
-          display: grid;
-        }
-        }
-
-        @media (max-width: $limite_ancho) {
-          background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0));
-
-        }
-        @media (min-width: $limite_ancho){
-          //
-
-          position: fixed;
-
-      }
     }
     &__links
     {
@@ -59,18 +19,18 @@ $limite_ancho: 1848px;
 
     &__responsive
     {
-      display: flex;
-      justify-content: right;
-      @include mixins.background-width(100%);
-      //background-color: bisque
-
+    //@include mixins.adapt-resp-navbar();
+    @media (min-width: 1848px)
+      {
+        display: none;
+      }
     }
 }
 
 
 
 .Hamburger{
-//background-color: blueviolet;
+
   @include mixins.Margin-LT-RT-UP-DN(0px,4%,10px,10px);
   @include mixins.div-size-WD-HG(35px,30px);
 
@@ -80,35 +40,35 @@ $limite_ancho: 1848px;
 
   & span
   {
-    background-color: blue;
+    background-color: #0e223d;
     position: absolute;
  
     @include mixins.BorderRadius-TL-TR-BL-BR(2px,2px,2px,2px);
     transition: .3s cubic-bezier(.8, .5, .2, 1.4); //Crear mixin para esto (tal vez)
     @include mixins.div-size-WD-HG(100%,4px);
     transition-duration: 500ms
+  }
 
+  & span:nth-child(1){
 
+    top:0px;
+    left: 0px;
+  }
+
+  & span:nth-child(2){
+
+    top:13px;
+    left: 0px;
+    opacity:1;
+  }
+  & span:nth-child(3){
+
+    bottom:0px;
+    left: 0px;
   }
 //Preocupar de limpiar codigo despues
 }
 
-.Hamburger span:nth-child(1){
-
-  top:0px;
-  left: 0px;
-}
-.Hamburger span:nth-child(2){
-
-  top:13px;
-  left: 0px;
-  opacity:1;
-}
-.Hamburger span:nth-child(3){
-
-  bottom:0px;
-  left: 0px;
-}
 .Hamburger:not(.open):hover span:nth-child(1){
 
   transform: rotate(-3deg) scaleY(1.1);
@@ -144,40 +104,25 @@ $limite_ancho: 1848px;
 @media only screen and (max-width: $limite_ancho){
     .Navigator
     {
-      //background-color: brown;
-        //@include mixins.crear-flexbox();
         display: grid;
         @include mixins.Margin-LT-RT-UP-DN(0px,0px,0px,120px);
         &__container
         {
           display: none;
+         // @include mixins.adapt-resp-navbar-despl-off();
         }
         &__container.open
         {
-          //background-color: chartreuse;
-          position: fixed;
-          display: flex;
-          flex-flow: column nowrap;
-          justify-content: center;
-          align-items: center;
-          @include mixins.Margin-LT-RT-UP-DN(0px,0px,50px,0px);
-          @include mixins.background-width(100%);
+          @include mixins.adapt-resp-navbar-links();
+          @include mixins.adapt-resp-navbar-despl-on();
         }
         &__responsive{
-          background-color: aqua;
-          position: fixed;
-             @include mixins.Position-LT-RT-UP-DN(0px,0px ,0px ,0px);
-             @include mixins.Margin-LT-RT-UP-DN(0px,0px,0px,0px);
-             @include mixins.BorderWidth-LT-RT-UP-DN(0px,0px,0px,0px);
-             @include mixins.BorderRadius-TL-TR-BL-BR(0px,0px,0px,0px);
-             @include mixins.Padding-LT-RT-UP-DN(0px,0px,0px,0px);
-             @include mixins.div-size-WD-HG(100%,50px);
-             z-index: 9999;
+          @include mixins.adapt-resp-navbar();
         }
         &__links
         {
-            
-            @include mixins.vw-font-size(100%)
+            @include mixins.vw-font-size(4vw);
+            @include mixins.Margin-LT-RT-UP-DN(0px,0px,0.1em,0.1em);
         }
     }
     .Hamburger

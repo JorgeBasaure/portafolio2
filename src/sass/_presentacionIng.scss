@@ -6,7 +6,7 @@
 
 .profile{
    @include mixins.Margin-LT-RT-UP-DN(0px,0px,90px,90px);
-   //background-color: aliceblue;
+   @include mixins.Emerging-headers(); 
 }
 
 .profiletable{
@@ -95,7 +95,7 @@
             @include mixins.div-size-WD-HG(50%,50%);
        }
        &--Pparagraph,&--Aparagraph,&--Jparagraph{
-
+            @include mixins.Margin-LT-RT-UP-DN(5px,5px,2px,2px);
             @include mixins.div-size-WD-HG(97%,100%);
             @include mixins.vw-font-size(2.5vw);
             text-align: left;
