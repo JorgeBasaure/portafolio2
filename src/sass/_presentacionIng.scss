@@ -13,9 +13,9 @@
    
    &--title, h1{
         //background-color: #00ffff; //Para debug
-        @include mixins.ajusteEncabezado();
-        @include mixins.emergerEncabezado();
-        @include mixins.Emerging-headers(); 
+      @include mixins.ajusteEncabezado();
+      @include mixins.emergerEncabezado();
+      @include mixins.Emerging-headers(); 
    }
 
    &__Spersonal{
@@ -31,14 +31,14 @@
       @include mixins.ajustePersonal();
       @include mixins.emerger-texto();
       //background-color:#ff5c33 ;
-    }
+   }
 
 
 
    &__Sacademy{
 
      //background-color: #9999ff;
-     @include mixins.crear-flexbox();
+   @include mixins.crear-flexbox();
    }
    &--academy{
       content: url('../img/bellavista-7___Selected.jpg');
@@ -57,7 +57,7 @@
       @include mixins.crear-flexbox();
        //background-color: #adebad;
    }
-    &--job{
+   &--job{
       content:url('../img/1332946447-lmb-bic-mut-10.jpg');
       @include mixins.ajusteLaboral-img();
      //background-color: #33cc33;
@@ -75,44 +75,32 @@
 @media only screen and (max-width: 834px){
    .profile{
 
-       @include mixins.Margin-LT-RT-UP-DN(0px,0px,140px,120px);
-       @include mixins.background-width(95%);
-       display: block;
-       text-align: center;
+      @include mixins.Margin-LT-RT-UP-DN(0px,0px,140px,120px);
+      @include mixins.background-width(95%);
+      display: block;
+      text-align: center;
    }
-       .profiletable{
+      .profiletable{
             @include mixins.Margin-LT-RT-UP-DN(0px,0px,21px,120px);
             @include mixins.background-width(100%);
             display: block;
             text-align: center;
-       &__Spersonal, &__Sacademy, &__Sjob{
+         &__Spersonal, &__Sacademy, &__Sjob{
             @include mixins.background-width(100%);
             display: block;
-       }
-       &--personal, &--academy,&--job{
+      }
+         &--personal, &--academy,&--job{
             @include mixins.Margin-LT-RT-UP-DN(auto,auto,17px,17px);
             @include mixins.BorderRadius-TL-TR-BL-BR(5px,5px,5px,5px);
             @include mixins.div-size-WD-HG(50%,50%);
-       }
-       &--Pparagraph,&--Aparagraph,&--Jparagraph{
+      }
+         &--Pparagraph,&--Aparagraph,&--Jparagraph{
             @include mixins.Margin-LT-RT-UP-DN(5px,5px,2px,2px);
             @include mixins.div-size-WD-HG(97%,100%);
             @include mixins.vw-font-size(2.5vw);
             text-align: left;
             display: block;
-       }
+      }
    }
 }
-   
-
-  
-
-    
-   
-      
-
-
-  
-
-    
 
