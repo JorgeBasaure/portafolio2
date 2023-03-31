@@ -33,6 +33,12 @@ class NavegadorResp extends Component
                                     <span></span>
                                     <span></span>
                                     <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
                                 </div>  
                                 </div>
                         </nav>
@@ -49,6 +55,12 @@ function BurguerButton()
                 const [menu,setMenu] = useState (false)
                 const toggleMenu = () => { setMenu (!menu) }
                 <div onClick={ toggleMenu } className={`Hamburger  ${Menu ? 'open': ''}`}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                     <span></span>
                     <span></span>
                     <span></span>

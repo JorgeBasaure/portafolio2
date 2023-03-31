@@ -192,6 +192,11 @@
         to{color: #268bd2}
     }
 }
+@mixin Blur-shadow-H-V-BLUR-COLOR($value1,$value2,$value3,$value4)
+{
+    text-shadow: $value1 $value2 $value3 $value4;
+    //
+}
 // ANTECEDENTES
 @mixin ajustePersonal-img()
 {

@@ -5,6 +5,7 @@
     @include mixins.Margin-LT-RT-UP-DN(0px,0px,90px,90px);
     &__title{
         @include mixins.Emerging-headers(); 
+        @include mixins.Blur-shadow-H-V-BLUR-COLOR(0.1em,0.1em,0.5em,rgba(38,139,210,1))
     }
 }
 .Conceptlogo{
