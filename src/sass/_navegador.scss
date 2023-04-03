@@ -10,6 +10,7 @@ $limite_ancho: 1848px;
     &__container
     {
         @include mixins.adapt-navbar();
+
     }
     &__links
     {
@@ -19,10 +20,69 @@ $limite_ancho: 1848px;
         @include mixins.Blur-shadow-H-V-BLUR-COLOR(0.1em,0.1em,0.5em,rgba(2,9,17,1));
         &:hover     
         {
-         @include mixins.Blur-shadow-H-V-BLUR-COLOR(0.1em,0.1em,0.5em,rgba(8,64,93,1));
-       }
+        @include mixins.Blur-shadow-H-V-BLUR-COLOR(0.1em,0.1em,0.5em,rgba(8,64,93,1));
+      }
     }
 
+      &__button{
+        &__prev
+        {
+
+          display: none;
+
+          &.open
+          {
+            @media (min-width: 1848px)
+            {
+              display: none;
+            }
+            display: flex;
+            &:hover
+            {
+              background-color: rgba(0,0,0,0.8);
+              color: yellow;
+            }
+          }
+        }
+        &__next
+        {
+
+          display: none;
+
+          &.open
+        {
+          @media (min-width: 1848px)
+          {
+            display: none;
+          }
+
+            display: flex;
+
+            &:hover
+            {
+              background-color: rgba(0,0,0,0.8);
+              color: yellow;
+            }
+          }
+        }
+    }
+
+&__dot
+{
+  &__container
+  {
+    @media (min-width: 1848px)
+    {
+      display: none;
+    }
+  }
+}
+
+
+
+
+
+    
     &__responsive
     {
     //@include mixins.adapt-resp-navbar();
@@ -33,29 +93,67 @@ $limite_ancho: 1848px;
     }
     @media only screen and (max-width: $limite_ancho){
       display: grid;
+
       @include mixins.Margin-LT-RT-UP-DN(0px,0px,0px,120px);
       &__container
       {
-        display: none;
+      display: none;
+
        // @include mixins.adapt-resp-navbar-despl-off();
-      }
-      &__container.open
-      {
+       &.open
+       {
         @include mixins.adapt-resp-navbar-links();
         @include mixins.adapt-resp-navbar-despl-on();
+       }
       }
       &__responsive{
         @include mixins.adapt-resp-navbar();
       }
       &__links
       {
-          @include mixins.vw-font-size(4vw);
+          @include mixins.vw-font-size(1vw);
           @include mixins.Margin-LT-RT-UP-DN(0px,0px,0.1em,0.1em);
           @include mixins.Blur-shadow-H-V-BLUR-COLOR(0.1em,0.1em,0.5em,rgba(2,9,17,1));
           &:hover     
           {
            @include mixins.Blur-shadow-H-V-BLUR-COLOR(0.1em,0.1em,0.5em,rgba(8,64,93,1));
          }
+      }
+      &__dot
+      {
+
+         display: block;
+
+        &.open 
+        {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+
+
+            &:hover
+            {
+              background-color: #717171;
+            }
+          
+        }
+          &__container
+          {
+
+            &.open
+            {
+              display:flex;
+              text-align: center;
+              padding: 20px;
+              background: #ddd;
+            }
+          }
+
       }
     }
 }
