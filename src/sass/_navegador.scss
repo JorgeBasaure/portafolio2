@@ -10,7 +10,10 @@ $limite_ancho: 1848px;
     &__container
     {
         @include mixins.adapt-navbar();
-
+          &__mySlides
+          {
+            display: flex;
+          }
     }
     &__links
     {
@@ -104,6 +107,7 @@ $limite_ancho: 1848px;
        {
         @include mixins.adapt-resp-navbar-links();
         @include mixins.adapt-resp-navbar-despl-on();
+        background-color: blue;
        }
       }
       &__responsive{
@@ -147,6 +151,10 @@ $limite_ancho: 1848px;
 
             &.open
             {
+              @media (min-width: 1848px)
+              {
+                display: none;
+              }
               display:flex;
               text-align: center;
               padding: 20px;
