@@ -120,6 +120,21 @@
     @include div-size-WD-HG(99%,100%);
     position: fixed;
     display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin adapt-resp-navbar-col-links()
+{
+    background-image: linear-gradient(rgb(97, 218, 251),rgba(255, 255, 255, 0));
+    @include Position-LT-RT-UP-DN(0px,0px,0px,0px);
+    @include Margin-LT-RT-UP-DN(auto,auto,0px,0px);
+    @include BorderWidth-LT-RT-UP-DN(0px,0px,0px,0px);
+    @include BorderRadius-TL-TR-BL-BR(0px,0px,25px,25px);
+    @include Padding-LT-RT-UP-DN(0px,0px,15px,15px);
+    @include div-size-WD-HG(99%,100%);
+    position: fixed;
+    display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
