@@ -12,15 +12,17 @@ $limite_ancho: 1848px;
         @include mixins.adapt-navbar();
           &__mySlides
           {
-            @media (min-width: 1848px)
-            {
-              transform: translateX(0%);
-            }
             width: 900%;
-display: flex;
+            display: flex;
             //background-color: red;
             transition:all .5s ease;
-            transform: translateX(44.4%);
+            transform: translateX(0%);
+            @media (max-width: $limite_ancho)
+            {
+          
+              transform: translateX(44.4%);
+            }
+
           }
     }
     &__links
@@ -49,7 +51,7 @@ display: flex;
             {
               display: none;
             }
-            //display: block;
+            display: block;
             &:hover
             {
               background-color: rgba(0,0,0,0.8);
@@ -69,7 +71,7 @@ display: flex;
             display: none;
           }
           backdrop-filter: blur(1px);
-            //display: block;
+            display: block;
 
             &:hover
             {

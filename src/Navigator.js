@@ -1,17 +1,28 @@
-import React, { Component} from 'react';
+import React, { Component } from 'react';
 //Colocar el snippetcomplementario en SASS llamado " asds"
-//Grande = Navigator__container open
-//Punto = Navigator__dot open
-const containerOpen = document.querySelector('.Navigator__container__mySlides')
-const dotOpen = document.querySelectorAll(".Navigator__dot.open")
-//TODO: Mejorar esta funcion.
-dotOpen.forEach( ( cadaDotOpen,i ) => 
+
+//TODO: Hacer un evento que ponga en posición neutral a "MySlides"
+//TODO: Crear función que haga pasar pagina al modo responsivo del menu.
+
+
+
+
+class NavegadorResp extends Component
+{
+    //TODO:  Crear otra funcion que haga lo mismo, pero con botones para pasar pagina.
+    IndexDotClick = () => {
+        const containerOpen = document.querySelector('.Navigator__container__mySlides')
+        const dotOpen = document.querySelectorAll(".Navigator__dot.open")
+        if(window.innerWidth>1848) 
+        {containerOpen.style.transform = `translateX(${ 0 }%)`}
+        dotOpen.forEach( ( cadaDotOpen,i ) => 
         {
-            dotOpen[i].window.addEventListener( 'click',()=>{
+            dotOpen[i].addEventListener( 'click',()=>{
                     let calc = 11.1
                     let pos = i
                     let op = 44.4 - (calc*pos)
                     containerOpen.style.transform = `translateX(${ op }%)`
+
 
                     dotOpen.forEach( ( cadaDotOpen,i ) => {
                             dotOpen[i].classList.remove('on')
@@ -19,9 +30,18 @@ dotOpen.forEach( ( cadaDotOpen,i ) =>
                         dotOpen[i].classList.add('on')
                 })
         } )
+      };
+    mySlidesReset = () =>
+        {
+            if(window.innerWidth>1848) 
+            {this.IndexDotClick.containerOpen.style.transform = `translateX(${ 0 }%)`}
+        }
 
-class NavegadorResp extends Component
-{
+    IndexArrowClick = () =>
+    {
+
+    }
+
 
         state ={ 
                         show: false, 
@@ -37,11 +57,10 @@ class NavegadorResp extends Component
 
                 const toggleMenu = !this.state.menu
                 const Menu = this.state.menu
-                const containerOpen = document.querySelector('.Navigator__container__mySlides')
-const dotOpen = document.querySelectorAll(".Navigator__dot.open")
-        
+          console.log(this.IndexArrowClick.index)
 
                 if (!this.state.show)
+                
                     {
                         return(
                         
@@ -71,27 +90,27 @@ const dotOpen = document.querySelectorAll(".Navigator__dot.open")
                                 </div>
 
                                 <div>
-                                        <p className={  `Navigator__button__prev ${  Menu ? 'open': '' } `  } >❮</p>
+                                        <p    className={  `Navigator__button__prev ${  Menu ? 'open': '' } `  } >❮</p>
                                     </div>
-
-                                <div className='Navigator__listdot'>
-
+<p className='prueba'>1</p>
+                                <div className='Navigator__listdot' >
+                               
                                 <ul className={  `Navigator__dot__container ${  Menu ? 'open': '' } `  } >
-                                    <li  onClick={   ()=>  containerOpen.style.transform = `translateX(${ 44.4 }%)`   }  className={  `Navigator__dot ${  Menu ? 'open': '' } `  } ></li> 
-                                    <li  onClick={   ()=>  containerOpen.style.transform = `translateX(${ 33.3 }%)`   }   className={  `Navigator__dot ${  Menu ? 'open': '' } `  } ></li> 
-                                    <li  onClick={   ()=>  containerOpen.style.transform = `translateX(${ 22.2 }%)`   }   className={  `Navigator__dot ${  Menu ? 'open': '' } `  } ></li> 
-                                    <li  onClick={   ()=>  containerOpen.style.transform = `translateX(${ 11.1 }%)`   }   className={  `Navigator__dot ${  Menu ? 'open': '' } `  } ></li> 
-                                    <li  onClick={   ()=>  containerOpen.style.transform = `translateX(${ 0 }%)`   }   className={  `Navigator__dot ${  Menu ? 'open': '' } `  } ></li> 
-                                    <li  onClick={   ()=>  containerOpen.style.transform = `translateX(${ -11.1 }%)`   }   className={  `Navigator__dot ${  Menu ? 'open': '' } `  } ></li> 
-                                    <li  onClick={   ()=>  containerOpen.style.transform = `translateX(${ -22.2 }%)`   }   className={  `Navigator__dot ${  Menu ? 'open': '' } `  } ></li> 
-                                    <li  onClick={   ()=>  containerOpen.style.transform = `translateX(${ -33.3 }%)`   }   className={  `Navigator__dot ${  Menu ? 'open': '' } `  } ></li> 
-                                    <li  onClick={   ()=>  containerOpen.style.transform = `translateX(${ -44.4 }%)`   }   className={  `Navigator__dot ${  Menu ? 'open': '' } `  } ></li> 
+                                    <li  onClick={   ()=>  this.IndexDotClick()   }  className={  `Navigator__dot ${  Menu ? 'open': '' } `  } ></li> 
+                                    <li  onClick={   ()=>  this.IndexDotClick()   }  className={  `Navigator__dot ${  Menu ? 'open': '' } `  } ></li> 
+                                    <li  onClick={   ()=>  this.IndexDotClick()   }  className={  `Navigator__dot ${  Menu ? 'open': '' } `  } ></li> 
+                                    <li  onClick={   ()=>  this.IndexDotClick()   }  className={  `Navigator__dot ${  Menu ? 'open': '' } `  } ></li> 
+                                    <li  onClick={   ()=>  this.IndexDotClick()   }  className={  `Navigator__dot ${  Menu ? 'open': '' } `  } ></li> 
+                                    <li  onClick={   ()=>  this.IndexDotClick()   }  className={  `Navigator__dot ${  Menu ? 'open': '' } `  } ></li> 
+                                    <li  onClick={   ()=>  this.IndexDotClick()   }  className={  `Navigator__dot ${  Menu ? 'open': '' } `  } ></li> 
+                                    <li  onClick={   ()=>  this.IndexDotClick()   }  className={  `Navigator__dot ${  Menu ? 'open': '' } `  } ></li> 
+                                    <li  onClick={   ()=>  this.IndexDotClick()   }  className={  `Navigator__dot ${  Menu ? 'open': '' } `  } ></li> 
                                 </ul>
 
                                 </div>
 
                                 <div>
-                                        <p  className={  `Navigator__button__next ${  Menu ? 'open': '' } `  }  >❯</p>
+                                        <p     className={  `Navigator__button__next ${  Menu ? 'open': '' } `  }  >❯</p>
                                     </div>
 
                             </div>
