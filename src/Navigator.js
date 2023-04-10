@@ -1,52 +1,86 @@
 import React, { Component } from 'react';
 //Colocar el snippetcomplementario en SASS llamado " asds"
 
-//TODO: Hacer un evento que ponga en posición neutral a "MySlides"
-//TODO: Crear función que haga pasar pagina al modo responsivo del menu.
+//TODO: Hacer un evento que ponga en posición neutral a "MySlides" cuando esté fuera del modo responsivo.
+
 
 
 
 
 class NavegadorResp extends Component
 {
-    //TODO:  Crear otra funcion que haga lo mismo, pero con botones para pasar pagina.
+
+
     IndexDotClick = () => {
+
         const containerOpen = document.querySelector('.Navigator__container__mySlides')
         const dotOpen = document.querySelectorAll(".Navigator__dot.open")
-        if(window.innerWidth>1848) 
-        {containerOpen.style.transform = `translateX(${ 0 }%)`}
+        let calc = 11.1;
+        const xIndex = 44.4;
+
         dotOpen.forEach( ( cadaDotOpen,i ) => 
         {
             dotOpen[i].addEventListener( 'click',()=>{
-                    let calc = 11.1
-                    let pos = i
-                    let op = 44.4 - (calc*pos)
+                //const pos = i;
+                const op = xIndex - (calc*i);
+                   //calc*pos*index++
+
                     containerOpen.style.transform = `translateX(${ op }%)`
 
 
                     dotOpen.forEach( ( cadaDotOpen,i ) => {
                             dotOpen[i].classList.remove('on')
+                       
                         })    
                         dotOpen[i].classList.add('on')
+
                 })
         } )
+       
       };
+
     mySlidesReset = () =>
         {
-            if(window.innerWidth>1848) 
-            {this.IndexDotClick.containerOpen.style.transform = `translateX(${ 0 }%)`}
+            const containerOpen = document.querySelector('.Navigator__container__mySlides');
+            containerOpen.addEventListener( 'mouseover',()=>{
+            containerOpen.style.transform = `translateX(${ 0 }%)`
+            });
         }
 
-    IndexArrowClick = () =>
+    indexArrowClick = (n) =>
     {
+        //TODO: Poner traba de algun tipo para los botones;
+        const containerOpen = document.querySelector('.Navigator__container__mySlides')
+        const arrowOpen = document.querySelectorAll(".Navigator__links")
+        let calc = 11.1;
+        const xIndex = 44.4;
+        const op = xIndex - (calc*n);
+            if (n>arrowOpen.length)
+            {
+                n = n - 9
+            }
+            if (n<1)
+            {
+                n = n + 9
+            }
 
+            containerOpen.style.transform = `translateX(${ op }%)`
+          
+            console.log(op)
+
+
+
+        //console.log(arrowOpen.length)
+      
     }
+
 
 
         state ={ 
                         show: false, 
                         menu:false,
-
+                        index:1
+                        
                     }
                     
 
@@ -54,10 +88,21 @@ class NavegadorResp extends Component
 
         render()
             {
-
+                
                 const toggleMenu = !this.state.menu
                 const Menu = this.state.menu
-          console.log(this.IndexArrowClick.index)
+                const plus = this.state.index +1
+                const minus = this.state.index -1
+                let count = this.state.index
+                
+                if(count > 9)
+                {
+                  count = count - 9
+                }
+                if (count<1)
+                {
+                    count= count + 9
+                }
 
                 if (!this.state.show)
                 
@@ -66,7 +111,7 @@ class NavegadorResp extends Component
                         
                         <nav  className='Navigator' id='myNavigator'> 
                         
-                            <div className={  `Navigator__container ${  Menu ? 'open': '' } `  } >
+                            <div   className={  `Navigator__container ${  Menu ? 'open': '' } `  } >
 
                                 <div className='Navigator__container__mySlides'> 
                                     <a onClick={   ()=> this.setState(   { menu: toggleMenu }   )   }  href="#sector_01" className='Navigator__links'>Presentación</a>
@@ -90,9 +135,9 @@ class NavegadorResp extends Component
                                 </div>
 
                                 <div>
-                                        <p    className={  `Navigator__button__prev ${  Menu ? 'open': '' } `  } >❮</p>
+                                        <p   onClick={   ()=> this.indexArrowClick( count, this.setState ({index: minus }))   }     className={  `Navigator__button__prev ${  Menu ? 'open': '' } `  } >❮</p>
                                     </div>
-<p className='prueba'>1</p>
+<p className='prueba'>{count}</p>
                                 <div className='Navigator__listdot' >
                                
                                 <ul className={  `Navigator__dot__container ${  Menu ? 'open': '' } `  } >
@@ -110,7 +155,7 @@ class NavegadorResp extends Component
                                 </div>
 
                                 <div>
-                                        <p     className={  `Navigator__button__next ${  Menu ? 'open': '' } `  }  >❯</p>
+                                        <p  onClick={   ()=> this.indexArrowClick( count,         this.setState ({index: plus}))   }     className={  `Navigator__button__next ${  Menu ? 'open': '' } `  }  >❯</p>
                                     </div>
 
                             </div>
