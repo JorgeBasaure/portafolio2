@@ -375,5 +375,9 @@
     }
 }
 
+@mixin translateX($value1)
+{
+    transform: translateX($value1);
+}
 //TODO: DEBUGEAR EL MIXINS. LO QUE ESTÁ ARRIBA ESTÁ LISTO
 //LO QUE NO SE NECESITE, BORRARLO.

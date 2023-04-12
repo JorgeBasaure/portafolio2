@@ -9,21 +9,28 @@ import React, { Component } from 'react';
 
 class NavegadorResp extends Component
 {
-
+constructor(){
+    super()
+    this.state={
+        show: false, 
+        menu:false,
+        index:1
+    }
+}
 
     IndexDotClick = () => {
 
         const containerOpen = document.querySelector('.Navigator__container__mySlides')
         const dotOpen = document.querySelectorAll(".Navigator__dot.open")
-        let calc = 11.1;
-        const xIndex = 44.4;
+        let calc = 100/dotOpen.length;
+        const xIndex = calc *4;
 
         dotOpen.forEach( ( cadaDotOpen,i ) => 
         {
             dotOpen[i].addEventListener( 'click',()=>{
-                //const pos = i;
+
                 const op = xIndex - (calc*i);
-                   //calc*pos*index++
+
 
                     containerOpen.style.transform = `translateX(${ op }%)`
 
@@ -45,64 +52,64 @@ class NavegadorResp extends Component
             containerOpen.addEventListener( 'mouseover',()=>{
             containerOpen.style.transform = `translateX(${ 0 }%)`
             });
-        }
+        };
 
-    indexArrowClick = (n) =>
+//TODO: Arrastrar el carrousel tal cual como la versión de "DotClicks"
+
+
+    indexArrowClickPlus = () =>
     {
-        //TODO: Poner traba de algun tipo para los botones;
+        const count = this.state.index;
+        this.setState( { index : count + 1 } )
+        //this.setState( prevState => ( { index: prevState.index+ 1 } ))
+
+        let value = count + 1
         const containerOpen = document.querySelector('.Navigator__container__mySlides')
         const arrowOpen = document.querySelectorAll(".Navigator__links")
-        let calc = 11.1;
-        const xIndex = 44.4;
-        const op = xIndex - (calc*n);
-            if (n>arrowOpen.length)
-            {
-                n = n - 9
-            }
-            if (n<1)
-            {
-                n = n + 9
-            }
+      
+        if ( value > arrowOpen.length )
+        {
+            value = value - arrowOpen.length
+            this.setState( { index:count - ( arrowOpen.length - 1 ) } )
+        }
+        let calc = 100 / arrowOpen.length;
+        const xIndex = calc * 4;
+        const op = ( xIndex + calc ) + ( calc * -value )
+
+            containerOpen.style.transform = `translateX(${ op }%)` 
+         
+    };
+    indexArrowClickMinus = () =>
+    {
+        const count = this.state.index;
+        this.setState( { index : count - 1 } )
+        //this.setState( prevState => ( { index: prevState.index -1 } ))
+
+        let value = count - 1
+        let reset = 1
+        const containerOpen = document.querySelector('.Navigator__container__mySlides')
+        const arrowOpen = document.querySelectorAll(".Navigator__links")
+    
+        if ( value < reset )
+        {
+            value = value + arrowOpen.length
+            this.setState( { index:count + ( arrowOpen.length - 1 ) } )
+        }
+
+            let calc = 100 / arrowOpen.length;
+            const xIndex = calc * 4;
+            const op = ( xIndex + calc ) + ( calc * -value )
 
             containerOpen.style.transform = `translateX(${ op }%)`
-          
-            console.log(op)
 
 
-
-        //console.log(arrowOpen.length)
-      
-    }
-
-
-
-        state ={ 
-                        show: false, 
-                        menu:false,
-                        index:1
-                        
-                    }
-                    
-
-
+    };
 
         render()
             {
                 
                 const toggleMenu = !this.state.menu
                 const Menu = this.state.menu
-                const plus = this.state.index +1
-                const minus = this.state.index -1
-                let count = this.state.index
-                
-                if(count > 9)
-                {
-                  count = count - 9
-                }
-                if (count<1)
-                {
-                    count= count + 9
-                }
 
                 if (!this.state.show)
                 
@@ -117,29 +124,29 @@ class NavegadorResp extends Component
                                     <a onClick={   ()=> this.setState(   { menu: toggleMenu }   )   }  href="#sector_01" className='Navigator__links'>Presentación</a>
 
                                     <a onClick={   ()=> this.setState(   { menu: toggleMenu }   )   }  href="#sector_02" className='Navigator__links'>Habilidades en Front-End</a>
- 
+
                                     <a onClick={   ()=> this.setState(   { menu: toggleMenu }   )   }  href="#sector_03" className='Navigator__links'>Habilidades en Back-End</a>
-           
+
                                     <a onClick={   ()=> this.setState(   { menu: toggleMenu }   )   }  href="#sector_04" className='Navigator__links'>Habilidades en IDE</a>
-                 
+
                                     <a onClick={   ()=> this.setState(   { menu: toggleMenu }   )   }  href="#sector_05" className='Navigator__links'>Habilidades en Office</a>
-  
+
                                     <a onClick={   ()=> this.setState(   { menu: toggleMenu }   )   }  href="#sector_06" className='Navigator__links'>Habilidades en BB.DD.</a>
-                   
+
                                     <a onClick={   ()=> this.setState(   { menu: toggleMenu }   )   }  href="#sector_07" className='Navigator__links'>Habilidades en Conceptos</a>
-                      
+
                                     <a onClick={   ()=> this.setState(   { menu: toggleMenu }   )   }  href="#sector_08" className='Navigator__links'>Habilidades en Control de versiones</a>
-                           
+
                                     <a onClick={   ()=> this.setState(   { menu: toggleMenu }   )   }  href="#sector_09" className='Navigator__links'>Contacto</a>
 
                                 </div>
 
                                 <div>
-                                        <p   onClick={   ()=> this.indexArrowClick( count, this.setState ({index: minus }))   }     className={  `Navigator__button__prev ${  Menu ? 'open': '' } `  } >❮</p>
+                                        <p   onClick={   ( )=> this.indexArrowClickMinus( )  }     className={  `Navigator__button__prev ${  Menu ? 'open': '' } `  } >❮</p>
                                     </div>
-<p className='prueba'>{count}</p>
+<p   className='prueba'>{this.state.index}</p>
                                 <div className='Navigator__listdot' >
-                               
+                                
                                 <ul className={  `Navigator__dot__container ${  Menu ? 'open': '' } `  } >
                                     <li  onClick={   ()=>  this.IndexDotClick()   }  className={  `Navigator__dot ${  Menu ? 'open': '' } `  } ></li> 
                                     <li  onClick={   ()=>  this.IndexDotClick()   }  className={  `Navigator__dot ${  Menu ? 'open': '' } `  } ></li> 
@@ -155,7 +162,7 @@ class NavegadorResp extends Component
                                 </div>
 
                                 <div>
-                                        <p  onClick={   ()=> this.indexArrowClick( count,         this.setState ({index: plus}))   }     className={  `Navigator__button__next ${  Menu ? 'open': '' } `  }  >❯</p>
+                                        <p  onClick={   ( )=> this.indexArrowClickPlus( )   }     className={  `Navigator__button__next ${  Menu ? 'open': '' } `  }  >❯</p>
                                     </div>
 
                             </div>
@@ -205,38 +212,4 @@ function BurguerButton()
     )
 }
 export default BurguerButton
-
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
 */
-
-
-
-

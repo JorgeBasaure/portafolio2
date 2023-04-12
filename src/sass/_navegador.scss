@@ -1,5 +1,6 @@
 @use 'mixins';
 $limite_ancho: 1848px;
+$calibre: ((100%/9) * 4);
 
 //TODO: Mejorar la presentación en lo posible
 
@@ -19,8 +20,8 @@ $limite_ancho: 1848px;
             transform: translateX(0%);
             @media (max-width: $limite_ancho)
             {
-          
-              transform: translateX(44.4%);
+            
+              transform: translateX($calibre);
             }
 
           }
