@@ -11,16 +11,16 @@
 @use 'herramientasControlVersiones';
 @use 'contacto';
 
-//TODO: Encender el fondo de pantalla uns vez debugeado.
+//TODO: Limpiar codigo SASS y Hacer Snippets en JS.
 html
 {
-    @include mixins.scroll();
+    @include mixins.scroll( );
 }
 body
 {
-    background-image: linear-gradient(rgb(0, 0, 0),rgba(255, 255, 255, 0)) , url('../img/space-7273891.jpg');
-    @include mixins.crear-flexbox();
-    @include mixins.arreglar-imagen();
+    background-image: linear-gradient(rgb( 0, 0, 0 ),rgba( 255, 255, 255, 0 ) ) , url( '../img/space-7273891.jpg' );
+    @include mixins.crear-flexbox( );
+    @include mixins.arreglar-imagen( );
     overflow: hidden;
 
 }
@@ -29,18 +29,18 @@ body
 //RESOLUCIÓN 1: 800px.
 //TODO: LLEGAR A UNA MINIMA RESOLUCIÓN Y NO BAJAR DE AHI.
 //TODO 2: ADAPTAR A LAS DEMAS RESOLUCIONES TANTO ANCHO COMO ALTO
-@media only screen and (max-width: 1848px){
+@media only screen and ( max-width: 1848px ){
    html
    {
-      @include mixins.scroll();
+      @include mixins.scroll( );
       overflow-x: hidden;
    }
 
     body {
         
-        background-image: linear-gradient(rgb(0, 0, 0),rgba(255, 255, 255, 0)), url('../img/space-7273891.jpg');
-        @include mixins.arreglar-imagen();
-        @include mixins.background-width(100%);
+        background-image: linear-gradient(rgb( 0, 0, 0 ),rgba( 255, 255, 255, 0 ) ), url( '../img/space-7273891.jpg' );
+        @include mixins.arreglar-imagen( );
+        @include mixins.background-width ( 100% );
         display: block;
         overflow-x: hidden;
     }

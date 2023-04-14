@@ -41,8 +41,8 @@
         @include mixins.Margin-LT-RT-UP-DN(0px,0px,0px,0px);  
         @include mixins.div-size-WD-HG(100%,510px);
         display: block;
-         &--container
-         {
+        &--container
+        {
         justify-content: center;
         @include mixins.Margin-LT-RT-UP-DN(auto,auto,auto,auto);  
         @include mixins.background-width(95%);

@@ -117,7 +117,25 @@ constructor( )
                 if ( !stateShow )
                     {
                         return (
+
                         <nav  className='Navigator' id='myNavigator'> 
+                            <div className='Navigator__responsive'>
+
+<div onClick={   ()=> this.setState(   { menu: toggleMenu }   )   }  className={  `Hamburger ${  Menu ? 'open': '' } `  }>
+
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+</div>  
+
+</div>
 
                             <div   className={  `Navigator__container ${  Menu ? 'open': '' } `  } >
 
@@ -146,7 +164,7 @@ constructor( )
 
                                 <div>
 
-                                        <p   onClick={   ( )=> this.indexArrowClickMinus( )  }     className={  `Navigator__button__prev ${  Menu ? 'open': '' } `  } >❮</p>
+
 
                                 </div>
 
@@ -156,7 +174,18 @@ constructor( )
 
                                 <div className='Navigator__listdot'>
 
-                                    <ul className={  `Navigator__dot__container ${  Menu ? 'open': '' } `  } >
+                                <div onClick={   ( )=> this.indexArrowClickMinus( )  }     className={  `Navigator__button__prev ${  Menu ? 'open': '' } `  }>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+
+
+                                        <div className={  `Navigator__dot__container ${  Menu ? 'open': '' } `  } >
+
+
+
+                                    <ul >
 
                                         <li  onClick={   ( ) =>  this.IndexDotClick( )   }  className={  `Navigator__dot ${  Menu ? 'open': '' } `  } ></li> 
                                         <li  onClick={   ( ) =>  this.IndexDotClick( )   }  className={  `Navigator__dot ${  Menu ? 'open': '' } `  } ></li> 
@@ -169,37 +198,24 @@ constructor( )
                                         <li  onClick={   ( ) =>  this.IndexDotClick( )   }  className={  `Navigator__dot ${  Menu ? 'open': '' } `  } ></li> 
 
                                     </ul>
+                                    </div>
+                                    <div onClick={   ( )=> this.indexArrowClickPlus( )   }     className={  `Navigator__button__next ${  Menu ? 'open': '' } `  }  >
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+
 
                                 </div>
 
 
 
-                                <div>
 
-                                        <p  onClick={   ( )=> this.indexArrowClickPlus( )   }     className={  `Navigator__button__next ${  Menu ? 'open': '' } `  }  >❯</p>
-
-                                </div>
 
                             </div>
 
 
-                            <div className='Navigator__responsive'>
 
-                                <div onClick={   ()=> this.setState(   { menu: toggleMenu }   )   }  className={  `Hamburger ${  Menu ? 'open': '' } `  }>
-
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-
-                                </div>  
-
-                            </div>
 
                         </nav>
                         ) ;
