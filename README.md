@@ -4,7 +4,7 @@ Tengo 35 años. Soy recién titulado de la carrera de ingeniería en ejecución 
 
 ## Proyectos publicados:
 
--Portafolio
+-Portafolio (React)
 
 ### Contacto
 
