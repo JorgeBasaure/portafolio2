@@ -4,7 +4,7 @@ $calibre: ((100%/9) * 4);
 
 //TODO: Mejorar la presentación en lo posible
 ul{
-  padding-left: 0px;
+  @include mixins.Padding-LT-RT-UP-DN(0px,0px,0px,0px);
   @include mixins.Margin-LT-RT-UP-DN(0px,0px,0px,0px);
 
 }
@@ -67,7 +67,7 @@ ul{
               //@include mixins.crear-flexbox();
               display: inline-block;
             }
-            
+
             & span
             {
              
@@ -260,10 +260,11 @@ ul{
 {
   &__container
   {
-    @media (min-width: 1848px)
+    @media (min-width: $limite_ancho)
     {
       display: none;
     }
+
     @include mixins.Margin-LT-RT-UP-DN(0px,0px,0px,0px);
     width: 171px;
   }
@@ -306,7 +307,7 @@ ul{
       }
       &__links
       {
-          @include mixins.vw-font-size(4vw);
+          @include mixins.vw-font-size(7vw);
           @include mixins.Margin-LT-RT-UP-DN(0px,0px,0.1em,0.1em);
           @include mixins.Blur-shadow-H-V-BLUR-COLOR(0.1em,0.1em,0.5em,rgba(2,9,17,1));
           &:hover     
@@ -342,12 +343,13 @@ ul{
 
             &.open
             {
-              @media (min-width: 1848px)
+
+              @media  (max-width: 414px)
               {
+                //@include mixins.crear-flexbox();
                 display: none;
               }
-
-              display:flex;
+              display:none;
               align-items: center;
               text-align: center;
               padding: 0px;
