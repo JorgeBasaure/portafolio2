@@ -14,5 +14,5 @@ Tengo 35 años. Soy recién titulado de la carrera de ingeniería en ejecución 
 
     Correo electrónico: jorge.basaure.p@gmail.com
 
-    GIT-HUB: 
+    GIT-HUB: https://github.com/JorgeBasaure/portafolio2
 
