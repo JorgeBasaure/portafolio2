@@ -4,109 +4,130 @@
 
 
 
-.profile{
-   @include mixins.Margin-LT-RT-UP-DN(0px,0px,90px,90px);
+.profile
+{
+        @include mixins.Margin-LT-RT-UP-DN( 0px , 0px , 90px , 90px );
 
-   h1
-   {
-      @include mixins.Emerging-headers(); 
-      @include mixins.Blur-shadow-H-V-BLUR-COLOR(0.1em,0.1em,0.5em,rgba(38,139,210,1))
-   }
+        h1
+        {
+                @include mixins.Emerging-headers( ); 
+                @include mixins.Blur-shadow-H-V-BLUR-COLOR( 0.1em , 0.1em , 0.5em , rgba( 38 , 139 , 210 , 1 ) ) ;
+        }
 }
 
-.profiletable{
-   
-   &--title, h1{
-        //background-color: #00ffff; //Para debug
-      @include mixins.ajusteEncabezado();
-      @include mixins.emergerEncabezado();
-      @include mixins.Emerging-headers(); 
-      @include mixins.Blur-shadow-H-V-BLUR-COLOR(0.1em,0.1em,0.5em,rgba(38,139,210,1))
-   }
+.profiletable
+{
 
-   &__Spersonal{
-      //background-color: #ffd6cc;
-      @include mixins.crear-flexbox();
-   }
-   &--personal{
-      content: url('../img/20230131_124854.jpg');
-      @include mixins.ajustePersonal-img();
-      //background-color:#ff3300;
-   }
-   &--Pparagraph{
-      @include mixins.ajustePersonal();
-      @include mixins.emerger-texto();
-      //background-color:#ff5c33 ;
-   }
+        &--title, h1
+        {
+                //background-color: #00ffff ; //Para debug
+                @include mixins.ajusteEncabezado( ) ;
+                @include mixins.emergerEncabezado( ) ;
+                @include mixins.Emerging-headers( ) ; 
+                @include mixins.Blur-shadow-H-V-BLUR-COLOR( 0.1em , 0.1em , 0.5em , rgba( 38 , 139 , 210 , 1 ) ) ;
+        }
 
+        &__Spersonal
+        {
+                //background-color: #ffd6cc ;
+                @include mixins.crear-flexbox( ) ;
+        }
 
+        &--personal
+        {
+                content: url( '../img/20230131_124854.jpg' ) ;
+                @include mixins.ajustePersonal-img( ) ;
+                //background-color:#ff3300 ;
+        }
 
-   &__Sacademy{
+        &--Pparagraph
+        {
+                @include mixins.ajustePersonal( ) ;
+                @include mixins.emerger-texto( ) ;
+                //background-color:#ff5c33 ;
+        }
 
-     //background-color: #9999ff;
-   @include mixins.crear-flexbox();
-   }
-   &--academy{
-      content: url('../img/bellavista-7___Selected.jpg');
-      @include mixins.ajusteAcademico-img();
-      //background-color:  #3333ff;
-   }
-   &--Aparagraph{
-      @include mixins.ajusteAcademico();
-      @include mixins.emerger-texto();
-      //background-color: #6666ff;
-   }
+        &__Sacademy
+        {
+                //background-color: #9999ff ;
+                @include mixins.crear-flexbox( ) ;
+        }
 
+        &--academy
+        {
+                content: url( '../img/bellavista-7___Selected.jpg' ) ;
+                @include mixins.ajusteAcademico-img( ) ;
+                //background-color:  #3333ff ;
+        }
 
+        &--Aparagraph
+        {
+                @include mixins.ajusteAcademico( ) ;
+                @include mixins.emerger-texto( ) ;
+                //background-color: #6666ff ;
+        }
 
-   &__Sjob{
-      @include mixins.crear-flexbox();
-       //background-color: #adebad;
-   }
-   &--job{
-      content:url('../img/1332946447-lmb-bic-mut-10.jpg');
-      @include mixins.ajusteLaboral-img();
-     //background-color: #33cc33;
+        &__Sjob
+        {
+                @include mixins.crear-flexbox( ) ;
+                //background-color: #adebad ;
+        }
 
-   }
-   &--Jparagraph{
-      @include mixins.ajusteLaboral();
-      @include mixins.emerger-texto();
-      //background-color: #70db70;
-   }
+        &--job
+        {
+                content:url( '../img/1332946447-lmb-bic-mut-10.jpg' ) ;
+                @include mixins.ajusteLaboral-img( ) ;
+                //background-color: #33cc33 ;
+        }
+
+        &--Jparagraph
+        {
+                @include mixins.ajusteLaboral( ) ;
+                @include mixins.emerger-texto( ) ;
+                //background-color: #70db70 ;
+        }
 }
 
 
 
-@media only screen and (max-width: 834px){
-   .profile{
+@media only screen and ( max-width : 834px )
+{
+        .profile
+        {
+                @include mixins.Margin-LT-RT-UP-DN( 0px , 0px , 140px , 120px ) ;
+                @include mixins.background-width( 95% ) ;
+                display : block ;
+                text-align : center ;
+        }
 
-      @include mixins.Margin-LT-RT-UP-DN(0px,0px,140px,120px);
-      @include mixins.background-width(95%);
-      display: block;
-      text-align: center;
-   }
-      .profiletable{
-            @include mixins.Margin-LT-RT-UP-DN(0px,0px,21px,120px);
-            @include mixins.background-width(100%);
-            display: block;
-            text-align: center;
-         &__Spersonal, &__Sacademy, &__Sjob{
-            @include mixins.background-width(100%);
-            display: block;
-      }
-         &--personal, &--academy,&--job{
-            @include mixins.Margin-LT-RT-UP-DN(auto,auto,17px,17px);
-            @include mixins.BorderRadius-TL-TR-BL-BR(5px,5px,5px,5px);
-            @include mixins.div-size-WD-HG(50%,50%);
-      }
-         &--Pparagraph,&--Aparagraph,&--Jparagraph{
-            @include mixins.Margin-LT-RT-UP-DN(5px,5px,2px,2px);
-            @include mixins.div-size-WD-HG(97%,100%);
-            @include mixins.vw-font-size(2.5vw);
-            text-align: left;
-            display: block;
-      }
-   }
+        .profiletable
+        {
+                @include mixins.Margin-LT-RT-UP-DN( 0px , 0px , 21px , 120px ) ;
+                @include mixins.background-width( 100% ) ;
+                display : block ;
+                text-align : center ;
+
+                &__Spersonal, &__Sacademy, &__Sjob
+                {
+                        @include mixins.background-width( 100% ) ;
+                        display : block;
+                }
+
+                &--personal, &--academy,&--job
+                {
+                        @include mixins.Margin-LT-RT-UP-DN( auto , auto , 17px , 17px ) ;
+                        @include mixins.BorderRadius-TL-TR-BL-BR( 5px , 5px , 5px , 5px ) ;
+                        @include mixins.div-size-WD-HG( 50% , 50% ) ;
+                }
+
+                &--Pparagraph,&--Aparagraph,&--Jparagraph
+                {
+                        @include mixins.Margin-LT-RT-UP-DN( 5px , 5px , 2px , 2px ) ;
+                        @include mixins.div-size-WD-HG( 97% , 100% ) ;
+                        @include mixins.vw-font-size( 2.5vw ) ;
+                        text-align : left ;
+                        display : block ;
+                }
+        }
 }
 

@@ -1,49 +1,53 @@
-@use 'mixins';
+@use 'mixins' ;
 
-@use 'navegador';
-@use 'presentacionIng';
-@use 'herramientasFE';
-@use 'herramientasBE';
-@use 'herramientasIDE';
-@use 'herramientasOffice';
-@use 'manejoBD';
-@use 'herramientasConcept';
-@use 'herramientasControlVersiones';
-@use 'contacto';
+@use 'navegador' ;
+@use 'presentacionIng' ;
+@use 'herramientasFE' ;
+@use 'herramientasBE' ;
+@use 'herramientasIDE' ;
+@use 'herramientasOffice' ;
+@use 'manejoBD' ;
+@use 'herramientasConcept' ;
+@use 'herramientasControlVersiones' ;
+@use 'contacto' ;
 
 //TODO: Limpiar codigo SASS y Hacer Snippets en JS.
 html
 {
-    @include mixins.scroll( );
+        @include mixins.scroll( ) ;
 }
+
 body
 {
-    background-image: linear-gradient(rgb( 0, 0, 0 ),rgba( 255, 255, 255, 0 ) ) , url( '../img/space-7273891.jpg' );
-    @include mixins.crear-flexbox( );
-    @include mixins.arreglar-imagen( );
-    overflow: hidden;
 
+        background-image: linear-gradient( rgb( 0, 0, 0 ) , rgba( 255, 255, 255, 0 ) ) , url( '../img/space-7273891.jpg' ) ;
+        @include mixins.crear-flexbox( ) ;
+        @include mixins.arreglar-imagen( ) ;
+        overflow : hidden ;
 }
 
 //PARA SMARTPHONES
 //RESOLUCIÓN 1: 800px.
 //TODO: LLEGAR A UNA MINIMA RESOLUCIÓN Y NO BAJAR DE AHI.
 //TODO 2: ADAPTAR A LAS DEMAS RESOLUCIONES TANTO ANCHO COMO ALTO
-@media only screen and ( max-width: 1848px ){
-   html
-   {
-      @include mixins.scroll( );
-      overflow-x: hidden;
-   }
+@media only screen and ( max-width : 1848px ) 
+{
+        html
+        {
 
-    body {
+                @include mixins.scroll( ) ;
+                overflow-x: hidden ;
+        }
+
+        body 
+        {
         
-        background-image: linear-gradient(rgb( 0, 0, 0 ),rgba( 255, 255, 255, 0 ) ), url( '../img/space-7273891.jpg' );
-        @include mixins.arreglar-imagen( );
-        @include mixins.background-width ( 100% );
-        display: block;
-        overflow-x: hidden;
-    }
+                background-image: linear-gradient( rgb( 0, 0, 0 ) , rgba( 255, 255, 255, 0 ) ) , url( '../img/space-7273891.jpg' ) ;
+                @include mixins.arreglar-imagen( ) ;
+                @include mixins.background-width ( 100% ) ;
+                display : block ;
+                overflow-x : hidden ;
+        }
 }   
 //Resoluciones (Ancho px): 414, 412, 384, 360, (SAMSUNG).  1024, 834,820, 810, 768,428,414,390,  375,320, (MAC).  
 //                                             384 (LG). 600 (NEXUS). 240 (NOKIA). 411. 393 (PIXEL)

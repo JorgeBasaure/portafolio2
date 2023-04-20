@@ -2,176 +2,230 @@
 
 .PerkFe
 {
-    //background-color: aliceblue;
-    @include mixins.Margin-LT-RT-UP-DN(0px,0px,90px,90px);
-    &__title{
-        @include mixins.Emerging-headers(); 
-        @include mixins.Blur-shadow-H-V-BLUR-COLOR(0.1em,0.1em,0.5em,rgba(38,139,210,1))
-    }
-}
 
-.FElogo{
+        //background-color : aliceblue ;
+        @include mixins.Margin-LT-RT-UP-DN( 0px , 0px , 90px , 90px ) ;
 
-    
-    &__SHTML5{
-        //background-color: #ff8080;  // Para debug
-        @include mixins.crear-flexbox();
-        @include mixins.ajusteHabilidad();
-    }
-    &__HTML5{
-        content: url('../img/FE/HTML5_logo_and_wordmark.svg');
-        @include mixins.tamaño-logo();
-        //background-color: #ff0000;
-    }
-
-
-    &__Styles{
-        //background-color: #ffff00;
-        @include mixins.crear-flexbox();
-        @include mixins.ajusteHabilidad();
-        &--container
-        {
-            //background-color: blue;
-            @include mixins.crear-flexbox();
-        }
-    }
-    &__CSS{
-        content: url('../img/FE/CSS3_logo_and_wordmark.svg');
-        @include mixins.tamaño-logo();
-    }
-    &__PLUS{
-        //background-color: #ffffff;
-        @include mixins.crear-flexbox();
-        @include mixins.ajustePlus();
-        & p
+        &__title
         {
 
-        
-        @include mixins.Blur-shadow-H-V-BLUR-COLOR(0.1em,0.1em,0.5em,rgba(38,139,210,1))
+                @include mixins.Emerging-headers( ) ; 
+                @include mixins.Blur-shadow-H-V-BLUR-COLOR( 0.1em , 0.1em , 0.5em , rgba( 38 , 139 , 210 , 1 ) ) ;
         }
-    }
-    &__SASS{
-        content: url('../img/FE/Sass_Logo_Color.svg');
-        @include mixins.tamaño-logo();
-    }
-   
-
-    &__SJS{
-        //background-color: #00ff40;
-        @include mixins.crear-flexbox();
-        @include mixins.ajusteHabilidad();
-    }
-    &__JS{
-        content: url('../img/FE/javascript-logo-svgrepo-com.svg');
-        @include mixins.tamaño-logo();
-    }
-
-
-    &__SPHP{
-        //background-color: #ff80c0;
-        @include mixins.crear-flexbox();
-        @include mixins.ajusteHabilidad();
-    }
-    &__PHP{
-        content:url('../img/FE/PHP-logo.svg');
-        @include mixins.tamaño-logo();
-    }
-
-    &__SREACT{
-        //background-color: #ff00ff;
-        @include mixins.crear-flexbox();
-        @include mixins.ajusteHabilidad();
-    }
-    &__REACT{
-        content: url('../logo.svg');
-        @include mixins.tamaño-logo();
-    }
-    &__stats{
-        //background-color: #80ff80;
-        @include mixins.ajusteHabilidadstats();
-        @include mixins.emerger-texto();
-    }
 }
 
-
-
-@media only screen and (max-width: 834px){
-    .PerkFe
-    {
-                    @include mixins.Margin-LT-RT-UP-DN(0px,0px,140px,120px);
-                    @include mixins.background-width(95%);
-                    display: block;
-                    text-align: center;
-    }
 .FElogo
 {
-        @include mixins.Margin-LT-RT-UP-DN(auto,auto,140px,120px);
-        @include mixins.background-width(100%);
-        display: block;
-        text-align: center;
-    &__SHTML5,&__SJS,&__SPHP,&__SREACT
+
+        &__SHTML5
         {
-           @include mixins.div-size-WD-HG(100%,510px);
-            display: block;
-            margin: 0px;
-            &--container{
-                justify-content: center;
-                @include mixins.background-width(95%);
-                display: flex;
-                margin: auto;
-            }
-         
+
+                //background-color : #ff8080 ;  // Para debug
+                @include mixins.crear-flexbox( ) ;
+                @include mixins.ajusteHabilidad( ) ;
         }
 
-&__Styles
-{
-    @include mixins.div-size-WD-HG(98.5%,510px);
-    margin: 0px;
-    display: block;
-    &--container
-    {
-     justify-content: center;
-     @include mixins.background-width(95%);
-     display: flex;
-     margin: auto;
-    }
+        &__HTML5
+        {
+
+                //background-color : #ff0000 ;
+                content : url( '../img/FE/HTML5_logo_and_wordmark.svg' ) ; 
+                @include mixins.tamaño-logo( ) ;
+        }
+
+        &__Styles
+        {
+
+                //background-color : #ffff00 ;
+                @include mixins.crear-flexbox( ) ;
+                @include mixins.ajusteHabilidad( ) ;
+
+                &--container
+                {
+
+                        //background-color : blue ;
+                        @include mixins.crear-flexbox( ) ;
+                }
+        }
+
+        &__CSS
+        {
+
+                content : url( '../img/FE/CSS3_logo_and_wordmark.svg' ) ;
+                @include mixins.tamaño-logo( ) ;
+        }
+
+        &__PLUS
+        {
+
+                //background-color : #ffffff ;
+                @include mixins.crear-flexbox( ) ;
+                @include mixins.ajustePlus( ) ;
+
+                & p  //Para el " + "
+                {
+
+                        @include mixins.Blur-shadow-H-V-BLUR-COLOR( 0.1em , 0.1em , 0.5em , rgba( 38 , 139 , 210  ,1 ) ) ;
+                }
+        }
+
+        &__SASS
+        {
+
+                content : url( '../img/FE/Sass_Logo_Color.svg' ) ;
+                @include mixins.tamaño-logo( ) ;
+        }
+
+        &__SJS
+        {
+
+                //background-color : #00ff40 ;
+                @include mixins.crear-flexbox( ) ;
+                @include mixins.ajusteHabilidad( ) ;
+        }
+
+        &__JS
+        {
+
+                content : url( '../img/FE/javascript-logo-svgrepo-com.svg' ) ;
+                @include mixins.tamaño-logo( ) ;
+        }
+
+        &__SPHP
+        {
+
+                //background-color : #ff80c0 ;
+                @include mixins.crear-flexbox( ) ;
+                @include mixins.ajusteHabilidad( ) ;
+        }
+
+        &__PHP
+        {
+
+                content : url( '../img/FE/PHP-logo.svg' ) ;
+                @include mixins.tamaño-logo( ) ;
+        }
+
+        &__SREACT
+        {
+
+                //background-color : #ff00ff ;
+                @include mixins.crear-flexbox( ) ;
+                @include mixins.ajusteHabilidad( ) ;
+        }
+
+        &__REACT
+        {
+
+                content: url( '../logo.svg' ) ;
+                @include mixins.tamaño-logo( ) ;
+        }
+
+        &__stats
+        {
+
+                //background-color : #80ff80 ;
+                @include mixins.ajusteHabilidadstats( ) ;
+                @include mixins.emerger-texto( ) ;
+        }
 }
 
-&__HTML5,&__JS,&__REACT
-{
-    @include mixins.div-size-WD-HG(26%,100%);
-    @include mixins.Margin-LT-RT-UP-DN(auto,auto,17px,17px);
-    border-radius: 5px;
-}
 
-&__CSS
-{
-    @include mixins.div-size-WD-HG(20%,100%);
-    @include mixins.Margin-LT-RT-UP-DN(auto,auto,17px,17px);
-    border-radius: 5px;
-}
 
-&__PHP,&__SASS
+@media only screen and ( max-width : 834px )
 {
-    @include mixins.div-size-WD-HG(38%,100%);
-    @include mixins.Margin-LT-RT-UP-DN(auto,auto,17px,17px);
-    border-radius: 5px;
-}
 
-&__PLUS
-{
-    @include mixins.Margin-LT-RT-UP-DN(3px,3px,0px,0px);
-    @include mixins.vw-font-size(12vw);
-}
+        .PerkFe
+        {
 
-&__stats
-{
- text-align: left;
- @include mixins.Margin-LT-RT-UP-DN(3px,0px,0px,0px);
- @include mixins.BorderWidth-LT-RT-UP-DN(0px,0px,0px,0px);
- @include mixins.Padding-LT-RT-UP-DN(0px,0px,0px,0px);
- @include mixins.div-size-WD-HG(97%,50%);
- @include mixins.vw-font-size(90%);
-}
-}
+                @include mixins.Margin-LT-RT-UP-DN( 0px , 0px , 140px , 120px ) ;
+                @include mixins.background-width( 95% ) ;
+                display : block ;
+                text-align : center ;
+        }
+
+        .FElogo
+        {
+
+                @include mixins.Margin-LT-RT-UP-DN( auto , auto , 140px , 120px ) ;
+                @include mixins.background-width( 100% ) ;
+                display : block ;
+                text-align : center ;
+
+                &__SHTML5 , &__SJS , &__SPHP , &__SREACT
+                {
+
+                        @include mixins.div-size-WD-HG( 100% , 510px ) ;
+                        display : block ;
+                        margin : 0px ;
+
+                        &--container
+                        {
+
+                                justify-content : center ;
+                                @include mixins.background-width( 95% ) ;
+                                display: flex ;
+                                margin: auto ;
+                        }
+                }
+
+                &__Styles
+                {
+
+                        @include mixins.div-size-WD-HG( 98.5% , 510px ) ;
+                        margin : 0px ;
+                        display : block ;
+
+                        &--container
+                        {
+
+                                justify-content : center ;
+                                @include mixins.background-width( 95% ) ;
+                                display : flex ;
+                                margin : auto ;
+                        }
+                }
+
+                &__HTML5 , &__JS , &__REACT
+                {
+
+                        @include mixins.div-size-WD-HG( 26% , 100% ) ;
+                        @include mixins.Margin-LT-RT-UP-DN( auto , auto , 17px , 17px ) ;
+                        border-radius : 5px ;
+                }
+
+                &__CSS
+                {
+
+                        @include mixins.div-size-WD-HG( 20% , 100% );
+                        @include mixins.Margin-LT-RT-UP-DN( auto , auto , 17px , 17px ) ;
+                        border-radius : 5px ;
+                }
+
+                &__PHP , &__SASS
+                {
+
+                        @include mixins.div-size-WD-HG( 38% , 100% ) ;
+                        @include mixins.Margin-LT-RT-UP-DN( auto , auto , 17px , 17px ) ;
+                        border-radius : 5px ;
+                }
+
+                &__PLUS
+                {
+
+                        @include mixins.Margin-LT-RT-UP-DN( 3px , 3px , 0px , 0px ) ;
+                        @include mixins.vw-font-size( 12vw ) ;
+                }
+
+                &__stats
+                {
+
+                        text-align : left ;
+                        @include mixins.Margin-LT-RT-UP-DN( 3px , 0px , 0px , 0px ) ;
+                        @include mixins.BorderWidth-LT-RT-UP-DN( 0px , 0px , 0px , 0px ) ;
+                        @include mixins.Padding-LT-RT-UP-DN( 0px , 0px , 0px , 0px ) ;
+                        @include mixins.div-size-WD-HG( 97% , 50% ) ;
+                        @include mixins.vw-font-size( 90% ) ;
+                }
+        }       
 }

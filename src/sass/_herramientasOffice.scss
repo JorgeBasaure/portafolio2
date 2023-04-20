@@ -2,135 +2,161 @@
 
 .PerkOffice
 {
-    @include mixins.Margin-LT-RT-UP-DN(0px,0px,90px,90px);
-    &__title{
-        @include mixins.Emerging-headers(); 
-        @include mixins.Blur-shadow-H-V-BLUR-COLOR(0.1em,0.1em,0.5em,rgba(38,139,210,1))
-    }
-}
+        @include mixins.Margin-LT-RT-UP-DN( 0px , 0px , 90px , 90px ) ;
 
-
-.Officelogo{
-
-
-    &__SWORD{
-        //background-color: #ffff80;
-        @include mixins.crear-flexbox();
-    }
-    &__WORD{
-        content: url('../img/Office/Microsoft_Office_Word_2019_present.svg');
-        @include mixins.tamaño-logo();
-    }
-
-
-    &__SEXCEL{
-        //background-color: #80ffff;
-        @include mixins.crear-flexbox();
-    }
-    &__EXCEL{
-        content: url('../img/Office/icons8-microsoft-excel-2019-480.svg');
-        @include mixins.tamaño-logo();
-    }
-
-
-    &__SPROJECT{
-        //background-color: #0000ff;
-        @include mixins.crear-flexbox();
-    }
-    &__PROJECT{
-        content: url('../img/Office/Microsoft_Project_2019_present.svg');
-        @include mixins.tamaño-logo();
-    }
-
-
-    &__SSHAREPOINT{
-        //background-color: #ff0000;
-        @include mixins.crear-flexbox();
-    }
-    &__SHAREPOINT{
-        content: url('../img/Office/icons8-microsoft-sharepoint-2019-480.svg');
-        @include mixins.tamaño-logo();
-    }
- 
-
-    &__SPOWERBI{
-        //background-color: #008080;
-        @include mixins.crear-flexbox();
-    }
-    &__POWERBI{
-        content: url('../img/Office/New_Power_BI_Logo.svg');
-        @include mixins.tamaño-logo();
-    }
-
-
-    &__SVISIO{
-        //background-color: #8000ff;
-        @include mixins.crear-flexbox();
-    }
-    &__VISIO{
-        content: url('../img/Office/icons8-microsoft-visio-2019-480.svg');
-        @include mixins.tamaño-logo();
-    }
-
-
-    &__SPP{
-        //background-color: #804000;
-        @include mixins.crear-flexbox();
-    }
-    &__PP{
-        content: url('../img/Office/icons8-microsoft-powerpoint-2019-480.svg');
-        @include mixins.tamaño-logo();
-    }
-
-    &__stats{
-        //background-color: #ffffff;
-        @include mixins.ajusteHabilidadstats();
-        @include mixins.emerger-texto();
-    }
-}
-
-@media only screen and (max-width: 834px)
-{
-    .PerkOffice
+        &__title
         {
-        //background-color: chartreuse;
-        @include mixins.Margin-LT-RT-UP-DN(0px,0px,140px,120px);
-        @include mixins.background-width(98.5%);
-        display: block;
-        text-align: center;
+                @include mixins.Emerging-headers( ) ; 
+                @include mixins.Blur-shadow-H-V-BLUR-COLOR( 0.1em , 0.1em , 0.5em , rgba( 38 , 139 , 210 , 1 ) ) ;
         }
-    .Officelogo
+}
+
+
+.Officelogo
+{
+
+        &__SWORD
         {
-        @include mixins.Margin-LT-RT-UP-DN(0px,0px,140px,120px);    
-        @include mixins.background-width(100%);
-        display: block;
-        text-align: center;
-    
-        &__SWORD,&__SEXCEL,&__SPROJECT,&__SSHAREPOINT,&__SPOWERBI, &__SVISIO, &__SPP
+                //background-color : #ffff80 ;
+                @include mixins.crear-flexbox( ) ;
+        }
+
+        &__WORD
+        {
+                content : url( '../img/Office/Microsoft_Office_Word_2019_present.svg' ) ;
+                @include mixins.tamaño-logo( ) ;
+        }
+
+        &__SEXCEL
+        {
+                //background-color : #80ffff ;
+                @include mixins.crear-flexbox( ) ;
+        }
+
+        &__EXCEL
+        {
+                content : url( '../img/Office/icons8-microsoft-excel-2019-480.svg' ) ;
+                @include mixins.tamaño-logo( ) ;
+        }
+
+        &__SPROJECT
+        {
+                //background-color : #0000ff ;
+                @include mixins.crear-flexbox( ) ;
+        }
+
+        &__PROJECT
+        {
+                content : url( '../img/Office/Microsoft_Project_2019_present.svg' ) ;
+                @include mixins.tamaño-logo( ) ;
+        }
+
+        &__SSHAREPOINT
+        {
+                //background-color : #ff0000 ;
+                @include mixins.crear-flexbox( ) ;
+        }
+
+        &__SHAREPOINT
+        {
+                content : url( '../img/Office/icons8-microsoft-sharepoint-2019-480.svg' ) ;
+                @include mixins.tamaño-logo( ) ;
+        }
+
+        &__SPOWERBI
+        {
+                //background-color : #008080 ;
+                @include mixins.crear-flexbox( ) ;
+        }
+
+        &__POWERBI
+        {
+                content : url( '../img/Office/New_Power_BI_Logo.svg' ) ;
+                @include mixins.tamaño-logo( ) ;
+        }
+
+        &__SVISIO
+        {
+                //background-color : #8000ff ;
+                @include mixins.crear-flexbox( ) ;
+        }
+
+        &__VISIO
+        {
+                content : url( '../img/Office/icons8-microsoft-visio-2019-480.svg' ) ;
+                @include mixins.tamaño-logo( ) ;
+        }      
+
+        &__SPP
+        {
+                //background-color: #804000;
+                @include mixins.crear-flexbox( ) ;
+        }
+
+        &__PP
+        {
+                content : url( '../img/Office/icons8-microsoft-powerpoint-2019-480.svg' ) ;
+                @include mixins.tamaño-logo( ) ;
+        }
+
+        &__stats
+        {
+                //background-color : #ffffff ;
+                @include mixins.ajusteHabilidadstats( ) ;
+                @include mixins.emerger-texto( ) ;
+        }
+}
+
+@media only screen and ( max-width : 834px )
+{
+        .PerkOffice
+        {
+
+                //background-color : chartreuse ;
+                @include mixins.Margin-LT-RT-UP-DN( 0px , 0px , 140px , 120px ) ;
+                @include mixins.background-width( 98.5% ) ;
+                display : block ;
+                text-align : center ;
+        }
+
+        .Officelogo
+        {
+
+                @include mixins.Margin-LT-RT-UP-DN( 0px , 0px , 140px , 120px ) ;    
+                @include mixins.background-width( 100% ) ;
+                display : block ;
+                text-align : center ;
+
+                &__SWORD,&__SEXCEL,&__SPROJECT,&__SSHAREPOINT,&__SPOWERBI, &__SVISIO, &__SPP
                 {
-                @include mixins.Margin-LT-RT-UP-DN(0px,0px,0px,0px);  
-                @include mixins.div-size-WD-HG(100%,510px);
-                display: block;
-                &--container
-                    {
-                    @include mixins.Margin-LT-RT-UP-DN(auto,auto,auto,auto);  
-                    @include mixins.background-width(95%);
-                    display: flex;
-                    }
+
+                        @include mixins.Margin-LT-RT-UP-DN( 0px , 0px , 0px , 0px ) ;  
+                        @include mixins.div-size-WD-HG( 100% , 510px ) ;
+                        display : block ;
+
+                        &--container
+                        {
+
+                                @include mixins.Margin-LT-RT-UP-DN( auto , auto , auto , auto ) ;  
+                                @include mixins.background-width( 95% ) ;
+                                display : flex ;
+                        }
                 }
-            &__WORD,&__EXCEL,&__PROJECT,&__SHAREPOINT,&__POWERBI, &__VISIO, &__PP
+
+                &__WORD,&__EXCEL,&__PROJECT,&__SHAREPOINT,&__POWERBI, &__VISIO, &__PP
                 {
-                @include mixins.Margin-LT-RT-UP-DN(auto,auto,17px,17px);
-                @include mixins.BorderRadius-TL-TR-BL-BR(5px,5px,5px,5px);
-                @include mixins.div-size-WD-HG(26%,100%);
-                }         
-             &__stats
+                        @include mixins.Margin-LT-RT-UP-DN( auto , auto , 17px , 17px ) ;
+                        @include mixins.BorderRadius-TL-TR-BL-BR( 5px , 5px , 5px , 5px ) ;
+                        @include mixins.div-size-WD-HG( 26% , 100% ) ;
+                }
+
+                &__stats
                 {
-                @include mixins.Margin-LT-RT-UP-DN(3px,0px,0px,0px);
-                @include mixins.Padding-LT-RT-UP-DN(0px,0px,0px,0px);
-                @include mixins.div-size-WD-HG(98%,50%);
-                @include mixins.vw-font-size(90%);
-                text-align: left;
+                        @include mixins.Margin-LT-RT-UP-DN( 3px , 0px , 0px , 0px ) ;
+                        @include mixins.Padding-LT-RT-UP-DN( 0px , 0px , 0px , 0px ) ;
+                        @include mixins.div-size-WD-HG( 98% , 50% ) ;
+                        @include mixins.vw-font-size( 90% ) ;
+                        text-align : left ;
                 }
         }
 }

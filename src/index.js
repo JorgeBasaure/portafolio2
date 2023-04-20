@@ -16,18 +16,20 @@ import DatosContacto from './Contacto';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Navegador/>
-    <PresentacionDev/>
-    <HerramientasFE />
-    <HerramientasBE/>
-    <HerramientasIDE/>
-    <HerramientasOffice/>
-    <ManejoSQL/>
-    <HerramientasConcept/>
-    <HerramientasCtrlVer/>
-    <DatosContacto/>
-    <App />
-  </React.StrictMode>
+
+        <React.StrictMode>      
+                <Navegador/>
+                <PresentacionDev/>
+                <HerramientasFE />
+                <HerramientasBE/>
+                <HerramientasIDE/>
+                <HerramientasOffice/>
+                <ManejoSQL/>
+                <HerramientasConcept/>
+                <HerramientasCtrlVer/>
+                <DatosContacto/>
+                <App />
+        </React.StrictMode>
+        
 );
 

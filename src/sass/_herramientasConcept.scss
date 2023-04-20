@@ -2,100 +2,138 @@
 
 .PerkConcept
 {
-    @include mixins.Margin-LT-RT-UP-DN(0px,0px,90px,90px);
-    &__title{
-        @include mixins.Emerging-headers(); 
-        @include mixins.Blur-shadow-H-V-BLUR-COLOR(0.1em,0.1em,0.5em,rgba(38,139,210,1))
-    }
-}
-.Conceptlogo{
+        @include mixins.Margin-LT-RT-UP-DN( 0px , 0px , 90px , 90px ) ;
 
+        &__title
+        {
 
-    &__SBIZAGIM{
-        @include mixins.crear-flexbox();
-        //background-color: #ff8040;  //Para depurar
-    }
-    &__BIZAGIM{
-        content: url('../img/CONCEPT/modeler-logo-md.svg');
-        @include mixins.tamaño-logo();
-    }
-
-
-
-    &__SSTARUML{
-        @include mixins.crear-flexbox();
-        //background-color: #0000ff;
-    }
-    &__STARUML{
-        content: url('../img/CONCEPT/7642181.png');
-        @include mixins.tamaño-logo();
-    }
-
-    &__SSAPPD{
-        @include mixins.crear-flexbox();
-        //background-color: #c0c0c0;
-    }
-    &__SAPPD{
-        content: url('../img/CONCEPT/logo-powerdesigner.png');
-        @include mixins.tamaño-logo();
-    }
-
-
-    &__SBALSAMIQ{
-        @include mixins.crear-flexbox();
-        //background-color: #00ff00;
-    }
-    &__BALSAMIQ{
-        content: url('../img/CONCEPT/balsamiq-logo-screen-1000x500.png');
-        @include mixins.tamaño-logo-cuadrado();
-        //background-color: #0080c0;
-    }
-
-    &__stats{
-        //background-color: #00ffff;
-        @include mixins.ajusteHabilidadstats();
-        @include mixins.emerger-texto();
-    }
-}
-@media only screen and (max-width: 834px){
-    .PerkConcept{
-        //background-color: chartreuse;
-        @include mixins.Margin-LT-RT-UP-DN(0px,0px,140px,120px);
-        @include mixins.background-width(98.5%);
-        display: block;
-        text-align: center;
+                @include mixins.Emerging-headers( ) ; 
+                @include mixins.Blur-shadow-H-V-BLUR-COLOR( 0.1em , 0.1em , 0.5em , rgba( 38 , 139 , 210 , 1 ) ) ;
         }
-    .Conceptlogo{
-        @include mixins.Margin-LT-RT-UP-DN(0px,0px,140px,120px);    
-        @include mixins.background-width(100%);
-        display: block;
-        text-align: center;
-    
-        &__SBIZAGIM, &__SSTARUML, &__SSAPPD, &__SBALSAMIQ
-            {
-                @include mixins.Margin-LT-RT-UP-DN(0px,0px,0px,0px);  
-                @include mixins.div-size-WD-HG(100%,510px);
-                display: block;
-                 &--container
-                 {
-                justify-content: center;
-                @include mixins.Margin-LT-RT-UP-DN(auto,auto,auto,auto);  
-                @include mixins.background-width(95%);
-                display: flex;
+}
+
+
+.Conceptlogo
+{
+
+        &__SBIZAGIM
+        {
+
+                //background-color : #ff8040 ;  //Para depurar
+                @include mixins.crear-flexbox( ) ;
+        }
+
+        &__BIZAGIM
+        {
+
+                content: url( '../img/CONCEPT/modeler-logo-md.svg' ) ;
+                @include mixins.tamaño-logo( ) ;
+        }
+
+        &__SSTARUML
+        {
+
+                //background-color : #0000ff ;
+                @include mixins.crear-flexbox( ) ;
+        }
+
+        &__STARUML
+        {
+
+                content: url( '../img/CONCEPT/7642181.png' ) ;
+                @include mixins.tamaño-logo( ) ;
+        }
+
+        &__SSAPPD
+        {
+
+                //background-color : #c0c0c0 ;
+                @include mixins.crear-flexbox( ) ;    
+        }
+
+        &__SAPPD
+        {
+
+                content : url( '../img/CONCEPT/logo-powerdesigner.png' ) ;
+                @include mixins.tamaño-logo( ) ;
+        }
+
+        &__SBALSAMIQ
+        {
+
+                //background-color : #00ff00 ;
+                @include mixins.crear-flexbox( ) ;
+        }
+
+        &__BALSAMIQ
+        {
+
+                //background-color : #0080c0 ;
+                content : url( '../img/CONCEPT/balsamiq-logo-screen-1000x500.png' ) ;
+                @include mixins.tamaño-logo-cuadrado( ) ; 
+        }
+
+        &__stats
+        {
+
+                //background-color : #00ffff ;
+                @include mixins.ajusteHabilidadstats( ) ;
+                @include mixins.emerger-texto( ) ;
+        }
+}
+
+@media only screen and ( max-width : 834px )
+{
+        .PerkConcept
+        {
+                //background-color : chartreuse ;
+                @include mixins.Margin-LT-RT-UP-DN( 0px , 0px , 140px , 120px ) ;
+                @include mixins.background-width( 98.5% ) ;
+                display : block ;
+                text-align : center ;
+        }
+
+        .Conceptlogo
+        {
+
+                @include mixins.Margin-LT-RT-UP-DN( 0px , 0px , 140px , 120px ) ;    
+                @include mixins.background-width( 100% ) ;
+                display : block ;
+                text-align : center ;
+
+                &__SBIZAGIM , &__SSTARUML , &__SSAPPD , &__SBALSAMIQ
+                {
+
+                        @include mixins.Margin-LT-RT-UP-DN( 0px , 0px , 0px , 0px ) ;  
+                        @include mixins.div-size-WD-HG( 100% , 510px ) ;
+                        display : block ;
+
+                        &--container
+                        {
+
+                                justify-content : center ;
+                                @include mixins.Margin-LT-RT-UP-DN( auto , auto , auto , auto ) ;  
+                                @include mixins.background-width( 95% ) ;
+                                display : flex ;
+                        }
                 }
-            }
-            &__BIZAGIM, &__STARUML, &__SAPPD, &__BALSAMIQ
-            {
-                @include mixins.Margin-LT-RT-UP-DN(auto,auto,17px,17px);
-                @include mixins.BorderRadius-TL-TR-BL-BR(5px,5px,5px,5px);
-                @include mixins.div-size-WD-HG(26%,100%);
-            }
-            &__stats{
-                @include mixins.Margin-LT-RT-UP-DN(3px,0px,0px,0px);
-                @include mixins.Padding-LT-RT-UP-DN(0px,0px,0px,0px);
-                @include mixins.div-size-WD-HG(98%,50%);
-                @include mixins.vw-font-size(90%);
-                text-align: left;
-            }
+
+                &__BIZAGIM , &__STARUML , &__SAPPD , &__BALSAMIQ
+                {
+
+                        @include mixins.Margin-LT-RT-UP-DN( auto , auto , 17px , 17px ) ;
+                        @include mixins.BorderRadius-TL-TR-BL-BR( 5px , 5px , 5px , 5px ) ;
+                        @include mixins.div-size-WD-HG( 26% , 100% ) ;
+                }
+
+                &__stats
+                {
+
+                        @include mixins.Margin-LT-RT-UP-DN( 3px , 0px , 0px , 0px ) ;
+                        @include mixins.Padding-LT-RT-UP-DN( 0px , 0px , 0px , 0px ) ;
+                        @include mixins.div-size-WD-HG( 98% , 50% ) ;
+                        @include mixins.vw-font-size( 90% ) ;
+                        text-align : left ;
+                }
         }
 }

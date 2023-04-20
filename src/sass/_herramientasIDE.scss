@@ -2,110 +2,152 @@
 
 .PerkIDE
 {
-    @include mixins.Margin-LT-RT-UP-DN(0px,0px,90px,90px);
-    &__title{
-        @include mixins.Emerging-headers(); 
-        @include mixins.Blur-shadow-H-V-BLUR-COLOR(0.1em,0.1em,0.5em,rgba(38,139,210,1))
-    }
+        @include mixins.Margin-LT-RT-UP-DN( 0px , 0px , 90px , 90px ) ;
+
+        &__title
+        {
+
+                @include mixins.Emerging-headers( ) ; 
+                @include mixins.Blur-shadow-H-V-BLUR-COLOR( 0.1em , 0.1em , 0.5em , rgba( 38 , 139 , 210 , 1 ) ) ;
+        }
 }
 
-.IDElogo{
+.IDElogo
+{
 
-    &__SVS{
-        @include mixins.crear-flexbox();
-        //background-color: #8080ff  //Para debugear
-    }
-    &__VS{
-        content:url('../img/IDE/Visual_Studio_Icon_2019.svg');
-        @include mixins.tamaño-logo();
-    }
+        &__SVS
+        {
 
+                //background-color: #8080ff  //Para debugear
+                @include mixins.crear-flexbox( ) ;
+        }
 
-    &__SVSC{
-        @include mixins.crear-flexbox();
-        //background-color: #ff80ff
-    }
-    &__VSC{
-        content: url('../img/IDE/vscode.svg');
-        @include mixins.tamaño-logo();
-    }
+        &__VS
+        {
 
+                content : url( '../img/IDE/Visual_Studio_Icon_2019.svg' ) ;
+                @include mixins.tamaño-logo( ) ;
+        }
 
-    &__SSQLMS{
-        @include mixins.crear-flexbox();
-        //background-color: #ff8000
-    }
-    &__SQLMS{
-        content: url('../img/IDE/sql-server-icon-png-11348.png');
-        @include mixins.tamaño-logo();
-    }
+        &__SVSC
+        {
 
+                //background-color: #ff80ff
+                @include mixins.crear-flexbox( ) ;
+        }
 
-    &__SNETBEANS{
-        @include mixins.crear-flexbox();
-        //background-color: #808080
-    }
-    &__NETBEANS{
-        content: url('../img/IDE/icons8-netbeans-512.svg');
-        @include mixins.tamaño-logo();
-    }
+        &__VSC
+        {
+
+                content : url( '../img/IDE/vscode.svg' ) ;
+                @include mixins.tamaño-logo( ) ;
+        }   
 
 
-    &__SNOTEPAD2PLUS{
-        @include mixins.crear-flexbox();
-        //background-color: #ffff00
-    }
-    &__NOTEPAD2PLUS{
-        content: url('../img/IDE/Notepad++_Logo.svg');
-        @include mixins.tamaño-logo();
-    }
+        &__SSQLMS
+        {
 
-    
-    &__stats{
-        //background-color: #80ff80;
-        @include mixins.ajusteHabilidadstats();
-        @include mixins.emerger-texto();
-    }
+                 //background-color : #ff8000 ;
+                @include mixins.crear-flexbox( ) ;
+        }
+
+        &__SQLMS
+        {
+
+                content : url( '../img/IDE/sql-server-icon-png-11348.png' ) ;
+                @include mixins.tamaño-logo();
+        }
+
+        &__SNETBEANS
+        {
+
+                //background-color: #808080 ;
+                @include mixins.crear-flexbox( ) ;
+        }
+
+        &__NETBEANS
+        {
+
+                content : url( '../img/IDE/icons8-netbeans-512.svg' ) ;
+                @include mixins.tamaño-logo( ) ;
+        }
+
+        &__SNOTEPAD2PLUS
+        {
+
+                //background-color : #ffff00 ; 
+                @include mixins.crear-flexbox( ) ;
+        }
+
+        &__NOTEPAD2PLUS
+        {
+
+                content : url( '../img/IDE/Notepad++_Logo.svg' ) ;
+                @include mixins.tamaño-logo( ) ;
+        }
+
+        &__stats
+        {
+                //background-color : #80ff80 ;
+                @include mixins.ajusteHabilidadstats( ) ;
+                @include mixins.emerger-texto( ) ;
+        }
 }
-@media only screen and (max-width: 834px){
-    .PerkIDE{
-        //background-color: chartreuse;
-        @include mixins.Margin-LT-RT-UP-DN(0px,0px,140px,120px);
-        @include mixins.background-width(98.5%);
-        display: block;
-        text-align: center;
-        }
-    .IDElogo{
-        @include mixins.Margin-LT-RT-UP-DN(0px,0px,140px,120px);
-        @include mixins.background-width(100%);
-        display: block;
-        text-align: center;
-    
-        &__SVS,&__SVSC,&__SSQLMS,&__SNETBEANS,&__SNOTEPAD2PLUS
-            {
-                @include mixins.Margin-LT-RT-UP-DN(0px,0px,0px,0px);
-                @include mixins.div-size-WD-HG(100%,510px);
-                display: block;
 
-                      &--container{
-                                justify-content: center;
-                                @include mixins.background-width(95%);
-                                display: flex;
-                                @include mixins.Margin-LT-RT-UP-DN(auto,auto,auto,auto);
-            }
-            }
-            &__VS,&__VSC,&__SQLMS,&__NETBEANS,&__NOTEPAD2PLUS
-            {
-                @include mixins.Margin-LT-RT-UP-DN(auto,auto,17px,17px);
-                @include mixins.BorderRadius-TL-TR-BL-BR(5px,5px,5px,5px);
-                @include mixins.div-size-WD-HG(26%,100%);
+@media only screen and ( max-width : 834px ) 
+{
+
+        .PerkIDE
+        {
+
+                //background-color : chartreuse ;
+                @include mixins.Margin-LT-RT-UP-DN( 0px , 0px , 140px , 120px ) ;
+                @include mixins.background-width( 98.5% ) ;
+                display : block ; 
+                text-align : center ;
         }
-            &__stats{
-                @include mixins.Margin-LT-RT-UP-DN(3px,0px,0px,0px);
-                @include mixins.Padding-LT-RT-UP-DN(0px,0px,0px,0px);
-                @include mixins.div-size-WD-HG(98%,50%);
-                @include mixins.vw-font-size(90%);
-                text-align: left;
-            }
+
+        .IDElogo
+        {
+
+                @include mixins.Margin-LT-RT-UP-DN( 0px , 0px , 140px , 120px ) ;
+                @include mixins.background-width( 100% ) ;
+                display : block ;
+                text-align : center ;
+
+                &__SVS , &__SVSC , &__SSQLMS , &__SNETBEANS , &__SNOTEPAD2PLUS
+                {
+
+                        @include mixins.Margin-LT-RT-UP-DN( 0px , 0px , 0px , 0px ) ;
+                        @include mixins.div-size-WD-HG( 100% , 510px ) ;
+                        display : block ;
+
+                        &--container
+                        {
+
+                                justify-content : center ;
+                                @include mixins.background-width( 95% ) ;
+                                display : flex ;
+                                @include mixins.Margin-LT-RT-UP-DN( auto , auto , auto , auto ) ;
+                        }
+                }
+
+                &__VS,&__VSC,&__SQLMS,&__NETBEANS,&__NOTEPAD2PLUS
+                {
+
+                        @include mixins.Margin-LT-RT-UP-DN( auto , auto , 17px , 17px ) ;
+                        @include mixins.BorderRadius-TL-TR-BL-BR( 5px , 5px , 5px , 5px ) ;
+                        @include mixins.div-size-WD-HG( 26% , 100% ) ;
+                }
+
+                &__stats
+                {
+
+                        @include mixins.Margin-LT-RT-UP-DN( 3px , 0px , 0px , 0px ) ;
+                        @include mixins.Padding-LT-RT-UP-DN( 0px , 0px , 0px , 0px ) ;
+                        @include mixins.div-size-WD-HG( 98% , 50% ) ;
+                        @include mixins.vw-font-size( 90% ) ;
+                        text-align : left ;
+                }
         }
 }

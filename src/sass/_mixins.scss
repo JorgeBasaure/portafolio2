@@ -1,383 +1,440 @@
 //AJUSTE DE DIV
-@mixin crear-flexbox(){
-    display:flex;
-
+@mixin crear-flexbox( )
+{
+        display:flex;
 }
 //LOS PRIMEROS 6 MIXIN QUE HAY QUE HACER PRIMERO DE AHORA EN ADELANTE
-@mixin Position-LT-RT-UP-DN($value1,$value2,$value3,$value4)
+
+@mixin Position-LT-RT-UP-DN( $value1 , $value2 , $value3 , $value4 )
 {
-    
-    left: ($value1);
-    right: ($value2);
-    top: ($value3);
-    bottom: ($value4);
-    
+
+        left : ( $value1 ) ;
+        right : ( $value2 ) ;
+        top : ( $value3 ) ;
+        bottom : ( $value4 ) ;
+
 }
 
-@mixin Margin-LT-RT-UP-DN($value1,$value2,$value3,$value4)
+@mixin Margin-LT-RT-UP-DN( $value1 , $value2 , $value3 , $value4 )
 {
-    margin: 
-            {
-                    left: ($value1);
-                    right: ($value2);
-                    top: ($value3);
-                    bottom: ($value4);
-            }
+        margin : 
+        {
+                left : ( $value1 ) ;
+                right : ( $value2 ) ;
+                top : ( $value3 ) ;
+                bottom : ( $value4 ) ;
+        }
 }
 
-
-@mixin BorderWidth-LT-RT-UP-DN($value1,$value2,$value3,$value4)
+@mixin BorderWidth-LT-RT-UP-DN( $value1 , $value2 , $value3 , $value4 )
 {
-    border: 
-            {
-                    left-width: ($value1);
-                    right-width: ($value2);
-                    top-width: ($value3);
-                    bottom-width: ($value4);
-            }
-}
-@mixin BorderRadius-TL-TR-BL-BR($value1,$value2,$value3,$value4)
-{
-    border: 
-            {
-                    top-left-radius: ($value1);
-                    top-right-radius: ($value2);
-                    bottom-left-radius: ($value3);
-                    bottom-right-radius: ($value4);
-            }
+        border : 
+        {
+                left-width : ( $value1 ) ;
+                right-width : ( $value2 ) ;
+                top-width : ( $value3 ) ;
+                bottom-width : ( $value4 ) ;
+        }
 }
 
-@mixin Padding-LT-RT-UP-DN($value1,$value2,$value3,$value4)
+@mixin BorderRadius-TL-TR-BL-BR( $value1 , $value2 , $value3 , $value4 )
 {
-    padding: 
-            {
-                    left: ($value1);
-                    right: ($value2);
-                    top: ($value3);
-                    bottom: ($value4);
-            }
+        border : 
+        {
+                top-left-radius : ( $value1 ) ;
+                top-right-radius : ( $value2 ) ;
+                bottom-left-radius : ( $value3 ) ;
+                bottom-right-radius : ( $value4 ) ;
+        }
 }
-@mixin div-size-WD-HG($value1,$value2)
+
+@mixin Padding-LT-RT-UP-DN( $value1 , $value2 , $value3 , $value4 )
 {
-    width: ($value1);
-    height: ($value2);
+        padding : 
+        {
+                left : ( $value1 ) ;
+                right : ( $value2 ) ;
+                top : ( $value3 ) ;
+                bottom : ( $value4 ) ;
+        }
 }
-@mixin DebugBackgroundColor($value)
+
+//TAMAÑO INDEPENDIENTE
+@mixin div-size-WD-HG( $value1 , $value2 )
 {
-    background-color:($value);
+        width : ( $value1 ) ;
+        height : ( $value2 ) ;
+}
+
+@mixin DebugBackgroundColor( $value )
+{
+        background-color : ( $value ) ;
 }
 
 //DEPRECIADO
-@mixin Margin-top($value)
+@mixin Margin-top( $value )
 {
-    margin-top: ($value)+px;
+        margin-top : ( $value ) + px ;
 }
-@mixin Margin-bottom($value)
+@mixin Margin-bottom( $value )
 {
-    margin-bottom: ($value)+px;
+        margin-bottom : ( $value ) + px ;
 }
-//AJUSTE DE ANCHO DE PANTALLA (RESPONSIVO)
-@mixin background-width($value)
-{
-    width: ($value);
-}
-@mixin background-heigth($value)
-{
-    height: ($value);
-}
-//AJUSTE DE TAMAÑO DE LETRA (RESPONSIVO)
-@mixin vw-font-size($value)
-{
-     font-size:($value);
-}
-//AJUSTES EN BARRA DE NAVEGACIÓN
 
 //RESPONSIVO
-@mixin adapt-resp-navbar()
-{
-    background-image: linear-gradient(rgb(97, 218, 251),rgba(255, 255, 255, 0));
-    @include Position-LT-RT-UP-DN(0px,0px,0px,0px);
-    @include Margin-LT-RT-UP-DN(auto,auto,0px,0px);
-    @include BorderWidth-LT-RT-UP-DN(0px,0px,0px,0px);
-    @include BorderRadius-TL-TR-BL-BR(0px,0px,25px,25px);
-    @include Padding-LT-RT-UP-DN(0px,0px,15px,15px);
-    @include div-size-WD-HG(99%,50px);
-    @include crear-flexbox();
-    z-index: 9999;
-    text-align: center;
-    align-items:center;
-    justify-content: right;
-    position: fixed;
-}
-@mixin adapt-resp-navbar-links()
-{
-    background-image: linear-gradient(rgb(97, 218, 251),rgba(255, 255, 255, 0));
-    @include Position-LT-RT-UP-DN(0px,0px,0px,0px);
-    @include Margin-LT-RT-UP-DN(auto,auto,0px,0px);
-    @include BorderWidth-LT-RT-UP-DN(0px,0px,0px,0px);
-    @include BorderRadius-TL-TR-BL-BR(0px,0px,25px,25px);
-    @include Padding-LT-RT-UP-DN(0px,0px,15px,15px);
-    @include div-size-WD-HG(99%,100%);
-    position: fixed;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
-@mixin adapt-resp-navbar-col-links()
-{
-    background-image: linear-gradient(rgb(97, 218, 251),rgba(255, 255, 255, 0));
-    @include Position-LT-RT-UP-DN(0px,0px,0px,0px);
-    @include Margin-LT-RT-UP-DN(auto,auto,0px,0px);
-    @include BorderWidth-LT-RT-UP-DN(0px,0px,0px,0px);
-    @include BorderRadius-TL-TR-BL-BR(0px,0px,25px,25px);
-    @include Padding-LT-RT-UP-DN(0px,0px,15px,15px);
-    @include div-size-WD-HG(99%,100%);
-    position: fixed;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-}
-@mixin adapt-resp-navbar-despl-off()
-{
-    animation: despl-off 5s;
 
-    @keyframes despl-off {
-        from {opacity: 1}
-        to {opacity: 0}
-    }
-    opacity: 0
-
-}
-@mixin adapt-resp-navbar-despl-on()
+//AJUSTE DE ANCHO DE PANTALLA
+@mixin background-width( $value )
 {
-    animation: despl-on 5s;
+        width : ( $value ) ;
+}
 
-    @keyframes despl-on {
-        from {opacity: 0}
-        to {opacity: 1}
-    }
-    opacity: 1
+@mixin background-heigth( $value )
+{
+        height : ( $value ) ;
+}
+
+//AJUSTE DE TAMAÑO DE LETRA
+@mixin vw-font-size( $value )
+{
+        font-size : ( $value ) ;
+}
+
+//AJUSTES EN BARRA DE NAVEGACIÓN
+@mixin adapt-resp-navbar( )
+{
+        background-image : linear-gradient( rgb( 97 , 218 , 251 ) ,rgba( 255 , 255 , 255 , 0 ) ) ;
+        @include Position-LT-RT-UP-DN( 0px , 0px , 0px , 0px ) ;
+        @include Margin-LT-RT-UP-DN( auto , auto , 0px , 0px ) ;
+        @include BorderWidth-LT-RT-UP-DN( 0px , 0px , 0px , 0px ) ;
+        @include BorderRadius-TL-TR-BL-BR( 0px , 0px , 25px , 25px ) ;
+        @include Padding-LT-RT-UP-DN( 0px , 0px , 15px , 15px ) ;
+        @include div-size-WD-HG( 99% , 50px ) ;
+        @include crear-flexbox( );
+        z-index : 9999 ;
+        text-align : center ;
+        align-items : center ;
+        justify-content : right ;
+        position : fixed ;
+}
+
+@mixin adapt-resp-navbar-links( )
+{
+        background-image: linear-gradient( rgb ( 97 ,  218 , 251 ) , rgba( 255 , 255 , 255 , 0 ) ) ;
+        @include Position-LT-RT-UP-DN( 0px , 0px , 0px , 0px ) ;
+        @include Margin-LT-RT-UP-DN( auto , auto , 0px , 0px ) ;
+        @include BorderWidth-LT-RT-UP-DN( 0px , 0px , 0px , 0px ) ;
+        @include BorderRadius-TL-TR-BL-BR( 0px , 0px , 25px , 25px ) ;
+        @include Padding-LT-RT-UP-DN( 0px , 0px , 15px , 15px ) ;
+        @include div-size-WD-HG( 99% , 100% ) ;
+        position : fixed ;
+        display : flex ;
+        flex-flow : row nowrap ;
+        justify-content : space-between ;
+        align-items : center ;
+}
+
+@mixin adapt-resp-navbar-col-links( )
+{
+        background-image: linear-gradient( rgb( 97 , 218 , 251 ) , rgba( 255 , 255 , 255 , 0 ) ) ;
+        @include Position-LT-RT-UP-DN( 0px ,0px , 0px , 0px ) ;
+        @include Margin-LT-RT-UP-DN( auto , auto , 0px , 0px ) ;
+        @include BorderWidth-LT-RT-UP-DN( 0px , 0px , 0px , 0px ) ;
+        @include BorderRadius-TL-TR-BL-BR( 0px , 0px , 25px , 25px ) ;
+        @include Padding-LT-RT-UP-DN( 0px , 0px ,15px , 15px ) ;
+        @include div-size-WD-HG( 99% , 100% ) ;
+        position : fixed ;
+        display : flex ;
+        flex-flow : column nowrap ;
+        justify-content : center ;
+        align-items : center ;
+}
+
+@mixin adapt-resp-navbar-despl-off( )
+{
+        animation : despl-off 5s ;
+
+                @keyframes despl-off 
+                {
+                        from { opacity : 1 ; }
+                        to { opacity : 0 ; }
+                }
+        opacity : 0 ;
+}
+
+@mixin adapt-resp-navbar-despl-on( )
+{
+        animation : despl-on 5s ;
+
+                @keyframes despl-on 
+                {
+                        from { opacity : 0 ; }
+                        to { opacity : 1 ; }
+                }
+        opacity: 1 ;
 }
 
 //PANTALLA NORMAL
-@mixin adapt-navbar()
+@mixin adapt-navbar( )
 {
-    background-image: linear-gradient(rgb(97, 218, 251),rgba(255, 255, 255, 0));
-    @include Position-LT-RT-UP-DN(0px,0px,0px,0px);
-    @include Margin-LT-RT-UP-DN(auto,auto,0px,0px);
-    @include BorderWidth-LT-RT-UP-DN(0px,0px,0px,0px);
-    @include BorderRadius-TL-TR-BL-BR(0px,0px,25px,25px);
-    @include Padding-LT-RT-UP-DN(0px,0px,15px,15px);
-    @include div-size-WD-HG(99%,50px);
-    @include crear-flexbox();
-    z-index: 9999;
-    position: fixed;
-    text-align: center;
-    align-items:center;
-    justify-content: center;
+        background-image: linear-gradient( rgb( 97 , 218 , 251 ) , rgba( 255 , 255 , 255 , 0 ) ) ;
+        @include Position-LT-RT-UP-DN (0px , 0px , 0px , 0px ) ;
+        @include Margin-LT-RT-UP-DN( auto , auto , 0px , 0px ) ;
+        @include BorderWidth-LT-RT-UP-DN( 0px , 0px , 0px , 0px ) ;
+        @include BorderRadius-TL-TR-BL-BR( 0px , 0px , 25px , 25px ) ;
+        @include Padding-LT-RT-UP-DN( 0px , 0px , 15px , 15px ) ;
+        @include div-size-WD-HG( 99% , 50px ) ;
+        @include crear-flexbox( ) ;
+        z-index : 9999 ;
+        position : fixed ;
+        text-align : center ;
+        align-items :center ;
+        justify-content : center ;
 }
 
-
-@mixin adapt-navbar-links()
+@mixin adapt-navbar-links( )
 {
-    color: aqua;
-    @include Padding-LT-RT-UP-DN(25px,25px,0px,0px);
-    text-align: center;
+        color : aqua ;
+        @include Padding-LT-RT-UP-DN( 25px , 25px , 0px , 0px ) ;
+        text-align : center ;
 }
-
-
 
 //AJUSTES DE  DESPLAZAMIENTO (SCROLL)
-@mixin scroll()
+@mixin scroll( )
 {
-    overflow: auto;
-    scroll-behavior: smooth;   
-    scroll-padding: 90px;
+        overflow : auto ;
+        scroll-behavior : smooth ;   
+        scroll-padding : 90px ;
 }
+
 //ENCABEZADOS
-@mixin Emerging-headers()
+@mixin Emerging-headers( )
 {
-    color: #268bd2;
-    animation: emerging-headers 3s, infinite;
+        color : #268bd2 ;
+        animation : emerging-headers 3s , infinite ;
 
-    @keyframes emerging-headers {
-        from{color:transparent}
-        to{color: #268bd2}
-    }
-}
-@mixin Blur-shadow-H-V-BLUR-COLOR($value1,$value2,$value3,$value4)
-{
-    text-shadow: $value1 $value2 $value3 $value4;
-    //
-}
-// ANTECEDENTES
-@mixin ajustePersonal-img()
-{
-    @include background-heigth(300px);
-    @include Margin-LT-RT-UP-DN(2px,2px,2px,2px);
-    @include BorderRadius-TL-TR-BL-BR(25px,25px,25px,25px);
-    @include Padding-LT-RT-UP-DN(1px,1px,1px,1px);
-    animation: emerging-img 6s, cursor .75s step-end infinite alternate;
-
-    @keyframes emerging-img {
-        from {opacity: 0}
-        to {opacity: 1}
-    }
-}
-@mixin ajustePersonal()
-{
-    @include background-heigth(300px);
-    @include Margin-LT-RT-UP-DN(20px,20px,2px,2px);
-}
-@mixin ajusteAcademico-img()
-{
-    
-    @include background-heigth(200px);
-    @include Margin-LT-RT-UP-DN(2px,2px,2px,2px);
-    @include BorderRadius-TL-TR-BL-BR(25px,25px,25px,25px);
-    @include Padding-LT-RT-UP-DN(1px,1px,1px,1px);
-    
-    
-    animation: emerging-img 6s, cursor .75s step-end infinite alternate;
-
-    @keyframes emerging-img {
-        from {opacity: 0}
-        to {opacity: 1}
-    }
-}
-@mixin ajusteAcademico()
-{
-    @include background-heigth(200px);
-    @include Margin-LT-RT-UP-DN(20px,20px,2px,2px);
-    @include Padding-LT-RT-UP-DN(1px,1px,1px,1px);
-}
-@mixin ajusteLaboral-img()
-{
-    @include background-heigth(240px);
-    @include Margin-LT-RT-UP-DN(2px,2px,2px,2px);
-    @include BorderRadius-TL-TR-BL-BR(25px,25px,25px,25px);
-    @include Padding-LT-RT-UP-DN(1px,1px,1px,1px);
-    animation: emerging-img 6s, cursor .75s step-end infinite alternate;
-
-    @keyframes emerging-img {
-        from {opacity: 0}
-        to {opacity: 1}
-    }
-}
-@mixin ajusteLaboral()
-{
-    @include background-heigth(240px);
-    @include Margin-LT-RT-UP-DN(20px,20px,2px,2px);
-    @include Padding-LT-RT-UP-DN(1px,1px,1px,1px);
-}
-@mixin ajusteEncabezado()
-{
-    @include background-heigth(50px);
-    @include Margin-LT-RT-UP-DN(2px,2px,2px,2px);
-    @include Padding-LT-RT-UP-DN(1px,1px,1px,1px);
-}
-@mixin emergerEncabezado()
-{
-    animation: emer-txt 1s, steps(500);
-    @keyframes emer-txt {
-        from {opacity: 0}
-        to {opacity: 1}
-        
-    }
-}
-@mixin emerger-texto()
-{
-    animation: emer-txt 9s, steps(500);
-    color: #a98a34;
-    @keyframes emer-txt {
-        from {opacity: 0}
-        to {opacity: 1}
-        
-    }
-}
-
-
-//HABILIDADES DURAS
-
-@mixin ajusteHabilidad()
-{
-    @include Margin-LT-RT-UP-DN(0px,0px,10px,10px);
-    @include BorderWidth-LT-RT-UP-DN(5px,5px,5px,5px);
-    @include Padding-LT-RT-UP-DN(1px,1px,1px,1px);
-    @include background-heigth(220px);
-}
-
-@mixin tamaño-logo{
-
-    @include Margin-LT-RT-UP-DN(0px,0px,10px,0px);
-    @include BorderRadius-TL-TR-BL-BR(25px,25px,25px,25px);
-    @include Padding-LT-RT-UP-DN(1px,1px,1px,1px);
-    @include div-size-WD-HG(180px,180px);
-
-    background-image: linear-gradient(rgb(97, 218, 251),rgba(255, 255, 255, 0));
-    transform: skewY(0deg);
-    animation: emerging-logo 4s, cursor .25s step-end infinite alternate;
-    @keyframes emerging-logo {
-        from {opacity: 0; transform: skewY(90deg);}
-        to {opacity: 1; transform: skewY(0deg);}
-    }
-}
-@mixin ajusteHabilidadstats()
-{
-    @include Margin-LT-RT-UP-DN(20px,20px,10px,10px);
-    @include BorderWidth-LT-RT-UP-DN(5px,5px,5px,5px);
-    @include Padding-LT-RT-UP-DN(5px,0px,0px,0px);
-    @include div-size-WD-HG(1470px,200px);
-}
-
-@mixin ajustePlus(){
-
-    @include vw-font-size(50px);
-    color:rgb(97, 218, 251);
-    @include Margin-LT-RT-UP-DN(5px,5px,30px,0px);
-
-    animation: emergin-plus 12s, steps(500), infinite;
-
-     @keyframes emergin-plus {
-            from{color:transparent}
-            to{color:rgb(97, 218, 251)}
+        @keyframes emerging-headers 
+        {
+                from { color : transparent }
+                to { color : #268bd2 }
         }
 }
-@mixin tamaño-logo-cuadrado{
-    @include Margin-LT-RT-UP-DN(0px,0px,50px,0px);
-    @include BorderRadius-TL-TR-BL-BR(25px,25px,25px,25px);
-    @include Padding-LT-RT-UP-DN(1px,1px,1px,1px);
-    @include div-size-WD-HG(200px,100px);
 
-    background-image: linear-gradient(rgb(97, 218, 251),rgba(255, 255, 255, 0));
-    animation: emerging-logo-cuadrado 3.5s  steps(500), cursor 1s step-end infinite alternate;
-
-    @keyframes emerging-logo-cuadrado {
-        from {opacity: 0; transform: skewY(90deg);}
-        to {opacity: 1; transform: skewY(0deg);}
-    }
-}
-
-@mixin arreglar-imagen{
-    background: {
-        size:cover;
-        repeat: no-repeat;
-        position: center;
-        attachment: fixed;
-    }
-    animation: emerger-fondo .5s;
-
-    @keyframes emerger-fondo {
-        from {opacity: 0}
-        to {opacity: 1}
-    }
-}
-
-@mixin translateX($value1)
+@mixin Blur-shadow-H-V-BLUR-COLOR( $value1 , $value2 , $value3 , $value4 )
 {
-    transform: translateX($value1);
+        text-shadow : $value1 $value2 $value3 $value4 ;
+}
+
+// ANTECEDENTES
+@mixin ajustePersonal-img( )
+{
+        @include background-heigth( 300px ) ;
+        @include Margin-LT-RT-UP-DN( 2px , 2px , 2px , 2px ) ;
+        @include BorderRadius-TL-TR-BL-BR( 25px , 25px , 25px , 25px ) ;
+        @include Padding-LT-RT-UP-DN( 1px , 1px , 1px , 1px ) ;
+        animation : emerging-img 6s , cursor .75s step-end infinite alternate ;
+
+        @keyframes emerging-img 
+        {
+
+                from { opacity : 0 ; }
+                to {opacity : 1 ; }
+        }
+}
+
+@mixin ajustePersonal( )
+{
+        @include background-heigth( 300px ) ;
+        @include Margin-LT-RT-UP-DN( 20px , 20px , 2px , 2px ) ;
+}
+
+@mixin ajusteAcademico-img( )
+{
+
+        @include background-heigth( 200px ) ;
+        @include Margin-LT-RT-UP-DN( 2px , 2px , 2px , 2px ) ;
+        @include BorderRadius-TL-TR-BL-BR( 25px , 25px , 25px , 25px ) ;
+        @include Padding-LT-RT-UP-DN( 1px , 1px , 1px , 1px ) ;
+        animation: emerging-img 6s , cursor .75s step-end infinite alternate ;
+
+        @keyframes emerging-img 
+        {
+                from { opacity : 0 ; }
+                to {opacity : 1 ; }
+        }
+}
+
+@mixin ajusteAcademico( )
+{
+        @include background-heigth( 200px ) ;
+        @include Margin-LT-RT-UP-DN( 20px , 20px , 2px , 2px ) ;
+        @include Padding-LT-RT-UP-DN( 1px , 1px , 1px , 1px ) ;
+}
+
+@mixin ajusteLaboral-img( )
+{
+        @include background-heigth( 240px ) ;
+        @include Margin-LT-RT-UP-DN( 2px , 2px , 2px , 2px ) ;
+        @include BorderRadius-TL-TR-BL-BR( 25px , 25px , 25px , 25px ) ;
+        @include Padding-LT-RT-UP-DN( 1px , 1px , 1px , 1px ) ;
+        animation: emerging-img 6s , cursor .75s step-end infinite alternate ;
+
+        @keyframes emerging-img 
+        {
+                from { opacity : 0 ; }
+                to { opacity : 1 ; }
+        }
+}
+
+@mixin ajusteLaboral( )
+{
+        @include background-heigth( 240px ) ;
+        @include Margin-LT-RT-UP-DN( 20px , 20px , 2px , 2px ) ;
+        @include Padding-LT-RT-UP-DN( 1px , 1px , 1px , 1px ) ;
+}
+
+@mixin ajusteEncabezado( )
+{
+        @include background-heigth( 50px ) ;
+        @include Margin-LT-RT-UP-DN( 2px , 2px , 2px , 2px ) ;
+        @include Padding-LT-RT-UP-DN( 1px , 1px , 1px , 1px ) ;
+}
+
+@mixin emergerEncabezado( )
+{
+        animation : emer-txt 1s , steps( 500 ) ;
+
+        @keyframes emer-txt 
+        {
+                from { opacity : 0 ; }
+                to { opacity : 1 ; }
+        
+        }
+}
+
+@mixin emerger-texto( ) 
+{
+        animation : emer-txt 9s , steps( 500 ) ;
+        color : #a98a34 ;
+
+        @keyframes emer-txt     
+        {
+
+                from { opacity : 0 ; }
+                to { opacity : 1 ; }
+        }
+}
+
+//HABILIDADES DURAS
+@mixin ajusteHabilidad( )
+{
+        @include Margin-LT-RT-UP-DN( 0px , 0px , 10px , 10px ) ;
+        @include BorderWidth-LT-RT-UP-DN( 5px , 5px , 5px , 5px ) ;
+        @include Padding-LT-RT-UP-DN( 1px , 1px , 1px , 1px );
+        @include background-heigth( 220px ) ;
+}
+
+@mixin tamaño-logo
+{
+
+        @include Margin-LT-RT-UP-DN( 0px , 0px , 10px , 0px ) ;
+        @include BorderRadius-TL-TR-BL-BR( 25px , 25px , 25px , 25px ) ;
+        @include Padding-LT-RT-UP-DN( 1px , 1px , 1px , 1px ) ;
+        @include div-size-WD-HG( 180px , 180px ) ;
+
+        background-image : linear-gradient( rgb( 97 , 218 , 251 ) ,rgba( 255 , 255 , 255 , 0 ) ) ;
+        transform: skewY( 0deg ) ;
+        animation: emerging-logo 4s , cursor .25s step-end infinite alternate ;
+
+        @keyframes emerging-logo 
+        {
+
+                from 
+                { 
+                        opacity : 0 ; 
+                        transform : skewY( 90deg ) ;
+                }
+
+                to 
+                {
+                        opacity : 1 ; 
+                        transform : skewY( 0deg ) ;
+                }
+        }
+}
+
+@mixin ajusteHabilidadstats( )
+{
+        @include Margin-LT-RT-UP-DN( 20px , 20px , 10px , 10px ) ;
+        @include BorderWidth-LT-RT-UP-DN( 5px , 5px , 5px , 5px ) ;
+        @include Padding-LT-RT-UP-DN( 5px , 0px , 0px , 0px ) ;
+        @include div-size-WD-HG( 1470px , 200px ) ;
+}
+
+@mixin ajustePlus( )
+{
+
+        @include vw-font-size( 50px ) ;
+        color :rgb( 97 , 218 , 251 ) ;
+        @include Margin-LT-RT-UP-DN( 5px , 5px , 30px , 0px ) ;
+
+        animation: emergin-plus 12s , steps( 500 ) , infinite ;
+
+        @keyframes emergin-plus 
+        {
+                from { color : transparent ; }
+                to{ color :rgb( 97 , 218 , 251 ) ; } 
+        }
+}
+
+@mixin tamaño-logo-cuadrado
+{
+        @include Margin-LT-RT-UP-DN( 0px , 0px , 50px , 0px ) ;
+        @include BorderRadius-TL-TR-BL-BR( 25px , 25px , 25px , 25px ) ;
+        @include Padding-LT-RT-UP-DN( 1px , 1px , 1px , 1px ) ;
+        @include div-size-WD-HG( 200px , 100px ) ;
+
+        background-image : linear-gradient( rgb( 97 , 218 , 251 ) , rgba( 255 , 255 , 255 , 0 ) ) ;
+        animation : emerging-logo-cuadrado 3.5s  steps( 500 ) , cursor 1s step-end infinite alternate ;
+
+        @keyframes emerging-logo-cuadrado 
+        {
+                from 
+                {
+                        opacity : 0 ;
+                        transform : skewY( 90deg ) ;
+                }
+
+                to 
+                {
+                        opacity : 1 ; 
+                        transform : skewY( 0deg ) ;
+                }
+        }
+}
+
+@mixin arreglar-imagen
+{
+        background : 
+        {
+                size : cover ;
+                repeat : no-repeat ;
+                position : center ;
+                attachment : fixed ;
+        }
+
+        animation: emerger-fondo .5s;
+
+        @keyframes emerger-fondo 
+        {
+                from { opacity : 0 ; }
+                to { opacity : 1 ; }
+        }
+}
+
+@mixin translateX( $value1 )
+{
+        ransform : translateX( $value1 ) ;
 }
 //TODO: DEBUGEAR EL MIXINS. LO QUE ESTÁ ARRIBA ESTÁ LISTO
 //LO QUE NO SE NECESITE, BORRARLO.

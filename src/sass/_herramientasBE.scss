@@ -3,89 +3,125 @@
 //COLOREANDO EL DIV CON MARGIN Y PADDING.
 .PerkBe
 {
-    @include mixins.Margin-LT-RT-UP-DN(0px,0px,90px,90px);
-    &__title{
-        @include mixins.Emerging-headers(); 
-        @include mixins.Blur-shadow-H-V-BLUR-COLOR(0.1em,0.1em,0.5em,rgba(38,139,210,1))
-    }
-}
+        @include mixins.Margin-LT-RT-UP-DN( 0px , 0px , 90px , 90px ) ;
 
-.BElogo{
+        &__title
+        {
 
-    &__SVBNET{
-        @include mixins.crear-flexbox();
-        //background-color: #ff0000; // Para debug
-    }
-    &__VBNET{
-        content:url('../img/BE/VB.NET_Logo.svg');
-        @include mixins.tamaño-logo();
-       //background-color: #00ffff
-    }
-    &__SJAVA{
-        @include mixins.crear-flexbox();
-       //background-color: #0080ff
-        
-    }
-    &__JAVA{
-        content: url('../img/BE/java-logo-svgrepo-com.svg');
-        @include mixins.tamaño-logo();
-        //background-color: #1ea427
-    }
-    &__SCSHARP{
-        @include mixins.crear-flexbox();
-        //background-color: #00ff00
-    }
-    &__CSHARP{
-        content: url(../img/BE/c--4.svg);
-        @include mixins.tamaño-logo();
-        //background-color: #b90000
-    }
-    &__stats{
-        //background-color: #80ff80;
-        @include mixins.ajusteHabilidadstats();
-        @include mixins.emerger-texto();
-    }
-}
-
-@media only screen and (max-width: 834px){
-    .PerkBe{
-        //background-color: chartreuse;
-        @include mixins.Margin-LT-RT-UP-DN(0px,0px,140px,120px);
-        @include mixins.background-width(98.5%);
-        display: block;
-        text-align: center;
+                @include mixins.Emerging-headers( ) ; 
+                @include mixins.Blur-shadow-H-V-BLUR-COLOR( 0.1em , 0.1em , 0.5em , rgba( 38 , 139 , 210 , 1 ) ) ;
         }
-    .BElogo{
-        @include mixins.Margin-LT-RT-UP-DN(0px,0px,140px,120px);    
-        @include mixins.background-width(100%);
-        display: block;
-        text-align: center;
+}
 
-        &__SVBNET,&__SJAVA,&__SCSHARP
-            {
-                @include mixins.Margin-LT-RT-UP-DN(0px,0px,0px,0px);  
-                @include mixins.div-size-WD-HG(100%,510px);
-                display: block;
-                 &--container
-                 {
-                justify-content: center;
-                @include mixins.Margin-LT-RT-UP-DN(auto,auto,auto,auto);  
-                @include mixins.background-width(95%);
-                display: flex;
+.BElogo
+{
+
+        &__SVBNET
+        {
+
+                //background-color : #ff0000 ; // Para debug
+                @include mixins.crear-flexbox( ) ;
+        }
+
+        &__VBNET
+        {
+
+                //background-color : #00ffff ;
+                content : url( '../img/BE/VB.NET_Logo.svg' ) ;
+                @include mixins.tamaño-logo( ) ;
+        }
+
+        &__SJAVA
+        {
+
+               //background-color : #0080ff ;
+                @include mixins.crear-flexbox( ) ;
+        }
+
+        &__JAVA
+        {
+
+                //background-color : #1ea427 ;
+                content : url( '../img/BE/java-logo-svgrepo-com.svg' ) ;
+                @include mixins.tamaño-logo();
+        }
+
+        &__SCSHARP
+        {
+
+                //background-color : #00ff00 ;
+                @include mixins.crear-flexbox( ) ;
+        }
+        
+        &__CSHARP
+        {
+
+                //background-color : #b90000 ;
+                content : url( '../img/BE/c--4.svg' ) ;
+                @include mixins.tamaño-logo( ) ; 
+        }
+
+        &__stats
+        {
+
+                //background-color : #80ff80 ;
+                @include mixins.ajusteHabilidadstats( ) ;
+                @include mixins.emerger-texto( ) ;
+        }
+}
+
+@media only screen and ( max-width : 834px )
+{
+        .PerkBe
+        {
+
+                //background-color : chartreuse ;
+                @include mixins.Margin-LT-RT-UP-DN( 0px , 0px , 140px , 120px ) ;
+                @include mixins.background-width( 98.5% ) ;
+                display : block ;
+                text-align : center ;
+        }
+
+        .BElogo
+        {
+                @include mixins.Margin-LT-RT-UP-DN( 0px , 0px , 140px , 120px ) ;    
+                @include mixins.background-width( 100% ) ;
+                display : block ;
+                text-align : center ;
+
+                &__SVBNET , &__SJAVA , &__SCSHARP
+                {
+
+                        @include mixins.Margin-LT-RT-UP-DN( 0px , 0px , 0px , 0px ) ;  
+                        @include mixins.div-size-WD-HG( 100% , 510px ) ;
+                        display : block ;
+
+                        &--container
+                        {
+
+                                justify-content : center ;
+                                @include mixins.Margin-LT-RT-UP-DN( auto , auto , auto , auto ) ;  
+                                @include mixins.background-width( 95% ) ;
+                                display : flex ;
+                        }
                 }
-            }
-            &__VBNET,&__JAVA,&__CSHARP
-            {
-                @include mixins.Margin-LT-RT-UP-DN(auto,auto,17px,17px);
-                @include mixins.BorderRadius-TL-TR-BL-BR(5px,5px,5px,5px);
-                @include mixins.div-size-WD-HG(26%,100%);
-            }
-            &__stats{
-                @include mixins.Margin-LT-RT-UP-DN(3px,0px,0px,0px);
-                @include mixins.Padding-LT-RT-UP-DN(0px,0px,0px,0px);
-                @include mixins.div-size-WD-HG(98%,50%);
-                @include mixins.vw-font-size(90%);
-                text-align: left;
-            }
+
+                &__VBNET , &__JAVA , &__CSHARP
+                {
+                        
+                        @include mixins.Margin-LT-RT-UP-DN( auto , auto , 17px , 17px ) ;
+                        @include mixins.BorderRadius-TL-TR-BL-BR( 5px , 5px , 5px , 5px ) ;
+                        @include mixins.div-size-WD-HG( 26% , 100% ) ;
+                }
+
+                &__stats
+                {
+
+                        @include mixins.Margin-LT-RT-UP-DN( 3px , 0px , 0px , 0px ) ;
+                        @include mixins.Padding-LT-RT-UP-DN( 0px , 0px , 0px , 0px ) ;
+                        @include mixins.div-size-WD-HG( 98% , 50% ) ;
+                        @include mixins.vw-font-size( 90% ) ;
+                        text-align : left ;
+                }
         }
 }
